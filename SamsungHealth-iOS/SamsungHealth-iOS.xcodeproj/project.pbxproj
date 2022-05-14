@@ -51,6 +51,7 @@
 		98484F80282F92D200D670B8 /* KmWeightDummyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F7E282F92D200D670B8 /* KmWeightDummyCollectionViewCell.swift */; };
 		98484F81282F92D200D670B8 /* KmWeightDummyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98484F7F282F92D200D670B8 /* KmWeightDummyCollectionViewCell.xib */; };
 		98484F83282F92DC00D670B8 /* KmWeightViewController+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F82282F92DC00D670B8 /* KmWeightViewController+Network.swift */; };
+		98484F89282F943800D670B8 /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F88282F943800D670B8 /* UIFont+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +101,10 @@
 		98484F7E282F92D200D670B8 /* KmWeightDummyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KmWeightDummyCollectionViewCell.swift; sourceTree = "<group>"; };
 		98484F7F282F92D200D670B8 /* KmWeightDummyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KmWeightDummyCollectionViewCell.xib; sourceTree = "<group>"; };
 		98484F82282F92DC00D670B8 /* KmWeightViewController+Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KmWeightViewController+Network.swift"; sourceTree = "<group>"; };
+		98484F85282F940000D670B8 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		98484F86282F940700D670B8 /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		98484F87282F940F00D670B8 /* NotoSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Medium.ttf"; sourceTree = "<group>"; };
+		98484F88282F943800D670B8 /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 		C932CDDFDBAC295AEBE74D20 /* Pods-SamsungHealth-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamsungHealth-iOS.debug.xcconfig"; path = "Target Support Files/Pods-SamsungHealth-iOS/Pods-SamsungHealth-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		DCD77963D8091FC46DD7CF2E /* Pods-SamsungHealth-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamsungHealth-iOS.release.xcconfig"; path = "Target Support Files/Pods-SamsungHealth-iOS/Pods-SamsungHealth-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -229,6 +234,7 @@
 		98484F21282F8DA800D670B8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				98484F84282F93F600D670B8 /* Font */,
 				98484F0B282F8B1B00D670B8 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -246,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				98484F3A282F8F6700D670B8 /* ViewController+.swift */,
+				98484F88282F943800D670B8 /* UIFont+.swift */,
 			);
 			path = AppExtensions;
 			sourceTree = "<group>";
@@ -426,6 +433,16 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		98484F84282F93F600D670B8 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				98484F87282F940F00D670B8 /* NotoSans-Medium.ttf */,
+				98484F86282F940700D670B8 /* NotoSans-Bold.ttf */,
+				98484F85282F940000D670B8 /* NotoSans-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -556,6 +573,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98484F89282F943800D670B8 /* UIFont+.swift in Sources */,
 				98484F53282F917500D670B8 /* BabyMainTabBarController.swift in Sources */,
 				98484F6F282F927400D670B8 /* KmMainTabBarViewController.swift in Sources */,
 				98484F6B282F925C00D670B8 /* YinMainTabBarController.swift in Sources */,

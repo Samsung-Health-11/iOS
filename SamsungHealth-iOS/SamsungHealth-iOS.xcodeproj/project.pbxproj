@@ -24,8 +24,6 @@
 		98484F4B282F903F00D670B8 /* BabyDummyWeightCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98484F49282F903F00D670B8 /* BabyDummyWeightCollectionViewCell.xib */; };
 		98484F4D282F913000D670B8 /* BabyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F4C282F913000D670B8 /* BabyHomeViewController.swift */; };
 		98484F4F282F913B00D670B8 /* BabyWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F4E282F913B00D670B8 /* BabyWeightViewController.swift */; };
-		98484F51282F916700D670B8 /* BabyMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98484F50282F916700D670B8 /* BabyMain.storyboard */; };
-		98484F53282F917500D670B8 /* BabyMainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F52282F917500D670B8 /* BabyMainTabBarController.swift */; };
 		98484F55282F91CD00D670B8 /* YinHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98484F54282F91CD00D670B8 /* YinHome.storyboard */; };
 		98484F57282F91E500D670B8 /* YinHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F56282F91E500D670B8 /* YinHomeViewController.swift */; };
 		98484F5A282F91FC00D670B8 /* YinHomeDummyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F58282F91FC00D670B8 /* YinHomeDummyCollectionViewCell.swift */; };
@@ -36,10 +34,6 @@
 		98484F64282F923100D670B8 /* YinWeightDummyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F62282F923100D670B8 /* YinWeightDummyCollectionViewCell.swift */; };
 		98484F65282F923100D670B8 /* YinWeightDummyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98484F63282F923100D670B8 /* YinWeightDummyCollectionViewCell.xib */; };
 		98484F67282F923C00D670B8 /* YinWeightViewController+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F66282F923C00D670B8 /* YinWeightViewController+Network.swift */; };
-		98484F69282F924B00D670B8 /* YinMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98484F68282F924B00D670B8 /* YinMain.storyboard */; };
-		98484F6B282F925C00D670B8 /* YinMainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F6A282F925C00D670B8 /* YinMainTabBarController.swift */; };
-		98484F6D282F926B00D670B8 /* KmMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98484F6C282F926B00D670B8 /* KmMain.storyboard */; };
-		98484F6F282F927400D670B8 /* KmMainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F6E282F927400D670B8 /* KmMainTabBarViewController.swift */; };
 		98484F71282F927C00D670B8 /* KmHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98484F70282F927C00D670B8 /* KmHome.storyboard */; };
 		98484F73282F928600D670B8 /* KmHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F72282F928600D670B8 /* KmHomeViewController.swift */; };
 		98484F76282F929E00D670B8 /* KmHomeDummyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F74282F929E00D670B8 /* KmHomeDummyCollectionViewCell.swift */; };
@@ -85,8 +79,6 @@
 		98484F49282F903F00D670B8 /* BabyDummyWeightCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BabyDummyWeightCollectionViewCell.xib; sourceTree = "<group>"; };
 		98484F4C282F913000D670B8 /* BabyHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyHomeViewController.swift; sourceTree = "<group>"; };
 		98484F4E282F913B00D670B8 /* BabyWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyWeightViewController.swift; sourceTree = "<group>"; };
-		98484F50282F916700D670B8 /* BabyMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BabyMain.storyboard; sourceTree = "<group>"; };
-		98484F52282F917500D670B8 /* BabyMainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyMainTabBarController.swift; sourceTree = "<group>"; };
 		98484F54282F91CD00D670B8 /* YinHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YinHome.storyboard; sourceTree = "<group>"; };
 		98484F56282F91E500D670B8 /* YinHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YinHomeViewController.swift; sourceTree = "<group>"; };
 		98484F58282F91FC00D670B8 /* YinHomeDummyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YinHomeDummyCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -97,10 +89,6 @@
 		98484F62282F923100D670B8 /* YinWeightDummyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YinWeightDummyCollectionViewCell.swift; sourceTree = "<group>"; };
 		98484F63282F923100D670B8 /* YinWeightDummyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YinWeightDummyCollectionViewCell.xib; sourceTree = "<group>"; };
 		98484F66282F923C00D670B8 /* YinWeightViewController+Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YinWeightViewController+Network.swift"; sourceTree = "<group>"; };
-		98484F68282F924B00D670B8 /* YinMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YinMain.storyboard; sourceTree = "<group>"; };
-		98484F6A282F925C00D670B8 /* YinMainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YinMainTabBarController.swift; sourceTree = "<group>"; };
-		98484F6C282F926B00D670B8 /* KmMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KmMain.storyboard; sourceTree = "<group>"; };
-		98484F6E282F927400D670B8 /* KmMainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KmMainTabBarViewController.swift; sourceTree = "<group>"; };
 		98484F70282F927C00D670B8 /* KmHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KmHome.storyboard; sourceTree = "<group>"; };
 		98484F72282F928600D670B8 /* KmHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KmHomeViewController.swift; sourceTree = "<group>"; };
 		98484F74282F929E00D670B8 /* KmHomeDummyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KmHomeDummyCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -198,8 +186,6 @@
 			children = (
 				98484F27282F8E9700D670B8 /* Home */,
 				98484F35282F8F2B00D670B8 /* Weight */,
-				98484F6C282F926B00D670B8 /* KmMain.storyboard */,
-				98484F6E282F927400D670B8 /* KmMainTabBarViewController.swift */,
 			);
 			path = "Scene(km)";
 			sourceTree = "<group>";
@@ -209,8 +195,6 @@
 			children = (
 				98484F26282F8E9400D670B8 /* Home */,
 				98484F32282F8EFB00D670B8 /* Weight */,
-				98484F68282F924B00D670B8 /* YinMain.storyboard */,
-				98484F6A282F925C00D670B8 /* YinMainTabBarController.swift */,
 			);
 			path = "Scene(yi)";
 			sourceTree = "<group>";
@@ -220,8 +204,6 @@
 			children = (
 				98484F25282F8E8700D670B8 /* Home */,
 				98484F2F282F8EDC00D670B8 /* Weight */,
-				98484F50282F916700D670B8 /* BabyMain.storyboard */,
-				98484F52282F917500D670B8 /* BabyMainTabBarController.swift */,
 			);
 			path = "Scene(baby)";
 			sourceTree = "<group>";
@@ -544,8 +526,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98484F69282F924B00D670B8 /* YinMain.storyboard in Resources */,
-				98484F6D282F926B00D670B8 /* KmMain.storyboard in Resources */,
 				98484F77282F929E00D670B8 /* KmHomeDummyCollectionViewCell.xib in Resources */,
 				98484F5F282F921200D670B8 /* YinWeight.storyboard in Resources */,
 				98484F45282F902700D670B8 /* BabyWeight.storyboard in Resources */,
@@ -560,7 +540,6 @@
 				98484F5B282F91FC00D670B8 /* YinHomeDummyCollectionViewCell.xib in Resources */,
 				98484F0C282F8B1B00D670B8 /* Assets.xcassets in Resources */,
 				98484F71282F927C00D670B8 /* KmHome.storyboard in Resources */,
-				98484F51282F916700D670B8 /* BabyMain.storyboard in Resources */,
 				98484F43282F901800D670B8 /* BabyDummyCollectionViewCell.xib in Resources */,
 				98484F0A282F8B1600D670B8 /* Main.storyboard in Resources */,
 			);
@@ -616,9 +595,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				98484F89282F943800D670B8 /* UIFont+.swift in Sources */,
-				98484F53282F917500D670B8 /* BabyMainTabBarController.swift in Sources */,
-				98484F6F282F927400D670B8 /* KmMainTabBarViewController.swift in Sources */,
-				98484F6B282F925C00D670B8 /* YinMainTabBarController.swift in Sources */,
 				98484F912830A6F100D670B8 /* Image.swift in Sources */,
 				98484F982830AFBA00D670B8 /* BaseTargetType.swift in Sources */,
 				98484FA22830B06500D670B8 /* NetworkResult.swift in Sources */,

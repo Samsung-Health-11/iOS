@@ -14,7 +14,6 @@
 		98484F0C282F8B1B00D670B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98484F0B282F8B1B00D670B8 /* Assets.xcassets */; };
 		98484F0F282F8B1B00D670B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98484F0D282F8B1B00D670B8 /* LaunchScreen.storyboard */; };
 		98484F39282F8F5B00D670B8 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F38282F8F5B00D670B8 /* Const.swift */; };
-		98484F3B282F8F6700D670B8 /* ViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F3A282F8F6700D670B8 /* ViewController+.swift */; };
 		98484F3D282F8F9400D670B8 /* BabyHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98484F3C282F8F9400D670B8 /* BabyHome.storyboard */; };
 		98484F3F282F8FA500D670B8 /* BabyHomeViewController+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F3E282F8FA500D670B8 /* BabyHomeViewController+Network.swift */; };
 		98484F42282F901800D670B8 /* BabyDummyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F40282F901800D670B8 /* BabyDummyCollectionViewCell.swift */; };
@@ -62,6 +61,8 @@
 		98484FA02830B03E00D670B8 /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F9F2830B03E00D670B8 /* NetworkConstant.swift */; };
 		98484FA22830B06500D670B8 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484FA12830B06500D670B8 /* NetworkResult.swift */; };
 		98484FA42830B08A00D670B8 /* URLConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484FA32830B08A00D670B8 /* URLConstant.swift */; };
+		98D25B762830B6F30030C2D1 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98D25B752830B6F30030C2D1 /* Colors.xcassets */; };
+		98D25B782830B7440030C2D1 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D25B772830B7440030C2D1 /* UIColor+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,7 +75,6 @@
 		98484F0E282F8B1B00D670B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98484F10282F8B1B00D670B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98484F38282F8F5B00D670B8 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
-		98484F3A282F8F6700D670B8 /* ViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+.swift"; sourceTree = "<group>"; };
 		98484F3C282F8F9400D670B8 /* BabyHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BabyHome.storyboard; sourceTree = "<group>"; };
 		98484F3E282F8FA500D670B8 /* BabyHomeViewController+Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BabyHomeViewController+Network.swift"; sourceTree = "<group>"; };
 		98484F40282F901800D670B8 /* BabyDummyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyDummyCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -125,6 +125,8 @@
 		98484F9F2830B03E00D670B8 /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
 		98484FA12830B06500D670B8 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		98484FA32830B08A00D670B8 /* URLConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstant.swift; sourceTree = "<group>"; };
+		98D25B752830B6F30030C2D1 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		98D25B772830B7440030C2D1 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		C932CDDFDBAC295AEBE74D20 /* Pods-SamsungHealth-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamsungHealth-iOS.debug.xcconfig"; path = "Target Support Files/Pods-SamsungHealth-iOS/Pods-SamsungHealth-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		DCD77963D8091FC46DD7CF2E /* Pods-SamsungHealth-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamsungHealth-iOS.release.xcconfig"; path = "Target Support Files/Pods-SamsungHealth-iOS/Pods-SamsungHealth-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -257,6 +259,7 @@
 			children = (
 				98484F84282F93F600D670B8 /* Font */,
 				98484F0B282F8B1B00D670B8 /* Assets.xcassets */,
+				98D25B752830B6F30030C2D1 /* Colors.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -275,8 +278,8 @@
 		98484F23282F8E4800D670B8 /* AppExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				98484F3A282F8F6700D670B8 /* ViewController+.swift */,
 				98484F88282F943800D670B8 /* UIFont+.swift */,
+				98D25B772830B7440030C2D1 /* UIColor+.swift */,
 			);
 			path = AppExtensions;
 			sourceTree = "<group>";
@@ -553,6 +556,7 @@
 				98484F4B282F903F00D670B8 /* BabyDummyWeightCollectionViewCell.xib in Resources */,
 				98484F55282F91CD00D670B8 /* YinHome.storyboard in Resources */,
 				98484F7B282F92B400D670B8 /* KmWeight.storyboard in Resources */,
+				98D25B762830B6F30030C2D1 /* Colors.xcassets in Resources */,
 				98484F5B282F91FC00D670B8 /* YinHomeDummyCollectionViewCell.xib in Resources */,
 				98484F0C282F8B1B00D670B8 /* Assets.xcassets in Resources */,
 				98484F71282F927C00D670B8 /* KmHome.storyboard in Resources */,
@@ -628,10 +632,10 @@
 				98484F4F282F913B00D670B8 /* BabyWeightViewController.swift in Sources */,
 				98484F05282F8B1600D670B8 /* SceneDelegate.swift in Sources */,
 				98484F76282F929E00D670B8 /* KmHomeDummyCollectionViewCell.swift in Sources */,
+				98D25B782830B7440030C2D1 /* UIColor+.swift in Sources */,
 				98484FA42830B08A00D670B8 /* URLConstant.swift in Sources */,
 				98484F5A282F91FC00D670B8 /* YinHomeDummyCollectionViewCell.swift in Sources */,
 				98484F80282F92D200D670B8 /* KmWeightDummyCollectionViewCell.swift in Sources */,
-				98484F3B282F8F6700D670B8 /* ViewController+.swift in Sources */,
 				98484F4A282F903F00D670B8 /* BabyDummyWeightCollectionViewCell.swift in Sources */,
 				98484F67282F923C00D670B8 /* YinWeightViewController+Network.swift in Sources */,
 				98484F7D282F92C000D670B8 /* KmWeightViewController.swift in Sources */,

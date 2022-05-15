@@ -55,6 +55,13 @@
 		98484F8D2830A54300D670B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F8C2830A54300D670B8 /* ViewController.swift */; };
 		98484F8F2830A54900D670B8 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F8E2830A54900D670B8 /* Storyboard.swift */; };
 		98484F912830A6F100D670B8 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F902830A6F100D670B8 /* Image.swift */; };
+		98484F982830AFBA00D670B8 /* BaseTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F972830AFBA00D670B8 /* BaseTargetType.swift */; };
+		98484F9A2830AFCE00D670B8 /* GeneralResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F992830AFCE00D670B8 /* GeneralResponse.swift */; };
+		98484F9C2830AFF100D670B8 /* MoyaLoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F9B2830AFF100D670B8 /* MoyaLoggingPlugin.swift */; };
+		98484F9E2830B00400D670B8 /* NetworkBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F9D2830B00400D670B8 /* NetworkBase.swift */; };
+		98484FA02830B03E00D670B8 /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F9F2830B03E00D670B8 /* NetworkConstant.swift */; };
+		98484FA22830B06500D670B8 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484FA12830B06500D670B8 /* NetworkResult.swift */; };
+		98484FA42830B08A00D670B8 /* URLConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484FA32830B08A00D670B8 /* URLConstant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,6 +118,13 @@
 		98484F8C2830A54300D670B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		98484F8E2830A54900D670B8 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		98484F902830A6F100D670B8 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		98484F972830AFBA00D670B8 /* BaseTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTargetType.swift; sourceTree = "<group>"; };
+		98484F992830AFCE00D670B8 /* GeneralResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralResponse.swift; sourceTree = "<group>"; };
+		98484F9B2830AFF100D670B8 /* MoyaLoggingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLoggingPlugin.swift; sourceTree = "<group>"; };
+		98484F9D2830B00400D670B8 /* NetworkBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkBase.swift; sourceTree = "<group>"; };
+		98484F9F2830B03E00D670B8 /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
+		98484FA12830B06500D670B8 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		98484FA32830B08A00D670B8 /* URLConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstant.swift; sourceTree = "<group>"; };
 		C932CDDFDBAC295AEBE74D20 /* Pods-SamsungHealth-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamsungHealth-iOS.debug.xcconfig"; path = "Target Support Files/Pods-SamsungHealth-iOS/Pods-SamsungHealth-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		DCD77963D8091FC46DD7CF2E /* Pods-SamsungHealth-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamsungHealth-iOS.release.xcconfig"; path = "Target Support Files/Pods-SamsungHealth-iOS/Pods-SamsungHealth-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -223,6 +237,7 @@
 		98484F1F282F8D9400D670B8 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				98484F942830AF7A00D670B8 /* Base */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -452,6 +467,20 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		98484F942830AF7A00D670B8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				98484F972830AFBA00D670B8 /* BaseTargetType.swift */,
+				98484F992830AFCE00D670B8 /* GeneralResponse.swift */,
+				98484F9B2830AFF100D670B8 /* MoyaLoggingPlugin.swift */,
+				98484F9D2830B00400D670B8 /* NetworkBase.swift */,
+				98484F9F2830B03E00D670B8 /* NetworkConstant.swift */,
+				98484FA12830B06500D670B8 /* NetworkResult.swift */,
+				98484FA32830B08A00D670B8 /* URLConstant.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -587,14 +616,19 @@
 				98484F6F282F927400D670B8 /* KmMainTabBarViewController.swift in Sources */,
 				98484F6B282F925C00D670B8 /* YinMainTabBarController.swift in Sources */,
 				98484F912830A6F100D670B8 /* Image.swift in Sources */,
+				98484F982830AFBA00D670B8 /* BaseTargetType.swift in Sources */,
+				98484FA22830B06500D670B8 /* NetworkResult.swift in Sources */,
 				98484F83282F92DC00D670B8 /* KmWeightViewController+Network.swift in Sources */,
+				98484F9A2830AFCE00D670B8 /* GeneralResponse.swift in Sources */,
 				98484F03282F8B1600D670B8 /* AppDelegate.swift in Sources */,
+				98484F9E2830B00400D670B8 /* NetworkBase.swift in Sources */,
 				98484F57282F91E500D670B8 /* YinHomeViewController.swift in Sources */,
 				98484F4D282F913000D670B8 /* BabyHomeViewController.swift in Sources */,
 				98484F79282F92AB00D670B8 /* KmHomeViewController+Network.swift in Sources */,
 				98484F4F282F913B00D670B8 /* BabyWeightViewController.swift in Sources */,
 				98484F05282F8B1600D670B8 /* SceneDelegate.swift in Sources */,
 				98484F76282F929E00D670B8 /* KmHomeDummyCollectionViewCell.swift in Sources */,
+				98484FA42830B08A00D670B8 /* URLConstant.swift in Sources */,
 				98484F5A282F91FC00D670B8 /* YinHomeDummyCollectionViewCell.swift in Sources */,
 				98484F80282F92D200D670B8 /* KmWeightDummyCollectionViewCell.swift in Sources */,
 				98484F3B282F8F6700D670B8 /* ViewController+.swift in Sources */,
@@ -605,11 +639,13 @@
 				98484F73282F928600D670B8 /* KmHomeViewController.swift in Sources */,
 				98484F61282F921E00D670B8 /* YinWeightViewController.swift in Sources */,
 				98484F8D2830A54300D670B8 /* ViewController.swift in Sources */,
+				98484FA02830B03E00D670B8 /* NetworkConstant.swift in Sources */,
 				98484F39282F8F5B00D670B8 /* Const.swift in Sources */,
 				98484F64282F923100D670B8 /* YinWeightDummyCollectionViewCell.swift in Sources */,
 				98484F8F2830A54900D670B8 /* Storyboard.swift in Sources */,
 				98484F5D282F920700D670B8 /* YinHomeViewController+Network.swift in Sources */,
 				98484F3F282F8FA500D670B8 /* BabyHomeViewController+Network.swift in Sources */,
+				98484F9C2830AFF100D670B8 /* MoyaLoggingPlugin.swift in Sources */,
 				98484F42282F901800D670B8 /* BabyDummyCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

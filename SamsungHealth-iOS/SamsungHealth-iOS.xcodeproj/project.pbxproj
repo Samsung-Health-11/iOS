@@ -52,6 +52,9 @@
 		98484F81282F92D200D670B8 /* KmWeightDummyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98484F7F282F92D200D670B8 /* KmWeightDummyCollectionViewCell.xib */; };
 		98484F83282F92DC00D670B8 /* KmWeightViewController+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F82282F92DC00D670B8 /* KmWeightViewController+Network.swift */; };
 		98484F89282F943800D670B8 /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F88282F943800D670B8 /* UIFont+.swift */; };
+		98484F8D2830A54300D670B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F8C2830A54300D670B8 /* ViewController.swift */; };
+		98484F8F2830A54900D670B8 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F8E2830A54900D670B8 /* Storyboard.swift */; };
+		98484F912830A6F100D670B8 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F902830A6F100D670B8 /* Image.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -105,6 +108,9 @@
 		98484F86282F940700D670B8 /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
 		98484F87282F940F00D670B8 /* NotoSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Medium.ttf"; sourceTree = "<group>"; };
 		98484F88282F943800D670B8 /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
+		98484F8C2830A54300D670B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		98484F8E2830A54900D670B8 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		98484F902830A6F100D670B8 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		C932CDDFDBAC295AEBE74D20 /* Pods-SamsungHealth-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamsungHealth-iOS.debug.xcconfig"; path = "Target Support Files/Pods-SamsungHealth-iOS/Pods-SamsungHealth-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		DCD77963D8091FC46DD7CF2E /* Pods-SamsungHealth-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamsungHealth-iOS.release.xcconfig"; path = "Target Support Files/Pods-SamsungHealth-iOS/Pods-SamsungHealth-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -244,6 +250,9 @@
 			isa = PBXGroup;
 			children = (
 				98484F38282F8F5B00D670B8 /* Const.swift */,
+				98484F902830A6F100D670B8 /* Image.swift */,
+				98484F8E2830A54900D670B8 /* Storyboard.swift */,
+				98484F8C2830A54300D670B8 /* ViewController.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -577,6 +586,7 @@
 				98484F53282F917500D670B8 /* BabyMainTabBarController.swift in Sources */,
 				98484F6F282F927400D670B8 /* KmMainTabBarViewController.swift in Sources */,
 				98484F6B282F925C00D670B8 /* YinMainTabBarController.swift in Sources */,
+				98484F912830A6F100D670B8 /* Image.swift in Sources */,
 				98484F83282F92DC00D670B8 /* KmWeightViewController+Network.swift in Sources */,
 				98484F03282F8B1600D670B8 /* AppDelegate.swift in Sources */,
 				98484F57282F91E500D670B8 /* YinHomeViewController.swift in Sources */,
@@ -594,8 +604,10 @@
 				98484F47282F903400D670B8 /* BabyWeightViewController+Network.swift in Sources */,
 				98484F73282F928600D670B8 /* KmHomeViewController.swift in Sources */,
 				98484F61282F921E00D670B8 /* YinWeightViewController.swift in Sources */,
+				98484F8D2830A54300D670B8 /* ViewController.swift in Sources */,
 				98484F39282F8F5B00D670B8 /* Const.swift in Sources */,
 				98484F64282F923100D670B8 /* YinWeightDummyCollectionViewCell.swift in Sources */,
+				98484F8F2830A54900D670B8 /* Storyboard.swift in Sources */,
 				98484F5D282F920700D670B8 /* YinHomeViewController+Network.swift in Sources */,
 				98484F3F282F8FA500D670B8 /* BabyHomeViewController+Network.swift in Sources */,
 				98484F42282F901800D670B8 /* BabyDummyCollectionViewCell.swift in Sources */,

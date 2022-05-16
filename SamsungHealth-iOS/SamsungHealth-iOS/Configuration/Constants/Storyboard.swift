@@ -12,16 +12,19 @@ extension Const {
         
         // MARK: - 영린이
         
+        static let BabyMain = "BabyMain"
         static let BabyHome = "BabyHome"
         static let BabyWeight = "BabyWeight"
         
         // MARK: - 김영인
         
+        static let YinMain = "YinMain"
         static let YinHome = "YinHome"
         static let YinWeight = "YinWeight"
         
         // MARK: - 이경민
         
+        static let KmMain = "KmMain"
         static let KmHome = "KmHome"
         static let KmWeight = "KmWeight"
     }

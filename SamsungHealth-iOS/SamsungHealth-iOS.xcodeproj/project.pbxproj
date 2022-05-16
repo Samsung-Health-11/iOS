@@ -55,6 +55,18 @@
 		98484FA02830B03E00D670B8 /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F9F2830B03E00D670B8 /* NetworkConstant.swift */; };
 		98484FA22830B06500D670B8 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484FA12830B06500D670B8 /* NetworkResult.swift */; };
 		98484FA42830B08A00D670B8 /* URLConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484FA32830B08A00D670B8 /* URLConstant.swift */; };
+		98AC5DBF28322105001F040D /* BabyMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98AC5DBE28322105001F040D /* BabyMain.storyboard */; };
+		98AC5DC128322117001F040D /* BabyMainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AC5DC028322117001F040D /* BabyMainTabBarController.swift */; };
+		98AC5DC328322121001F040D /* YinMainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AC5DC228322121001F040D /* YinMainTabBarController.swift */; };
+		98AC5DC528322126001F040D /* YinMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98AC5DC428322126001F040D /* YinMain.storyboard */; };
+		98AC5DC728322139001F040D /* KmMainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AC5DC628322139001F040D /* KmMainTabBarController.swift */; };
+		98AC5DC928322141001F040D /* KmMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98AC5DC828322141001F040D /* KmMain.storyboard */; };
+		98AC5DCC283223F7001F040D /* BabyTogetherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AC5DCB283223F7001F040D /* BabyTogetherViewController.swift */; };
+		98AC5DCE28322401001F040D /* BabyFitnessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AC5DCD28322401001F040D /* BabyFitnessViewController.swift */; };
+		98AC5DD02832240A001F040D /* BabyMyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AC5DCF2832240A001F040D /* BabyMyPageViewController.swift */; };
+		98AC5DD32832241B001F040D /* YinTogetherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AC5DD22832241B001F040D /* YinTogetherViewController.swift */; };
+		98AC5DD528322422001F040D /* YinFitnessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AC5DD428322422001F040D /* YinFitnessViewController.swift */; };
+		98AC5DD728322429001F040D /* YinMyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AC5DD628322429001F040D /* YinMyPageViewController.swift */; };
 		98D25B762830B6F30030C2D1 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98D25B752830B6F30030C2D1 /* Colors.xcassets */; };
 		98D25B782830B7440030C2D1 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D25B772830B7440030C2D1 /* UIColor+.swift */; };
 /* End PBXBuildFile section */
@@ -113,6 +125,18 @@
 		98484F9F2830B03E00D670B8 /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
 		98484FA12830B06500D670B8 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		98484FA32830B08A00D670B8 /* URLConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstant.swift; sourceTree = "<group>"; };
+		98AC5DBE28322105001F040D /* BabyMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BabyMain.storyboard; sourceTree = "<group>"; };
+		98AC5DC028322117001F040D /* BabyMainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyMainTabBarController.swift; sourceTree = "<group>"; };
+		98AC5DC228322121001F040D /* YinMainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YinMainTabBarController.swift; sourceTree = "<group>"; };
+		98AC5DC428322126001F040D /* YinMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YinMain.storyboard; sourceTree = "<group>"; };
+		98AC5DC628322139001F040D /* KmMainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KmMainTabBarController.swift; sourceTree = "<group>"; };
+		98AC5DC828322141001F040D /* KmMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KmMain.storyboard; sourceTree = "<group>"; };
+		98AC5DCB283223F7001F040D /* BabyTogetherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyTogetherViewController.swift; sourceTree = "<group>"; };
+		98AC5DCD28322401001F040D /* BabyFitnessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyFitnessViewController.swift; sourceTree = "<group>"; };
+		98AC5DCF2832240A001F040D /* BabyMyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyMyPageViewController.swift; sourceTree = "<group>"; };
+		98AC5DD22832241B001F040D /* YinTogetherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YinTogetherViewController.swift; sourceTree = "<group>"; };
+		98AC5DD428322422001F040D /* YinFitnessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YinFitnessViewController.swift; sourceTree = "<group>"; };
+		98AC5DD628322429001F040D /* YinMyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YinMyPageViewController.swift; sourceTree = "<group>"; };
 		98D25B752830B6F30030C2D1 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		98D25B772830B7440030C2D1 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		C932CDDFDBAC295AEBE74D20 /* Pods-SamsungHealth-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamsungHealth-iOS.debug.xcconfig"; path = "Target Support Files/Pods-SamsungHealth-iOS/Pods-SamsungHealth-iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -186,6 +210,8 @@
 			children = (
 				98484F27282F8E9700D670B8 /* Home */,
 				98484F35282F8F2B00D670B8 /* Weight */,
+				98AC5DC828322141001F040D /* KmMain.storyboard */,
+				98AC5DC628322139001F040D /* KmMainTabBarController.swift */,
 			);
 			path = "Scene(km)";
 			sourceTree = "<group>";
@@ -193,8 +219,11 @@
 		98484F1C282F8D1D00D670B8 /* Scene(yi) */ = {
 			isa = PBXGroup;
 			children = (
+				98AC5DD128322410001F040D /* TabVCs */,
 				98484F26282F8E9400D670B8 /* Home */,
 				98484F32282F8EFB00D670B8 /* Weight */,
+				98AC5DC428322126001F040D /* YinMain.storyboard */,
+				98AC5DC228322121001F040D /* YinMainTabBarController.swift */,
 			);
 			path = "Scene(yi)";
 			sourceTree = "<group>";
@@ -202,8 +231,11 @@
 		98484F1D282F8D2200D670B8 /* Scene(baby) */ = {
 			isa = PBXGroup;
 			children = (
+				98AC5DCA283223CB001F040D /* TabVCs */,
 				98484F25282F8E8700D670B8 /* Home */,
 				98484F2F282F8EDC00D670B8 /* Weight */,
+				98AC5DBE28322105001F040D /* BabyMain.storyboard */,
+				98AC5DC028322117001F040D /* BabyMainTabBarController.swift */,
 			);
 			path = "Scene(baby)";
 			sourceTree = "<group>";
@@ -466,6 +498,26 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		98AC5DCA283223CB001F040D /* TabVCs */ = {
+			isa = PBXGroup;
+			children = (
+				98AC5DCB283223F7001F040D /* BabyTogetherViewController.swift */,
+				98AC5DCD28322401001F040D /* BabyFitnessViewController.swift */,
+				98AC5DCF2832240A001F040D /* BabyMyPageViewController.swift */,
+			);
+			path = TabVCs;
+			sourceTree = "<group>";
+		};
+		98AC5DD128322410001F040D /* TabVCs */ = {
+			isa = PBXGroup;
+			children = (
+				98AC5DD22832241B001F040D /* YinTogetherViewController.swift */,
+				98AC5DD428322422001F040D /* YinFitnessViewController.swift */,
+				98AC5DD628322429001F040D /* YinMyPageViewController.swift */,
+			);
+			path = TabVCs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -535,12 +587,15 @@
 				98484F65282F923100D670B8 /* YinWeightDummyCollectionViewCell.xib in Resources */,
 				98484F4B282F903F00D670B8 /* BabyDummyWeightCollectionViewCell.xib in Resources */,
 				98484F55282F91CD00D670B8 /* YinHome.storyboard in Resources */,
+				98AC5DBF28322105001F040D /* BabyMain.storyboard in Resources */,
 				98484F7B282F92B400D670B8 /* KmWeight.storyboard in Resources */,
 				98D25B762830B6F30030C2D1 /* Colors.xcassets in Resources */,
 				98484F5B282F91FC00D670B8 /* YinHomeDummyCollectionViewCell.xib in Resources */,
 				98484F0C282F8B1B00D670B8 /* Assets.xcassets in Resources */,
 				98484F71282F927C00D670B8 /* KmHome.storyboard in Resources */,
+				98AC5DC928322141001F040D /* KmMain.storyboard in Resources */,
 				98484F43282F901800D670B8 /* BabyDummyCollectionViewCell.xib in Resources */,
+				98AC5DC528322126001F040D /* YinMain.storyboard in Resources */,
 				98484F0A282F8B1600D670B8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -597,6 +652,7 @@
 				98484F89282F943800D670B8 /* UIFont+.swift in Sources */,
 				98484F912830A6F100D670B8 /* Image.swift in Sources */,
 				98484F982830AFBA00D670B8 /* BaseTargetType.swift in Sources */,
+				98AC5DCC283223F7001F040D /* BabyTogetherViewController.swift in Sources */,
 				98484FA22830B06500D670B8 /* NetworkResult.swift in Sources */,
 				98484F83282F92DC00D670B8 /* KmWeightViewController+Network.swift in Sources */,
 				98484F9A2830AFCE00D670B8 /* GeneralResponse.swift in Sources */,
@@ -611,19 +667,27 @@
 				98D25B782830B7440030C2D1 /* UIColor+.swift in Sources */,
 				98484FA42830B08A00D670B8 /* URLConstant.swift in Sources */,
 				98484F5A282F91FC00D670B8 /* YinHomeDummyCollectionViewCell.swift in Sources */,
+				98AC5DD728322429001F040D /* YinMyPageViewController.swift in Sources */,
 				98484F80282F92D200D670B8 /* KmWeightDummyCollectionViewCell.swift in Sources */,
+				98AC5DD32832241B001F040D /* YinTogetherViewController.swift in Sources */,
 				98484F4A282F903F00D670B8 /* BabyDummyWeightCollectionViewCell.swift in Sources */,
 				98484F67282F923C00D670B8 /* YinWeightViewController+Network.swift in Sources */,
+				98AC5DCE28322401001F040D /* BabyFitnessViewController.swift in Sources */,
 				98484F7D282F92C000D670B8 /* KmWeightViewController.swift in Sources */,
+				98AC5DD528322422001F040D /* YinFitnessViewController.swift in Sources */,
 				98484F47282F903400D670B8 /* BabyWeightViewController+Network.swift in Sources */,
+				98AC5DC328322121001F040D /* YinMainTabBarController.swift in Sources */,
 				98484F73282F928600D670B8 /* KmHomeViewController.swift in Sources */,
 				98484F61282F921E00D670B8 /* YinWeightViewController.swift in Sources */,
 				98484F8D2830A54300D670B8 /* ViewController.swift in Sources */,
 				98484FA02830B03E00D670B8 /* NetworkConstant.swift in Sources */,
+				98AC5DD02832240A001F040D /* BabyMyPageViewController.swift in Sources */,
 				98484F39282F8F5B00D670B8 /* Const.swift in Sources */,
 				98484F64282F923100D670B8 /* YinWeightDummyCollectionViewCell.swift in Sources */,
+				98AC5DC128322117001F040D /* BabyMainTabBarController.swift in Sources */,
 				98484F8F2830A54900D670B8 /* Storyboard.swift in Sources */,
 				98484F5D282F920700D670B8 /* YinHomeViewController+Network.swift in Sources */,
+				98AC5DC728322139001F040D /* KmMainTabBarController.swift in Sources */,
 				98484F3F282F8FA500D670B8 /* BabyHomeViewController+Network.swift in Sources */,
 				98484F9C2830AFF100D670B8 /* MoyaLoggingPlugin.swift in Sources */,
 				98484F42282F901800D670B8 /* BabyDummyCollectionViewCell.swift in Sources */,

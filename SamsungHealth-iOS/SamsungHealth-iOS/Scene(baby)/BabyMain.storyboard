@@ -1,28 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17150" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lAh-5X-Ao3">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Baby Main Tab Bar Controller-->
+        <scene sceneID="2Og-wJ-BAX">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="lAh-5X-Ao3" customClass="BabyMainTabBarController" customModule="SamsungHealth_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="igQ-h1-o6b">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="GFx-yP-xbA" kind="relationship" relationship="viewControllers" id="bZU-Md-TkX"/>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="viewControllers" id="Etm-Nr-zn0"/>
+                        <segue destination="AVx-T7-dw4" kind="relationship" relationship="viewControllers" id="MQ5-5S-Mfq"/>
+                        <segue destination="mzz-Zi-8v6" kind="relationship" relationship="viewControllers" id="bpu-EF-PTs"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="COr-Cm-X0S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-449" y="-98"/>
+        </scene>
+        <!--BabyHome-->
+        <scene sceneID="TZj-fA-and">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BabyHome" id="GFx-yP-xbA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="5Yu-PV-7Wd"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zEr-lf-gth" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1421" y="405"/>
+        </scene>
+        <!--BabyTogether-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController title="BabyTogether" id="Y6W-OH-hqX" customClass="BabyTogetherViewController" customModule="SamsungHealth_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="투게더" image="ssh_icon_together_off" selectedImage="ssh_icon_together_on" id="Q00-jN-ctW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-873" y="723"/>
+        </scene>
+        <!--BabyFitness-->
+        <scene sceneID="zGO-IJ-rL6">
+            <objects>
+                <viewController title="BabyFitness" id="AVx-T7-dw4" customClass="BabyFitnessViewController" customModule="SamsungHealth_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZgD-Ad-O26">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="32b-Mu-doH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="피트니스" image="ssh_icon_fitness_off" selectedImage="ssh_icon_fitness_on" id="qCk-tk-Zre"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Fh-5v-9iQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84" y="723"/>
+        </scene>
+        <!--BabyMyPage-->
+        <scene sceneID="K3K-jT-fwP">
+            <objects>
+                <viewController title="BabyMyPage" id="mzz-Zi-8v6" customClass="BabyMyPageViewController" customModule="SamsungHealth_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4ST-LG-F5K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="axk-yi-Sqo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="내 페이지" image="ssh_icon_mypage_off" selectedImage="ssh_icon_mypage_on" id="0mw-g4-3et"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6jg-2e-d3e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="746" y="723"/>
         </scene>
     </scenes>
     <resources>
+        <image name="ssh_icon_fitness_off" width="20" height="20"/>
+        <image name="ssh_icon_fitness_on" width="20" height="20"/>
+        <image name="ssh_icon_mypage_off" width="20" height="20"/>
+        <image name="ssh_icon_mypage_on" width="20" height="20"/>
+        <image name="ssh_icon_together_off" width="20" height="20"/>
+        <image name="ssh_icon_together_on" width="20" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

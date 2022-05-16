@@ -11,6 +11,17 @@ import UIKit
 extension Const {
     struct Image {
         
+        // MARK: - TabBar icon
+        
+        static let ssh_icon_home_off = UIImage(named: "ssh_icon_home_off")!
+        static let ssh_icon_home_on = UIImage(named: "ssh_icon_home_on")!
+        static let ssh_icon_together_off = UIImage(named: "ssh_icon_together_off")!
+        static let ssh_icon_together_on = UIImage(named: "ssh_icon_together_on")!
+        static let ssh_icon_fitness_off = UIImage(named: "ssh_icon_fitness_off")!
+        static let ssh_icon_fitness_on = UIImage(named: "ssh_icon_fitness_on")!
+        static let ssh_icon_mypage_off = UIImage(named: "ssh_icon_mypage_off")!
+        static let ssh_icon_mypage_on = UIImage(named: "ssh_icon_mypage_on")!
+        
         // MARK: - Home
         
         static let sshActivityheart = UIImage(named: "sshActivityheart")!

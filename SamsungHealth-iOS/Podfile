@@ -6,7 +6,6 @@ target 'SamsungHealth-iOS' do
   use_frameworks!
 
   # Pods for SamsungHealth-iOS
-pod 'Moya', '~> 15.0'
-pod 'IQKeyboardManagerSwift'
+pod 'Alamofire'
 
 end

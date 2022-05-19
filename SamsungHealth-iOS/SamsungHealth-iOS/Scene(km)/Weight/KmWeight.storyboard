@@ -49,12 +49,22 @@
                                         <color key="textColor" name="11SshColorBlack1"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BMf-SO-tfQ">
+                                        <rect key="frame" x="80" y="66" width="183" height="130"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="130" id="hHd-n7-uky"/>
+                                        </constraints>
+                                    </pickerView>
                                 </subviews>
                                 <color key="backgroundColor" name="11SshColorBgwhite"/>
                                 <constraints>
+                                    <constraint firstItem="BMf-SO-tfQ" firstAttribute="leading" secondItem="05u-6Y-hfU" secondAttribute="leading" constant="80" id="Cih-4u-5S9"/>
+                                    <constraint firstItem="BMf-SO-tfQ" firstAttribute="top" secondItem="05u-6Y-hfU" secondAttribute="top" constant="66" id="DKq-Ch-nX2"/>
                                     <constraint firstItem="qB1-yt-UmC" firstAttribute="leading" secondItem="05u-6Y-hfU" secondAttribute="leading" constant="19" id="Vqd-cW-zvO"/>
                                     <constraint firstAttribute="width" secondItem="05u-6Y-hfU" secondAttribute="height" multiplier="343:240" id="i3h-Ht-m7R"/>
+                                    <constraint firstAttribute="trailing" secondItem="BMf-SO-tfQ" secondAttribute="trailing" constant="80" id="rZ2-06-RIi"/>
                                     <constraint firstItem="qB1-yt-UmC" firstAttribute="top" secondItem="05u-6Y-hfU" secondAttribute="top" constant="21" id="t5A-F6-npf"/>
+                                    <constraint firstItem="BMf-SO-tfQ" firstAttribute="centerX" secondItem="05u-6Y-hfU" secondAttribute="centerX" id="yzC-H8-ZS3"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="입력하는 체중은 사용자 프로필에도 반영됩니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVY-Z0-dsB">
@@ -224,6 +234,7 @@
                     <connections>
                         <outlet property="buttonBackgroundViewBottomConstraint" destination="C1S-xc-yW7" id="7jI-jF-Xhy"/>
                         <outlet property="cancelButton" destination="uhA-Iu-rdn" id="7bu-NP-arg"/>
+                        <outlet property="pickerView" destination="BMf-SO-tfQ" id="9xE-vO-ZEo"/>
                         <outlet property="saveButton" destination="Rcu-J6-bcw" id="oHk-2V-Dtg"/>
                         <outlet property="timeLabel" destination="oFv-6D-YVM" id="vW2-kA-gRd"/>
                         <outlet property="titleLabel" destination="PZj-2a-h5l" id="cls-o0-SF2"/>

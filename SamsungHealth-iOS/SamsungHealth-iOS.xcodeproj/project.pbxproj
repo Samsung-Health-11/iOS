@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		552D37C77AC4DAC187A22F33 /* Pods_SamsungHealth_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033109FC38DEDBE2060F5464 /* Pods_SamsungHealth_iOS.framework */; };
+		98431EEB2835ED3000DE4CF6 /* NotoSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98431EE82835ED3000DE4CF6 /* NotoSans-Medium.ttf */; };
+		98431EEC2835ED3000DE4CF6 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98431EE92835ED3000DE4CF6 /* NotoSans-Regular.ttf */; };
+		98431EED2835ED3000DE4CF6 /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98431EEA2835ED3000DE4CF6 /* NotoSans-Bold.ttf */; };
 		98484F03282F8B1600D670B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F02282F8B1600D670B8 /* AppDelegate.swift */; };
 		98484F05282F8B1600D670B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F04282F8B1600D670B8 /* SceneDelegate.swift */; };
 		98484F0A282F8B1600D670B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98484F08282F8B1600D670B8 /* Main.storyboard */; };
@@ -16,42 +19,26 @@
 		98484F39282F8F5B00D670B8 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F38282F8F5B00D670B8 /* Const.swift */; };
 		98484F3D282F8F9400D670B8 /* BabyHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98484F3C282F8F9400D670B8 /* BabyHome.storyboard */; };
 		98484F3F282F8FA500D670B8 /* BabyHomeViewController+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F3E282F8FA500D670B8 /* BabyHomeViewController+Network.swift */; };
-		98484F42282F901800D670B8 /* BabyDummyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F40282F901800D670B8 /* BabyDummyCollectionViewCell.swift */; };
-		98484F43282F901800D670B8 /* BabyDummyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98484F41282F901800D670B8 /* BabyDummyCollectionViewCell.xib */; };
 		98484F45282F902700D670B8 /* BabyWeight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98484F44282F902700D670B8 /* BabyWeight.storyboard */; };
 		98484F47282F903400D670B8 /* BabyWeightViewController+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F46282F903400D670B8 /* BabyWeightViewController+Network.swift */; };
-		98484F4A282F903F00D670B8 /* BabyDummyWeightCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F48282F903F00D670B8 /* BabyDummyWeightCollectionViewCell.swift */; };
-		98484F4B282F903F00D670B8 /* BabyDummyWeightCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98484F49282F903F00D670B8 /* BabyDummyWeightCollectionViewCell.xib */; };
 		98484F4D282F913000D670B8 /* BabyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F4C282F913000D670B8 /* BabyHomeViewController.swift */; };
 		98484F4F282F913B00D670B8 /* BabyWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F4E282F913B00D670B8 /* BabyWeightViewController.swift */; };
 		98484F55282F91CD00D670B8 /* YinHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98484F54282F91CD00D670B8 /* YinHome.storyboard */; };
 		98484F57282F91E500D670B8 /* YinHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F56282F91E500D670B8 /* YinHomeViewController.swift */; };
-		98484F5A282F91FC00D670B8 /* YinHomeDummyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F58282F91FC00D670B8 /* YinHomeDummyCollectionViewCell.swift */; };
-		98484F5B282F91FC00D670B8 /* YinHomeDummyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98484F59282F91FC00D670B8 /* YinHomeDummyCollectionViewCell.xib */; };
 		98484F5D282F920700D670B8 /* YinHomeViewController+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F5C282F920700D670B8 /* YinHomeViewController+Network.swift */; };
 		98484F5F282F921200D670B8 /* YinWeight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98484F5E282F921200D670B8 /* YinWeight.storyboard */; };
 		98484F61282F921E00D670B8 /* YinWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F60282F921E00D670B8 /* YinWeightViewController.swift */; };
-		98484F64282F923100D670B8 /* YinWeightDummyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F62282F923100D670B8 /* YinWeightDummyCollectionViewCell.swift */; };
-		98484F65282F923100D670B8 /* YinWeightDummyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98484F63282F923100D670B8 /* YinWeightDummyCollectionViewCell.xib */; };
 		98484F67282F923C00D670B8 /* YinWeightViewController+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F66282F923C00D670B8 /* YinWeightViewController+Network.swift */; };
 		98484F71282F927C00D670B8 /* KmHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98484F70282F927C00D670B8 /* KmHome.storyboard */; };
 		98484F73282F928600D670B8 /* KmHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F72282F928600D670B8 /* KmHomeViewController.swift */; };
-		98484F76282F929E00D670B8 /* KmHomeDummyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F74282F929E00D670B8 /* KmHomeDummyCollectionViewCell.swift */; };
-		98484F77282F929E00D670B8 /* KmHomeDummyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98484F75282F929E00D670B8 /* KmHomeDummyCollectionViewCell.xib */; };
 		98484F79282F92AB00D670B8 /* KmHomeViewController+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F78282F92AB00D670B8 /* KmHomeViewController+Network.swift */; };
 		98484F7B282F92B400D670B8 /* KmWeight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98484F7A282F92B400D670B8 /* KmWeight.storyboard */; };
 		98484F7D282F92C000D670B8 /* KmWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F7C282F92C000D670B8 /* KmWeightViewController.swift */; };
-		98484F80282F92D200D670B8 /* KmWeightDummyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F7E282F92D200D670B8 /* KmWeightDummyCollectionViewCell.swift */; };
-		98484F81282F92D200D670B8 /* KmWeightDummyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98484F7F282F92D200D670B8 /* KmWeightDummyCollectionViewCell.xib */; };
 		98484F83282F92DC00D670B8 /* KmWeightViewController+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F82282F92DC00D670B8 /* KmWeightViewController+Network.swift */; };
 		98484F89282F943800D670B8 /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F88282F943800D670B8 /* UIFont+.swift */; };
 		98484F8D2830A54300D670B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F8C2830A54300D670B8 /* ViewController.swift */; };
 		98484F8F2830A54900D670B8 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F8E2830A54900D670B8 /* Storyboard.swift */; };
 		98484F912830A6F100D670B8 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F902830A6F100D670B8 /* Image.swift */; };
-		98484F982830AFBA00D670B8 /* BaseTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F972830AFBA00D670B8 /* BaseTargetType.swift */; };
-		98484F9A2830AFCE00D670B8 /* GeneralResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F992830AFCE00D670B8 /* GeneralResponse.swift */; };
-		98484F9C2830AFF100D670B8 /* MoyaLoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F9B2830AFF100D670B8 /* MoyaLoggingPlugin.swift */; };
-		98484F9E2830B00400D670B8 /* NetworkBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F9D2830B00400D670B8 /* NetworkBase.swift */; };
 		98484FA02830B03E00D670B8 /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F9F2830B03E00D670B8 /* NetworkConstant.swift */; };
 		98484FA22830B06500D670B8 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484FA12830B06500D670B8 /* NetworkResult.swift */; };
 		98484FA42830B08A00D670B8 /* URLConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484FA32830B08A00D670B8 /* URLConstant.swift */; };
@@ -73,6 +60,9 @@
 
 /* Begin PBXFileReference section */
 		033109FC38DEDBE2060F5464 /* Pods_SamsungHealth_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SamsungHealth_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98431EE82835ED3000DE4CF6 /* NotoSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Medium.ttf"; sourceTree = "<group>"; };
+		98431EE92835ED3000DE4CF6 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		98431EEA2835ED3000DE4CF6 /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
 		98484EFF282F8B1600D670B8 /* SamsungHealth-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SamsungHealth-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98484F02282F8B1600D670B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98484F04282F8B1600D670B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,45 +73,26 @@
 		98484F38282F8F5B00D670B8 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		98484F3C282F8F9400D670B8 /* BabyHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BabyHome.storyboard; sourceTree = "<group>"; };
 		98484F3E282F8FA500D670B8 /* BabyHomeViewController+Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BabyHomeViewController+Network.swift"; sourceTree = "<group>"; };
-		98484F40282F901800D670B8 /* BabyDummyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyDummyCollectionViewCell.swift; sourceTree = "<group>"; };
-		98484F41282F901800D670B8 /* BabyDummyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BabyDummyCollectionViewCell.xib; sourceTree = "<group>"; };
 		98484F44282F902700D670B8 /* BabyWeight.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BabyWeight.storyboard; sourceTree = "<group>"; };
 		98484F46282F903400D670B8 /* BabyWeightViewController+Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BabyWeightViewController+Network.swift"; sourceTree = "<group>"; };
-		98484F48282F903F00D670B8 /* BabyDummyWeightCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyDummyWeightCollectionViewCell.swift; sourceTree = "<group>"; };
-		98484F49282F903F00D670B8 /* BabyDummyWeightCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BabyDummyWeightCollectionViewCell.xib; sourceTree = "<group>"; };
 		98484F4C282F913000D670B8 /* BabyHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyHomeViewController.swift; sourceTree = "<group>"; };
 		98484F4E282F913B00D670B8 /* BabyWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyWeightViewController.swift; sourceTree = "<group>"; };
 		98484F54282F91CD00D670B8 /* YinHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YinHome.storyboard; sourceTree = "<group>"; };
 		98484F56282F91E500D670B8 /* YinHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YinHomeViewController.swift; sourceTree = "<group>"; };
-		98484F58282F91FC00D670B8 /* YinHomeDummyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YinHomeDummyCollectionViewCell.swift; sourceTree = "<group>"; };
-		98484F59282F91FC00D670B8 /* YinHomeDummyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YinHomeDummyCollectionViewCell.xib; sourceTree = "<group>"; };
 		98484F5C282F920700D670B8 /* YinHomeViewController+Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YinHomeViewController+Network.swift"; sourceTree = "<group>"; };
 		98484F5E282F921200D670B8 /* YinWeight.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YinWeight.storyboard; sourceTree = "<group>"; };
 		98484F60282F921E00D670B8 /* YinWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YinWeightViewController.swift; sourceTree = "<group>"; };
-		98484F62282F923100D670B8 /* YinWeightDummyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YinWeightDummyCollectionViewCell.swift; sourceTree = "<group>"; };
-		98484F63282F923100D670B8 /* YinWeightDummyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YinWeightDummyCollectionViewCell.xib; sourceTree = "<group>"; };
 		98484F66282F923C00D670B8 /* YinWeightViewController+Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YinWeightViewController+Network.swift"; sourceTree = "<group>"; };
 		98484F70282F927C00D670B8 /* KmHome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KmHome.storyboard; sourceTree = "<group>"; };
 		98484F72282F928600D670B8 /* KmHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KmHomeViewController.swift; sourceTree = "<group>"; };
-		98484F74282F929E00D670B8 /* KmHomeDummyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KmHomeDummyCollectionViewCell.swift; sourceTree = "<group>"; };
-		98484F75282F929E00D670B8 /* KmHomeDummyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KmHomeDummyCollectionViewCell.xib; sourceTree = "<group>"; };
 		98484F78282F92AB00D670B8 /* KmHomeViewController+Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KmHomeViewController+Network.swift"; sourceTree = "<group>"; };
 		98484F7A282F92B400D670B8 /* KmWeight.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KmWeight.storyboard; sourceTree = "<group>"; };
 		98484F7C282F92C000D670B8 /* KmWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KmWeightViewController.swift; sourceTree = "<group>"; };
-		98484F7E282F92D200D670B8 /* KmWeightDummyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KmWeightDummyCollectionViewCell.swift; sourceTree = "<group>"; };
-		98484F7F282F92D200D670B8 /* KmWeightDummyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KmWeightDummyCollectionViewCell.xib; sourceTree = "<group>"; };
 		98484F82282F92DC00D670B8 /* KmWeightViewController+Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KmWeightViewController+Network.swift"; sourceTree = "<group>"; };
-		98484F85282F940000D670B8 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
-		98484F86282F940700D670B8 /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
-		98484F87282F940F00D670B8 /* NotoSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Medium.ttf"; sourceTree = "<group>"; };
 		98484F88282F943800D670B8 /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 		98484F8C2830A54300D670B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		98484F8E2830A54900D670B8 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		98484F902830A6F100D670B8 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
-		98484F972830AFBA00D670B8 /* BaseTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTargetType.swift; sourceTree = "<group>"; };
-		98484F992830AFCE00D670B8 /* GeneralResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralResponse.swift; sourceTree = "<group>"; };
-		98484F9B2830AFF100D670B8 /* MoyaLoggingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLoggingPlugin.swift; sourceTree = "<group>"; };
-		98484F9D2830B00400D670B8 /* NetworkBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkBase.swift; sourceTree = "<group>"; };
 		98484F9F2830B03E00D670B8 /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
 		98484FA12830B06500D670B8 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		98484FA32830B08A00D670B8 /* URLConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstant.swift; sourceTree = "<group>"; };
@@ -310,7 +281,6 @@
 			isa = PBXGroup;
 			children = (
 				98484F29282F8EA000D670B8 /* Extension */,
-				98484F28282F8E9D00D670B8 /* Cell */,
 				98484F3C282F8F9400D670B8 /* BabyHome.storyboard */,
 				98484F4C282F913000D670B8 /* BabyHomeViewController.swift */,
 			);
@@ -321,7 +291,6 @@
 			isa = PBXGroup;
 			children = (
 				98484F2B282F8EAC00D670B8 /* Extension */,
-				98484F2A282F8EA700D670B8 /* Cell */,
 				98484F54282F91CD00D670B8 /* YinHome.storyboard */,
 				98484F56282F91E500D670B8 /* YinHomeViewController.swift */,
 			);
@@ -332,20 +301,10 @@
 			isa = PBXGroup;
 			children = (
 				98484F2D282F8EB200D670B8 /* Extension */,
-				98484F2C282F8EB000D670B8 /* Cell */,
 				98484F70282F927C00D670B8 /* KmHome.storyboard */,
 				98484F72282F928600D670B8 /* KmHomeViewController.swift */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		98484F28282F8E9D00D670B8 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				98484F40282F901800D670B8 /* BabyDummyCollectionViewCell.swift */,
-				98484F41282F901800D670B8 /* BabyDummyCollectionViewCell.xib */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		98484F29282F8EA000D670B8 /* Extension */ = {
@@ -356,30 +315,12 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		98484F2A282F8EA700D670B8 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				98484F58282F91FC00D670B8 /* YinHomeDummyCollectionViewCell.swift */,
-				98484F59282F91FC00D670B8 /* YinHomeDummyCollectionViewCell.xib */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
 		98484F2B282F8EAC00D670B8 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				98484F5C282F920700D670B8 /* YinHomeViewController+Network.swift */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		98484F2C282F8EB000D670B8 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				98484F74282F929E00D670B8 /* KmHomeDummyCollectionViewCell.swift */,
-				98484F75282F929E00D670B8 /* KmHomeDummyCollectionViewCell.xib */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		98484F2D282F8EB200D670B8 /* Extension */ = {
@@ -394,20 +335,10 @@
 			isa = PBXGroup;
 			children = (
 				98484F31282F8EF100D670B8 /* Extension */,
-				98484F30282F8EEE00D670B8 /* Cell */,
 				98484F44282F902700D670B8 /* BabyWeight.storyboard */,
 				98484F4E282F913B00D670B8 /* BabyWeightViewController.swift */,
 			);
 			path = Weight;
-			sourceTree = "<group>";
-		};
-		98484F30282F8EEE00D670B8 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				98484F48282F903F00D670B8 /* BabyDummyWeightCollectionViewCell.swift */,
-				98484F49282F903F00D670B8 /* BabyDummyWeightCollectionViewCell.xib */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		98484F31282F8EF100D670B8 /* Extension */ = {
@@ -422,20 +353,10 @@
 			isa = PBXGroup;
 			children = (
 				98484F34282F8F0F00D670B8 /* Extension */,
-				98484F33282F8F0B00D670B8 /* Cell */,
 				98484F5E282F921200D670B8 /* YinWeight.storyboard */,
 				98484F60282F921E00D670B8 /* YinWeightViewController.swift */,
 			);
 			path = Weight;
-			sourceTree = "<group>";
-		};
-		98484F33282F8F0B00D670B8 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				98484F62282F923100D670B8 /* YinWeightDummyCollectionViewCell.swift */,
-				98484F63282F923100D670B8 /* YinWeightDummyCollectionViewCell.xib */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		98484F34282F8F0F00D670B8 /* Extension */ = {
@@ -450,20 +371,10 @@
 			isa = PBXGroup;
 			children = (
 				98484F37282F8F3300D670B8 /* Extension */,
-				98484F36282F8F2F00D670B8 /* Cell */,
 				98484F7A282F92B400D670B8 /* KmWeight.storyboard */,
 				98484F7C282F92C000D670B8 /* KmWeightViewController.swift */,
 			);
 			path = Weight;
-			sourceTree = "<group>";
-		};
-		98484F36282F8F2F00D670B8 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				98484F7E282F92D200D670B8 /* KmWeightDummyCollectionViewCell.swift */,
-				98484F7F282F92D200D670B8 /* KmWeightDummyCollectionViewCell.xib */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		98484F37282F8F3300D670B8 /* Extension */ = {
@@ -477,9 +388,9 @@
 		98484F84282F93F600D670B8 /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				98484F87282F940F00D670B8 /* NotoSans-Medium.ttf */,
-				98484F86282F940700D670B8 /* NotoSans-Bold.ttf */,
-				98484F85282F940000D670B8 /* NotoSans-Regular.ttf */,
+				98431EEA2835ED3000DE4CF6 /* NotoSans-Bold.ttf */,
+				98431EE82835ED3000DE4CF6 /* NotoSans-Medium.ttf */,
+				98431EE92835ED3000DE4CF6 /* NotoSans-Regular.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -487,10 +398,6 @@
 		98484F942830AF7A00D670B8 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				98484F972830AFBA00D670B8 /* BaseTargetType.swift */,
-				98484F992830AFCE00D670B8 /* GeneralResponse.swift */,
-				98484F9B2830AFF100D670B8 /* MoyaLoggingPlugin.swift */,
-				98484F9D2830B00400D670B8 /* NetworkBase.swift */,
 				98484F9F2830B03E00D670B8 /* NetworkConstant.swift */,
 				98484FA12830B06500D670B8 /* NetworkResult.swift */,
 				98484FA32830B08A00D670B8 /* URLConstant.swift */,
@@ -578,23 +485,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98484F77282F929E00D670B8 /* KmHomeDummyCollectionViewCell.xib in Resources */,
+				98431EED2835ED3000DE4CF6 /* NotoSans-Bold.ttf in Resources */,
 				98484F5F282F921200D670B8 /* YinWeight.storyboard in Resources */,
 				98484F45282F902700D670B8 /* BabyWeight.storyboard in Resources */,
 				98484F0F282F8B1B00D670B8 /* LaunchScreen.storyboard in Resources */,
 				98484F3D282F8F9400D670B8 /* BabyHome.storyboard in Resources */,
-				98484F81282F92D200D670B8 /* KmWeightDummyCollectionViewCell.xib in Resources */,
-				98484F65282F923100D670B8 /* YinWeightDummyCollectionViewCell.xib in Resources */,
-				98484F4B282F903F00D670B8 /* BabyDummyWeightCollectionViewCell.xib in Resources */,
 				98484F55282F91CD00D670B8 /* YinHome.storyboard in Resources */,
 				98AC5DBF28322105001F040D /* BabyMain.storyboard in Resources */,
 				98484F7B282F92B400D670B8 /* KmWeight.storyboard in Resources */,
 				98D25B762830B6F30030C2D1 /* Colors.xcassets in Resources */,
-				98484F5B282F91FC00D670B8 /* YinHomeDummyCollectionViewCell.xib in Resources */,
 				98484F0C282F8B1B00D670B8 /* Assets.xcassets in Resources */,
 				98484F71282F927C00D670B8 /* KmHome.storyboard in Resources */,
+				98431EEB2835ED3000DE4CF6 /* NotoSans-Medium.ttf in Resources */,
 				98AC5DC928322141001F040D /* KmMain.storyboard in Resources */,
-				98484F43282F901800D670B8 /* BabyDummyCollectionViewCell.xib in Resources */,
+				98431EEC2835ED3000DE4CF6 /* NotoSans-Regular.ttf in Resources */,
 				98AC5DC528322126001F040D /* YinMain.storyboard in Resources */,
 				98484F0A282F8B1600D670B8 /* Main.storyboard in Resources */,
 			);
@@ -651,26 +555,19 @@
 			files = (
 				98484F89282F943800D670B8 /* UIFont+.swift in Sources */,
 				98484F912830A6F100D670B8 /* Image.swift in Sources */,
-				98484F982830AFBA00D670B8 /* BaseTargetType.swift in Sources */,
 				98AC5DCC283223F7001F040D /* BabyTogetherViewController.swift in Sources */,
 				98484FA22830B06500D670B8 /* NetworkResult.swift in Sources */,
 				98484F83282F92DC00D670B8 /* KmWeightViewController+Network.swift in Sources */,
-				98484F9A2830AFCE00D670B8 /* GeneralResponse.swift in Sources */,
 				98484F03282F8B1600D670B8 /* AppDelegate.swift in Sources */,
-				98484F9E2830B00400D670B8 /* NetworkBase.swift in Sources */,
 				98484F57282F91E500D670B8 /* YinHomeViewController.swift in Sources */,
 				98484F4D282F913000D670B8 /* BabyHomeViewController.swift in Sources */,
 				98484F79282F92AB00D670B8 /* KmHomeViewController+Network.swift in Sources */,
 				98484F4F282F913B00D670B8 /* BabyWeightViewController.swift in Sources */,
 				98484F05282F8B1600D670B8 /* SceneDelegate.swift in Sources */,
-				98484F76282F929E00D670B8 /* KmHomeDummyCollectionViewCell.swift in Sources */,
 				98D25B782830B7440030C2D1 /* UIColor+.swift in Sources */,
 				98484FA42830B08A00D670B8 /* URLConstant.swift in Sources */,
-				98484F5A282F91FC00D670B8 /* YinHomeDummyCollectionViewCell.swift in Sources */,
 				98AC5DD728322429001F040D /* YinMyPageViewController.swift in Sources */,
-				98484F80282F92D200D670B8 /* KmWeightDummyCollectionViewCell.swift in Sources */,
 				98AC5DD32832241B001F040D /* YinTogetherViewController.swift in Sources */,
-				98484F4A282F903F00D670B8 /* BabyDummyWeightCollectionViewCell.swift in Sources */,
 				98484F67282F923C00D670B8 /* YinWeightViewController+Network.swift in Sources */,
 				98AC5DCE28322401001F040D /* BabyFitnessViewController.swift in Sources */,
 				98484F7D282F92C000D670B8 /* KmWeightViewController.swift in Sources */,
@@ -683,14 +580,11 @@
 				98484FA02830B03E00D670B8 /* NetworkConstant.swift in Sources */,
 				98AC5DD02832240A001F040D /* BabyMyPageViewController.swift in Sources */,
 				98484F39282F8F5B00D670B8 /* Const.swift in Sources */,
-				98484F64282F923100D670B8 /* YinWeightDummyCollectionViewCell.swift in Sources */,
 				98AC5DC128322117001F040D /* BabyMainTabBarController.swift in Sources */,
 				98484F8F2830A54900D670B8 /* Storyboard.swift in Sources */,
 				98484F5D282F920700D670B8 /* YinHomeViewController+Network.swift in Sources */,
 				98AC5DC728322139001F040D /* KmMainTabBarController.swift in Sources */,
 				98484F3F282F8FA500D670B8 /* BabyHomeViewController+Network.swift in Sources */,
-				98484F9C2830AFF100D670B8 /* MoyaLoggingPlugin.swift in Sources */,
-				98484F42282F901800D670B8 /* BabyDummyCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		552D37C77AC4DAC187A22F33 /* Pods_SamsungHealth_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033109FC38DEDBE2060F5464 /* Pods_SamsungHealth_iOS.framework */; };
+		98431EEB2835ED3000DE4CF6 /* NotoSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98431EE82835ED3000DE4CF6 /* NotoSans-Medium.ttf */; };
+		98431EEC2835ED3000DE4CF6 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98431EE92835ED3000DE4CF6 /* NotoSans-Regular.ttf */; };
+		98431EED2835ED3000DE4CF6 /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98431EEA2835ED3000DE4CF6 /* NotoSans-Bold.ttf */; };
 		98484F03282F8B1600D670B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F02282F8B1600D670B8 /* AppDelegate.swift */; };
 		98484F05282F8B1600D670B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F04282F8B1600D670B8 /* SceneDelegate.swift */; };
 		98484F0A282F8B1600D670B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98484F08282F8B1600D670B8 /* Main.storyboard */; };
@@ -57,6 +60,9 @@
 
 /* Begin PBXFileReference section */
 		033109FC38DEDBE2060F5464 /* Pods_SamsungHealth_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SamsungHealth_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98431EE82835ED3000DE4CF6 /* NotoSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Medium.ttf"; sourceTree = "<group>"; };
+		98431EE92835ED3000DE4CF6 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		98431EEA2835ED3000DE4CF6 /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
 		98484EFF282F8B1600D670B8 /* SamsungHealth-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SamsungHealth-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98484F02282F8B1600D670B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98484F04282F8B1600D670B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,9 +89,6 @@
 		98484F7A282F92B400D670B8 /* KmWeight.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KmWeight.storyboard; sourceTree = "<group>"; };
 		98484F7C282F92C000D670B8 /* KmWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KmWeightViewController.swift; sourceTree = "<group>"; };
 		98484F82282F92DC00D670B8 /* KmWeightViewController+Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KmWeightViewController+Network.swift"; sourceTree = "<group>"; };
-		98484F85282F940000D670B8 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
-		98484F86282F940700D670B8 /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
-		98484F87282F940F00D670B8 /* NotoSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Medium.ttf"; sourceTree = "<group>"; };
 		98484F88282F943800D670B8 /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 		98484F8C2830A54300D670B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		98484F8E2830A54900D670B8 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
@@ -385,9 +388,9 @@
 		98484F84282F93F600D670B8 /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				98484F87282F940F00D670B8 /* NotoSans-Medium.ttf */,
-				98484F86282F940700D670B8 /* NotoSans-Bold.ttf */,
-				98484F85282F940000D670B8 /* NotoSans-Regular.ttf */,
+				98431EEA2835ED3000DE4CF6 /* NotoSans-Bold.ttf */,
+				98431EE82835ED3000DE4CF6 /* NotoSans-Medium.ttf */,
+				98431EE92835ED3000DE4CF6 /* NotoSans-Regular.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98431EED2835ED3000DE4CF6 /* NotoSans-Bold.ttf in Resources */,
 				98484F5F282F921200D670B8 /* YinWeight.storyboard in Resources */,
 				98484F45282F902700D670B8 /* BabyWeight.storyboard in Resources */,
 				98484F0F282F8B1B00D670B8 /* LaunchScreen.storyboard in Resources */,
@@ -492,7 +496,9 @@
 				98D25B762830B6F30030C2D1 /* Colors.xcassets in Resources */,
 				98484F0C282F8B1B00D670B8 /* Assets.xcassets in Resources */,
 				98484F71282F927C00D670B8 /* KmHome.storyboard in Resources */,
+				98431EEB2835ED3000DE4CF6 /* NotoSans-Medium.ttf in Resources */,
 				98AC5DC928322141001F040D /* KmMain.storyboard in Resources */,
+				98431EEC2835ED3000DE4CF6 /* NotoSans-Regular.ttf in Resources */,
 				98AC5DC528322126001F040D /* YinMain.storyboard in Resources */,
 				98484F0A282F8B1600D670B8 /* Main.storyboard in Resources */,
 			);

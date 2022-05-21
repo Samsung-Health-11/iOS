@@ -42,6 +42,9 @@
 		98484FA02830B03E00D670B8 /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484F9F2830B03E00D670B8 /* NetworkConstant.swift */; };
 		98484FA22830B06500D670B8 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484FA12830B06500D670B8 /* NetworkResult.swift */; };
 		98484FA42830B08A00D670B8 /* URLConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98484FA32830B08A00D670B8 /* URLConstant.swift */; };
+		98682C8D2836AD7200DDF9AE /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98682C8C2836AD7200DDF9AE /* UIViewController+.swift */; };
+		98682C982838E49F00DDF9AE /* KmWeightViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98682C972838E49F00DDF9AE /* KmWeightViewController+Extension.swift */; };
+		98682C9A2838F13100DDF9AE /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98682C992838F13100DDF9AE /* UITextField+.swift */; };
 		98AC5DBF28322105001F040D /* BabyMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98AC5DBE28322105001F040D /* BabyMain.storyboard */; };
 		98AC5DC128322117001F040D /* BabyMainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AC5DC028322117001F040D /* BabyMainTabBarController.swift */; };
 		98AC5DC328322121001F040D /* YinMainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AC5DC228322121001F040D /* YinMainTabBarController.swift */; };
@@ -96,6 +99,9 @@
 		98484F9F2830B03E00D670B8 /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
 		98484FA12830B06500D670B8 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		98484FA32830B08A00D670B8 /* URLConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstant.swift; sourceTree = "<group>"; };
+		98682C8C2836AD7200DDF9AE /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		98682C972838E49F00DDF9AE /* KmWeightViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KmWeightViewController+Extension.swift"; sourceTree = "<group>"; };
+		98682C992838F13100DDF9AE /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 		98AC5DBE28322105001F040D /* BabyMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BabyMain.storyboard; sourceTree = "<group>"; };
 		98AC5DC028322117001F040D /* BabyMainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyMainTabBarController.swift; sourceTree = "<group>"; };
 		98AC5DC228322121001F040D /* YinMainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YinMainTabBarController.swift; sourceTree = "<group>"; };
@@ -265,6 +271,8 @@
 			children = (
 				98484F88282F943800D670B8 /* UIFont+.swift */,
 				98D25B772830B7440030C2D1 /* UIColor+.swift */,
+				98682C8C2836AD7200DDF9AE /* UIViewController+.swift */,
+				98682C992838F13100DDF9AE /* UITextField+.swift */,
 			);
 			path = AppExtensions;
 			sourceTree = "<group>";
@@ -381,6 +389,7 @@
 			isa = PBXGroup;
 			children = (
 				98484F82282F92DC00D670B8 /* KmWeightViewController+Network.swift */,
+				98682C972838E49F00DDF9AE /* KmWeightViewController+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -561,6 +570,7 @@
 				98484F03282F8B1600D670B8 /* AppDelegate.swift in Sources */,
 				98484F57282F91E500D670B8 /* YinHomeViewController.swift in Sources */,
 				98484F4D282F913000D670B8 /* BabyHomeViewController.swift in Sources */,
+				98682C8D2836AD7200DDF9AE /* UIViewController+.swift in Sources */,
 				98484F79282F92AB00D670B8 /* KmHomeViewController+Network.swift in Sources */,
 				98484F4F282F913B00D670B8 /* BabyWeightViewController.swift in Sources */,
 				98484F05282F8B1600D670B8 /* SceneDelegate.swift in Sources */,
@@ -568,6 +578,8 @@
 				98484FA42830B08A00D670B8 /* URLConstant.swift in Sources */,
 				98AC5DD728322429001F040D /* YinMyPageViewController.swift in Sources */,
 				98AC5DD32832241B001F040D /* YinTogetherViewController.swift in Sources */,
+				98682C9A2838F13100DDF9AE /* UITextField+.swift in Sources */,
+				98682C982838E49F00DDF9AE /* KmWeightViewController+Extension.swift in Sources */,
 				98484F67282F923C00D670B8 /* YinWeightViewController+Network.swift in Sources */,
 				98AC5DCE28322401001F040D /* BabyFitnessViewController.swift in Sources */,
 				98484F7D282F92C000D670B8 /* KmWeightViewController.swift in Sources */,

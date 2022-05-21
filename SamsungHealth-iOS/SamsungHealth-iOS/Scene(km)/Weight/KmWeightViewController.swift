@@ -23,7 +23,6 @@ final class KmWeightViewController: UIViewController {
     @IBOutlet weak var fatTextField: UITextField!
     @IBOutlet weak var muscleTextField: UITextField!
     @IBOutlet weak var memoTextField: UITextField!
-    
     @IBOutlet weak var buttonBackgroundView: UIView!
     
     @IBOutlet var componentViewCollection: [UIView]!

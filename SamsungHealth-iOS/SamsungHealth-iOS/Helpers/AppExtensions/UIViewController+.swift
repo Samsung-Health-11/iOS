@@ -8,7 +8,6 @@
 import UIKit
 
 extension UIViewController {
-    
     func setKeyboardObserver() {
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(UIViewController.keyboardWillShow),

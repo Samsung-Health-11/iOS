@@ -20,7 +20,10 @@ final class KmWeightViewController: UIViewController {
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var pickerView: UIPickerView!
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var fatTextField: UITextField!
+    @IBOutlet weak var muscleTextField: UITextField!
+    @IBOutlet weak var memoTextField: UITextField!
+    
     @IBOutlet weak var buttonBackgroundView: UIView!
     
     @IBOutlet var componentViewCollection: [UIView]!
@@ -54,11 +57,11 @@ final class KmWeightViewController: UIViewController {
         setViewUI()
         setLabelUI()
         setButtonUI()
+        setTextFieldUI()
     }
     
     private func setDelegate() {
         setPickerView()
-        setTextField()
     }
     
     // MARK: - IBAction
@@ -89,6 +92,10 @@ extension KmWeightViewController {
         }
     }
     
+    private func setTextFieldUI() {
+        memoTextField.setPlaceholderColor(.SshColorGray2)
+    }
+    
     private func initPickerView() {
         pickerView.subviews[1].backgroundColor = .clear
     }
@@ -96,10 +103,6 @@ extension KmWeightViewController {
     private func setPickerView() {
         pickerView.delegate = self
         pickerView.dataSource = self
-    }
-    
-    private func setTextField() {
-        textField.delegate = self
     }
 }
 

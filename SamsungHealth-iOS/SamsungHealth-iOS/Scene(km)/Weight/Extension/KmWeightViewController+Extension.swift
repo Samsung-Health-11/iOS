@@ -7,33 +7,19 @@
 
 import UIKit
 
-extension KmWeightViewController: UITextFieldDelegate {
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        textField.becomeFirstResponder()
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        buttonBackgroundViewBottomConstraint.constant = 0
-        textField.resignFirstResponder()
-    }
-}
-
 extension KmWeightViewController {
     @objc override func keyboardWillShow(notification: NSNotification) {
         if let keyboardFrame: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
-            let keyboardRectangle = keyboardFrame.cgRectValue
-            let keyboardHeight = keyboardRectangle.height
-            UIView.animate(withDuration: 1) {
-                self.buttonBackgroundViewBottomConstraint.constant = keyboardHeight
-                self.view.layoutIfNeeded()
-            }
+            let keyboardHeight = keyboardFrame.cgRectValue.height
+            self.view.window?.frame.origin.y = (keyboardHeight * -1)
         }
     }
     
     @objc override func keyboardWillHide(notification: NSNotification) {
-        UIView.animate(withDuration: 1) {
-            self.buttonBackgroundViewBottomConstraint.constant = 0
-            self.view.layoutIfNeeded()
+        if self.view.window?.frame.origin.y != 0 {
+            if let keyboardFrame: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
+                self.view.window?.frame.origin.y = 0
+            }
         }
     }
 }

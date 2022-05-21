@@ -143,10 +143,19 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gzV-qX-KQX">
+                                        <rect key="frame" x="237" y="69" width="63" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="aQQ-Fc-gAZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" name="11SshColorBgwhite"/>
                                 <constraints>
                                     <constraint firstItem="5kw-Hs-P9c" firstAttribute="top" secondItem="FsM-we-RDy" secondAttribute="top" constant="15" id="034-F9-5Kv"/>
+                                    <constraint firstItem="uwV-VH-cwk" firstAttribute="leading" secondItem="gzV-qX-KQX" secondAttribute="trailing" constant="5" id="0Hj-GF-NMp"/>
                                     <constraint firstItem="DQU-GA-JiO" firstAttribute="top" secondItem="FsM-we-RDy" secondAttribute="top" constant="17" id="10K-jY-8Gx"/>
                                     <constraint firstAttribute="trailing" secondItem="DQU-GA-JiO" secondAttribute="trailing" constant="19" id="5Do-ua-88l"/>
                                     <constraint firstItem="v6x-LU-YUB" firstAttribute="width" secondItem="0A4-sa-sP3" secondAttribute="width" id="Ard-hq-R2c"/>
@@ -154,10 +163,12 @@
                                     <constraint firstAttribute="bottom" secondItem="uwV-VH-cwk" secondAttribute="bottom" constant="17" id="H1L-Q1-7ht"/>
                                     <constraint firstItem="0A4-sa-sP3" firstAttribute="top" secondItem="FsM-we-RDy" secondAttribute="top" constant="45" id="QO3-2v-xYf"/>
                                     <constraint firstAttribute="trailing" secondItem="uwV-VH-cwk" secondAttribute="trailing" constant="19" id="QW7-ly-EXy"/>
+                                    <constraint firstItem="gzV-qX-KQX" firstAttribute="width" secondItem="6Va-kv-BlH" secondAttribute="width" id="TP9-pY-Voq"/>
                                     <constraint firstItem="DQU-GA-JiO" firstAttribute="leading" secondItem="v6x-LU-YUB" secondAttribute="trailing" constant="5" id="V4x-xc-x3n"/>
                                     <constraint firstAttribute="bottom" secondItem="o8h-k3-o0U" secondAttribute="bottom" constant="16" id="WZ3-gO-fHw"/>
                                     <constraint firstItem="o8h-k3-o0U" firstAttribute="leading" secondItem="FsM-we-RDy" secondAttribute="leading" constant="19" id="aRA-56-Tqt"/>
                                     <constraint firstItem="5kw-Hs-P9c" firstAttribute="leading" secondItem="FsM-we-RDy" secondAttribute="leading" constant="19" id="aha-2k-0w9"/>
+                                    <constraint firstItem="6Va-kv-BlH" firstAttribute="top" secondItem="gzV-qX-KQX" secondAttribute="bottom" id="fVq-Y8-ach"/>
                                     <constraint firstAttribute="bottom" secondItem="6Va-kv-BlH" secondAttribute="bottom" constant="6" id="fdp-jt-EZi"/>
                                     <constraint firstItem="0A4-sa-sP3" firstAttribute="top" secondItem="v6x-LU-YUB" secondAttribute="bottom" id="go6-Cg-sxr"/>
                                     <constraint firstAttribute="trailing" secondItem="0A4-sa-sP3" secondAttribute="trailing" constant="38" id="h6u-Gf-tvI"/>
@@ -178,21 +189,25 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sshMemo" translatesAutoresizingMaskIntoConstraints="NO" id="VGG-mf-fsG">
                                         <rect key="frame" x="20" y="19" width="12" height="14"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메모" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKK-rT-A7k">
-                                        <rect key="frame" x="47" y="19.5" width="19.5" height="13.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="메모" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="igz-kr-D9I">
+                                        <rect key="frame" x="47" y="11" width="290" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="6bF-IY-Xhg"/>
+                                            <constraint firstAttribute="width" constant="290" id="Jt3-sc-PPP"/>
+                                        </constraints>
                                         <color key="textColor" name="11SshColorGray2"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" name="11SshColorBgwhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="RBQ-Lv-6oJ" secondAttribute="height" multiplier="343:52" id="FLq-Ss-IGK"/>
                                     <constraint firstAttribute="bottom" secondItem="VGG-mf-fsG" secondAttribute="bottom" constant="19" id="GLt-p2-7m2"/>
                                     <constraint firstItem="VGG-mf-fsG" firstAttribute="leading" secondItem="RBQ-Lv-6oJ" secondAttribute="leading" constant="20" id="VRa-yX-0Pq"/>
-                                    <constraint firstItem="IKK-rT-A7k" firstAttribute="leading" secondItem="VGG-mf-fsG" secondAttribute="trailing" constant="15" id="ZVM-qO-NyU"/>
                                     <constraint firstItem="VGG-mf-fsG" firstAttribute="top" secondItem="RBQ-Lv-6oJ" secondAttribute="top" constant="19" id="Zs7-Wa-zqB"/>
-                                    <constraint firstItem="IKK-rT-A7k" firstAttribute="centerY" secondItem="RBQ-Lv-6oJ" secondAttribute="centerY" id="rkE-WH-PvH"/>
+                                    <constraint firstItem="igz-kr-D9I" firstAttribute="leading" secondItem="VGG-mf-fsG" secondAttribute="trailing" constant="15" id="pqN-7L-xSn"/>
+                                    <constraint firstItem="igz-kr-D9I" firstAttribute="centerY" secondItem="RBQ-Lv-6oJ" secondAttribute="centerY" id="zBn-hS-MWh"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qxD-H0-GD5">
@@ -265,15 +280,16 @@
                         <outlet property="buttonBackgroundView" destination="qxD-H0-GD5" id="HpL-IO-K9V"/>
                         <outlet property="buttonBackgroundViewBottomConstraint" destination="C1S-xc-yW7" id="7jI-jF-Xhy"/>
                         <outlet property="cancelButton" destination="uhA-Iu-rdn" id="7bu-NP-arg"/>
+                        <outlet property="fatTextField" destination="v6x-LU-YUB" id="Tpd-yt-1is"/>
+                        <outlet property="memoTextField" destination="igz-kr-D9I" id="G3e-0J-GL1"/>
+                        <outlet property="muscleTextField" destination="gzV-qX-KQX" id="5ms-VA-sXM"/>
                         <outlet property="pickerView" destination="BMf-SO-tfQ" id="9xE-vO-ZEo"/>
                         <outlet property="saveButton" destination="Rcu-J6-bcw" id="oHk-2V-Dtg"/>
-                        <outlet property="textField" destination="v6x-LU-YUB" id="Tpd-yt-1is"/>
                         <outlet property="timeLabel" destination="oFv-6D-YVM" id="vW2-kA-gRd"/>
                         <outlet property="titleLabel" destination="PZj-2a-h5l" id="cls-o0-SF2"/>
                         <outletCollection property="titleLabelCollection" destination="qB1-yt-UmC" collectionClass="NSMutableArray" id="5oi-az-v80"/>
                         <outletCollection property="titleLabelCollection" destination="5kw-Hs-P9c" collectionClass="NSMutableArray" id="VIg-7B-a9F"/>
                         <outletCollection property="titleLabelCollection" destination="o8h-k3-o0U" collectionClass="NSMutableArray" id="HZL-oX-SbP"/>
-                        <outletCollection property="titleLabelCollection" destination="IKK-rT-A7k" collectionClass="NSMutableArray" id="3oe-gj-B9t"/>
                         <outletCollection property="componentViewCollection" destination="D7t-2W-Blf" collectionClass="NSMutableArray" id="dOn-dw-ReX"/>
                         <outletCollection property="componentViewCollection" destination="05u-6Y-hfU" collectionClass="NSMutableArray" id="wdr-Ej-vBf"/>
                         <outletCollection property="componentViewCollection" destination="FsM-we-RDy" collectionClass="NSMutableArray" id="IXo-2T-8Df"/>

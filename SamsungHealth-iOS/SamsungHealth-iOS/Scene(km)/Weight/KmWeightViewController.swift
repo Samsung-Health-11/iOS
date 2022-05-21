@@ -20,6 +20,8 @@ final class KmWeightViewController: UIViewController {
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var pickerView: UIPickerView!
+    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var buttonBackgroundView: UIView!
     
     @IBOutlet var componentViewCollection: [UIView]!
     @IBOutlet var titleLabelCollection: [UILabel]!
@@ -33,12 +35,17 @@ final class KmWeightViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
-        setPickerView()
+        setDelegate()
+        setKeyboardObserver()
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         initPickerView()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     // MARK: - Functions
@@ -49,9 +56,9 @@ final class KmWeightViewController: UIViewController {
         setButtonUI()
     }
     
-    private func setPickerView() {
-        pickerView.delegate = self
-        pickerView.dataSource = self
+    private func setDelegate() {
+        setPickerView()
+        setTextField()
     }
     
     // MARK: - IBAction
@@ -85,41 +92,50 @@ extension KmWeightViewController {
     private func initPickerView() {
         pickerView.subviews[1].backgroundColor = .clear
     }
+    
+    private func setPickerView() {
+        pickerView.delegate = self
+        pickerView.dataSource = self
+    }
+    
+    private func setTextField() {
+        textField.delegate = self
+    }
 }
 
 extension KmWeightViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 3
+        return 2
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         switch component {
         case 0: return 100
-        case 1: return 3
         default: return 10
         }
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        switch component {
-        case 0: return "\(row)"
-        case 1: return "."
-        default: return "\(row)"
-        }
+        return "\(row)"
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         weight = Float(pickerView.selectedRow(inComponent: 0))
-        weight += (Float(pickerView.selectedRow(inComponent: 2)) * 0.1)
+        weight += (Float(pickerView.selectedRow(inComponent: 1)) * 0.1)
     }
     
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 200, height: 20))
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 20))
-        label.text = component == 1 ? "." : "\(row)"
+        label.text = "\(row)"
         label.textAlignment = .center
         label.font = .SshFontH1
+        label.textColor = .SshColorBlack1
         view.addSubview(label)
         return view
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
+        return 50
     }
 }

@@ -31,6 +31,7 @@ class YinWeightViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
+        setDelegate()
     }
     
     override func viewWillLayoutSubviews() {
@@ -41,8 +42,11 @@ class YinWeightViewController: UIViewController {
     
     private func setUI() {
         setFont()
+        setTextFieldUI()
+    }
+    
+    private func setDelegate() {
         setPickerView()
-        setTextField()
     }
     
     private func setFont() {
@@ -62,7 +66,7 @@ class YinWeightViewController: UIViewController {
         weightPickerView.dataSource = self
     }
     
-    private func setTextField() {
+    private func setTextFieldUI() {
         [weightTextField, muscleTextField].forEach {
             let bottomBorder = CALayer()
             bottomBorder.borderWidth = 1
@@ -94,7 +98,7 @@ extension YinWeightViewController: UIPickerViewDelegate, UIPickerViewDataSource 
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 60))
         label.textAlignment = .center
-        label.font = UIFont.SshFontH1.withSize(24)
+        label.font = .SshFontH1
         switch (component) {
         case 1: label.text = "."
         default: label.text = "\(row)"

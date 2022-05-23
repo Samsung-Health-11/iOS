@@ -93,6 +93,8 @@ extension KmWeightViewController {
     
     private func initPickerView() {
         pickerView.subviews[1].backgroundColor = .clear
+        pickerView.selectRow(30, inComponent: 0, animated: false)
+        pickerView.selectRow(5, inComponent: 1, animated: false)
     }
     
     private func setPickerView() {

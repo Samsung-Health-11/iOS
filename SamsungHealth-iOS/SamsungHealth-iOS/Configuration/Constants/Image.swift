@@ -37,8 +37,10 @@ extension Const {
         static let sshLogo = UIImage(named: "sshLogo")!
         static let sshMemo = UIImage(named: "sshMemo")!
         static let sshMenubutton = UIImage(named: "sshMenubutton")!
+        static let sshMinusButtonOn = UIImage(named: "sshMinusButtonOn")!
         static let sshMinusButtonOff = UIImage(named: "sshMinusButtonOff")!
         static let sshPlusButtonOn = UIImage(named: "sshPlusButtonOn")!
+        static let sshPlusButtonOff = UIImage(named: "sshPlusButtonOff")!
         static let sshWalkbar = UIImage(named: "sshWalkbar")!
         static let sshWritebutton = UIImage(named: "sshWritebutton")!
     }

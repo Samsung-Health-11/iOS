@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "sshMinusButtonOff.png",
+      "filename" : "Property 1=ssh_minusbutton_on.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "sshMinusButtonOff@2x.png",
+      "filename" : "Property 1=ssh_minusbutton_on@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "sshMinusButtonOff@3x.png",
+      "filename" : "Property 1=ssh_minusbutton_on@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

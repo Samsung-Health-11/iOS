@@ -3,30 +3,600 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Yin Home View Controller-->
+        <!--홈-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="YinHomeViewController" id="Y6W-OH-hqX" customClass="YinHomeViewController" customModule="SamsungHealth_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WG1-jW-dUd">
+                                <rect key="frame" x="0.0" y="44" width="414" height="1073"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9C5-VD-o5w">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="928"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="YUr-u7-gM8">
+                                                <rect key="frame" x="28" y="36" width="138" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="138" id="Aku-bJ-3Bh"/>
+                                                    <constraint firstAttribute="height" constant="30" id="MwG-0X-Un7"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XW0-7S-1Fu">
+                                                <rect key="frame" x="374" y="43.5" width="3" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="3" id="Fx4-Tj-jcM"/>
+                                                    <constraint firstAttribute="height" constant="15" id="ksx-6A-1z0"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="sshMenubutton"/>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="9Of-qJ-URK" userLabel="홈 정보">
+                                                <rect key="frame" x="17" y="89" width="380" height="778"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VhK-8S-8lE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="380" height="92"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="걸음 수" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qL8-GM-zAU">
+                                                                <rect key="frame" x="20" y="15" width="43" height="18"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <color key="textColor" name="11SshColorBlack1"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="198" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKH-YT-soY">
+                                                                <rect key="frame" x="20" y="44" width="40.5" height="29"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <color key="textColor" name="11SshColorBlack1"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/1,900" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cop-pM-LUn">
+                                                                <rect key="frame" x="65.5" y="56" width="40" height="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <color key="textColor" name="11SshColorBlack2"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sshWalkbar" translatesAutoresizingMaskIntoConstraints="NO" id="JzQ-4e-SUH">
+                                                                <rect key="frame" x="250" y="65" width="113" height="8"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="113" id="7e8-Jg-eFN"/>
+                                                                    <constraint firstAttribute="height" constant="8" id="NSW-oD-iZr"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LsI-UZ-Mm7">
+                                                                <rect key="frame" x="250" y="48.5" width="22.5" height="13.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                                <color key="textColor" name="11SshColorBlack2"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" name="11SshColorBgwhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="JzQ-4e-SUH" firstAttribute="bottom" secondItem="cop-pM-LUn" secondAttribute="bottom" id="8jT-uo-t0E"/>
+                                                            <constraint firstItem="LsI-UZ-Mm7" firstAttribute="leading" secondItem="JzQ-4e-SUH" secondAttribute="leading" id="B5h-dz-kUg"/>
+                                                            <constraint firstItem="qL8-GM-zAU" firstAttribute="leading" secondItem="VhK-8S-8lE" secondAttribute="leading" constant="20" id="Cox-t8-Iwm"/>
+                                                            <constraint firstAttribute="trailing" secondItem="JzQ-4e-SUH" secondAttribute="trailing" constant="17" id="EJV-BJ-xnn"/>
+                                                            <constraint firstItem="qL8-GM-zAU" firstAttribute="top" secondItem="VhK-8S-8lE" secondAttribute="top" constant="15" id="JRJ-wr-RDc"/>
+                                                            <constraint firstItem="JzQ-4e-SUH" firstAttribute="top" secondItem="LsI-UZ-Mm7" secondAttribute="bottom" constant="3" id="S2R-YT-9n8"/>
+                                                            <constraint firstItem="AKH-YT-soY" firstAttribute="leading" secondItem="qL8-GM-zAU" secondAttribute="leading" id="VHQ-2O-MXo"/>
+                                                            <constraint firstItem="cop-pM-LUn" firstAttribute="leading" secondItem="AKH-YT-soY" secondAttribute="trailing" constant="5" id="WiV-VA-ggF"/>
+                                                            <constraint firstAttribute="bottom" secondItem="AKH-YT-soY" secondAttribute="bottom" constant="19" id="cDJ-xD-AhT"/>
+                                                            <constraint firstAttribute="height" constant="92" id="flh-GG-exL"/>
+                                                            <constraint firstItem="cop-pM-LUn" firstAttribute="bottom" secondItem="AKH-YT-soY" secondAttribute="bottom" id="vHF-Af-sgI"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="baf-sZ-a50">
+                                                        <rect key="frame" x="0.0" y="104" width="380" height="120"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="일일 활동" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zy4-AW-f34">
+                                                                <rect key="frame" x="19" y="15" width="56" height="18"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <color key="textColor" name="11SshColorBlack1"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="28H-DK-B3I">
+                                                                <rect key="frame" x="30" y="81" width="117" height="19"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="198" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3R-Z8-SwR">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="19"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                        <color key="textColor" name="11SshColorBlack1"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xJV-KA-2aA">
+                                                                        <rect key="frame" x="46" y="0.0" width="0.5" height="19"/>
+                                                                        <color key="backgroundColor" name="11SshColorGray5"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="19" id="Yv4-ZP-C8x"/>
+                                                                            <constraint firstAttribute="width" constant="0.5" id="u53-PW-ENe"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TxA-qy-jJS">
+                                                                        <rect key="frame" x="62.5" y="0.0" width="10.5" height="19"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                        <color key="textColor" name="11SshColorBlack1"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Gq-Pb-V4l">
+                                                                        <rect key="frame" x="89" y="0.0" width="0.5" height="19"/>
+                                                                        <color key="backgroundColor" name="11SshColorGray5"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="0.5" id="RzM-sc-ajY"/>
+                                                                            <constraint firstAttribute="height" constant="19" id="pb9-pT-DYf"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6N-0D-ksx">
+                                                                        <rect key="frame" x="105.5" y="0.0" width="11.5" height="19"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                        <color key="textColor" name="11SshColorBlack1"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sshIconSteps" translatesAutoresizingMaskIntoConstraints="NO" id="Xm8-yu-bIi">
+                                                                <rect key="frame" x="37" y="58" width="16" height="16"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="16" id="2DA-rM-tck"/>
+                                                                    <constraint firstAttribute="height" constant="16" id="Irr-pE-kup"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sshIconTime" translatesAutoresizingMaskIntoConstraints="NO" id="SeW-bD-BY0">
+                                                                <rect key="frame" x="90" y="58" width="16" height="16"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="16" id="78J-r1-dI2"/>
+                                                                    <constraint firstAttribute="height" constant="16" id="o8m-hS-5hF"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sshIconKcal" translatesAutoresizingMaskIntoConstraints="NO" id="xjM-7D-SN2">
+                                                                <rect key="frame" x="133.5" y="58" width="16" height="16"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="16" id="W8a-Hk-Ss2"/>
+                                                                    <constraint firstAttribute="width" constant="16" id="glz-8I-RhQ"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sshActivityheart" translatesAutoresizingMaskIntoConstraints="NO" id="MwF-t1-OD8">
+                                                                <rect key="frame" x="275" y="25" width="84" height="75"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="84" id="fFj-xc-XJE"/>
+                                                                    <constraint firstAttribute="height" constant="75" id="yDr-g1-pX0"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" name="11SshColorBgwhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="Xm8-yu-bIi" firstAttribute="top" secondItem="zy4-AW-f34" secondAttribute="bottom" constant="25" id="1Ry-g2-Xv0"/>
+                                                            <constraint firstItem="28H-DK-B3I" firstAttribute="top" secondItem="Xm8-yu-bIi" secondAttribute="bottom" constant="7" id="3cu-R5-FIg"/>
+                                                            <constraint firstItem="SeW-bD-BY0" firstAttribute="top" secondItem="Xm8-yu-bIi" secondAttribute="top" id="JjR-ZK-9zD"/>
+                                                            <constraint firstItem="zy4-AW-f34" firstAttribute="leading" secondItem="baf-sZ-a50" secondAttribute="leading" constant="19" id="NLv-Vw-9lz"/>
+                                                            <constraint firstItem="xjM-7D-SN2" firstAttribute="top" secondItem="SeW-bD-BY0" secondAttribute="top" id="ZC6-Gt-cw6"/>
+                                                            <constraint firstItem="SeW-bD-BY0" firstAttribute="centerX" secondItem="TxA-qy-jJS" secondAttribute="centerX" id="ldY-yu-kDR"/>
+                                                            <constraint firstItem="MwF-t1-OD8" firstAttribute="bottom" secondItem="28H-DK-B3I" secondAttribute="bottom" id="m4i-fF-BcY"/>
+                                                            <constraint firstItem="zy4-AW-f34" firstAttribute="top" secondItem="baf-sZ-a50" secondAttribute="top" constant="15" id="tL6-M3-bvT"/>
+                                                            <constraint firstAttribute="trailing" secondItem="MwF-t1-OD8" secondAttribute="trailing" constant="21" id="u9g-jl-aEn"/>
+                                                            <constraint firstItem="Xm8-yu-bIi" firstAttribute="centerX" secondItem="X3R-Z8-SwR" secondAttribute="centerX" id="vdz-p8-S9c"/>
+                                                            <constraint firstItem="28H-DK-B3I" firstAttribute="leading" secondItem="baf-sZ-a50" secondAttribute="leading" constant="30" id="wUS-Yz-PpW"/>
+                                                            <constraint firstAttribute="height" constant="120" id="zXX-F5-IRO"/>
+                                                            <constraint firstItem="xjM-7D-SN2" firstAttribute="centerX" secondItem="s6N-0D-ksx" secondAttribute="centerX" id="zj1-mv-vco"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XSY-fl-I5t">
+                                                        <rect key="frame" x="0.0" y="236" width="380" height="113"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="운동" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0c-ZJ-83T">
+                                                                <rect key="frame" x="15" y="18" width="26" height="18"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <color key="textColor" name="11SshColorBlack1"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기록 보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jE1-Nm-kzy">
+                                                                <rect key="frame" x="306" y="18" width="56" height="18"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <color key="textColor" name="11SshColorGray2"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="9px-q8-F4D">
+                                                                <rect key="frame" x="84" y="49" width="212" height="44"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qju-4a-yVq">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="44" id="HJs-gY-eIe"/>
+                                                                            <constraint firstAttribute="height" constant="44" id="uKc-rG-OO6"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <buttonConfiguration key="configuration" style="plain" image="sshButtonWalk"/>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6b-IP-ASG">
+                                                                        <rect key="frame" x="56" y="0.0" width="44" height="44"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="44" id="53V-rM-n7e"/>
+                                                                            <constraint firstAttribute="height" constant="44" id="nIu-p1-EAH"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <buttonConfiguration key="configuration" style="plain" image="sshButtonYoga"/>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQz-pp-yDP">
+                                                                        <rect key="frame" x="112" y="0.0" width="44" height="44"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="44" id="Uqr-h8-zob"/>
+                                                                            <constraint firstAttribute="width" constant="44" id="hAk-GY-Waq"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <buttonConfiguration key="configuration" style="plain" image="sshButtonStretch"/>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geC-pl-bi5">
+                                                                        <rect key="frame" x="168" y="0.0" width="44" height="44"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="44" id="6f8-Di-ua9"/>
+                                                                            <constraint firstAttribute="height" constant="44" id="Zfe-yr-qID"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <buttonConfiguration key="configuration" style="plain" image="sshButtonList"/>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" name="11SshColorBgwhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="t0c-ZJ-83T" firstAttribute="leading" secondItem="XSY-fl-I5t" secondAttribute="leading" constant="15" id="N3I-qM-oOV"/>
+                                                            <constraint firstItem="t0c-ZJ-83T" firstAttribute="top" secondItem="XSY-fl-I5t" secondAttribute="top" constant="18" id="U2H-6L-ejj"/>
+                                                            <constraint firstItem="jE1-Nm-kzy" firstAttribute="centerY" secondItem="t0c-ZJ-83T" secondAttribute="centerY" id="eNV-HS-sX7"/>
+                                                            <constraint firstItem="9px-q8-F4D" firstAttribute="centerX" secondItem="XSY-fl-I5t" secondAttribute="centerX" id="kGH-AW-Ncf"/>
+                                                            <constraint firstAttribute="bottom" secondItem="9px-q8-F4D" secondAttribute="bottom" constant="20" id="nlN-xK-gR0"/>
+                                                            <constraint firstAttribute="height" constant="113" id="sIF-sR-jhZ"/>
+                                                            <constraint firstAttribute="trailing" secondItem="jE1-Nm-kzy" secondAttribute="trailing" constant="18" id="uPm-SB-Rd5"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ha-ly-Toq">
+                                                        <rect key="frame" x="0.0" y="361" width="380" height="90"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="음식" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QoR-1l-f6G">
+                                                                <rect key="frame" x="19" y="15" width="26" height="18"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <color key="textColor" name="11SshColorBlack1"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQn-jh-enH">
+                                                                <rect key="frame" x="19" y="45" width="15" height="29"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <color key="textColor" name="11SshColorBlack1"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/1,457kcal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QwP-8g-2tn">
+                                                                <rect key="frame" x="39" y="57" width="65" height="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <color key="textColor" name="11SshColorBlack2"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTR-H0-zyg">
+                                                                <rect key="frame" x="250" y="26" width="113" height="34"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="34" id="3jI-9Q-hoP"/>
+                                                                    <constraint firstAttribute="width" constant="113" id="gyP-0f-wsL"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" image="sshWritebutton"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" name="11SshColorBgwhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="QwP-8g-2tn" firstAttribute="leading" secondItem="wQn-jh-enH" secondAttribute="trailing" constant="5" id="2Hr-hZ-6Ad"/>
+                                                            <constraint firstItem="QoR-1l-f6G" firstAttribute="top" secondItem="2Ha-ly-Toq" secondAttribute="top" constant="15" id="7BY-EG-n1v"/>
+                                                            <constraint firstAttribute="bottom" secondItem="QTR-H0-zyg" secondAttribute="bottom" constant="30" id="DrL-hd-yVE"/>
+                                                            <constraint firstAttribute="height" constant="90" id="Fap-ED-mKT"/>
+                                                            <constraint firstAttribute="trailing" secondItem="QTR-H0-zyg" secondAttribute="trailing" constant="17" id="Mw4-4I-F0H"/>
+                                                            <constraint firstAttribute="bottom" secondItem="wQn-jh-enH" secondAttribute="bottom" constant="16" id="Qpw-cm-csw"/>
+                                                            <constraint firstItem="QwP-8g-2tn" firstAttribute="bottom" secondItem="wQn-jh-enH" secondAttribute="bottom" id="n1Q-Xl-y4K"/>
+                                                            <constraint firstItem="QoR-1l-f6G" firstAttribute="leading" secondItem="2Ha-ly-Toq" secondAttribute="leading" constant="19" id="oct-T9-sJn"/>
+                                                            <constraint firstItem="wQn-jh-enH" firstAttribute="leading" secondItem="QoR-1l-f6G" secondAttribute="leading" id="vyX-uu-iyy"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wVb-ie-6W7">
+                                                        <rect key="frame" x="0.0" y="463" width="380" height="89"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="수면" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEd-7z-t1S">
+                                                                <rect key="frame" x="19" y="15" width="26" height="18"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <color key="textColor" name="11SshColorBlack1"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Yc-ga-tHv">
+                                                                <rect key="frame" x="19" y="44" width="13.5" height="29"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <color key="textColor" name="11SshColorBlack1"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Rj-ta-gg0">
+                                                                <rect key="frame" x="35.5" y="52.5" width="29.5" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" name="11SshColorBlack2"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtG-JA-crU">
+                                                                <rect key="frame" x="72" y="44" width="29.5" height="29"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <color key="textColor" name="11SshColorBlack1"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="분" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pB-F8-ClD">
+                                                                <rect key="frame" x="104.5" y="52.5" width="15" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" name="11SshColorBlack2"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sshWalkbar" translatesAutoresizingMaskIntoConstraints="NO" id="ruW-dy-nSP">
+                                                                <rect key="frame" x="255" y="54" width="103" height="10"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="10" id="VTe-7l-qPk"/>
+                                                                    <constraint firstAttribute="width" constant="103" id="zE4-1P-wfb"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오전 2:20 - 오전 9:50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HcJ-yZ-MOH">
+                                                                <rect key="frame" x="254.5" y="36.5" width="104.5" height="13.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                                <color key="textColor" name="11SshColorBlack2"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" name="11SshColorBgwhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="5Rj-ta-gg0" firstAttribute="leading" secondItem="0Yc-ga-tHv" secondAttribute="trailing" constant="3" id="3zg-Sl-wA2"/>
+                                                            <constraint firstItem="0Yc-ga-tHv" firstAttribute="leading" secondItem="MEd-7z-t1S" secondAttribute="leading" id="85K-nl-43D"/>
+                                                            <constraint firstItem="vtG-JA-crU" firstAttribute="bottom" secondItem="5Rj-ta-gg0" secondAttribute="bottom" id="DXI-YU-3wG"/>
+                                                            <constraint firstItem="MEd-7z-t1S" firstAttribute="top" secondItem="wVb-ie-6W7" secondAttribute="top" constant="15" id="KSc-w8-HKV"/>
+                                                            <constraint firstItem="1pB-F8-ClD" firstAttribute="leading" secondItem="vtG-JA-crU" secondAttribute="trailing" constant="3" id="LZx-EB-sXT"/>
+                                                            <constraint firstItem="vtG-JA-crU" firstAttribute="leading" secondItem="5Rj-ta-gg0" secondAttribute="trailing" constant="7" id="Lqh-sr-KAf"/>
+                                                            <constraint firstAttribute="trailing" secondItem="ruW-dy-nSP" secondAttribute="trailing" constant="22" id="S13-HR-3bZ"/>
+                                                            <constraint firstItem="MEd-7z-t1S" firstAttribute="leading" secondItem="wVb-ie-6W7" secondAttribute="leading" constant="19" id="W0n-pc-wtl"/>
+                                                            <constraint firstItem="5Rj-ta-gg0" firstAttribute="bottom" secondItem="0Yc-ga-tHv" secondAttribute="bottom" id="acS-X0-4h7"/>
+                                                            <constraint firstItem="1pB-F8-ClD" firstAttribute="bottom" secondItem="vtG-JA-crU" secondAttribute="bottom" id="h0j-GA-7et"/>
+                                                            <constraint firstItem="ruW-dy-nSP" firstAttribute="top" secondItem="HcJ-yZ-MOH" secondAttribute="bottom" constant="4" id="mun-Xx-t1H"/>
+                                                            <constraint firstAttribute="bottom" secondItem="0Yc-ga-tHv" secondAttribute="bottom" constant="16" id="pIP-MY-P0K"/>
+                                                            <constraint firstAttribute="height" constant="89" id="pgZ-UK-N4S"/>
+                                                            <constraint firstAttribute="bottom" secondItem="ruW-dy-nSP" secondAttribute="bottom" constant="25" id="soT-Pn-ZPN"/>
+                                                            <constraint firstItem="HcJ-yZ-MOH" firstAttribute="centerX" secondItem="ruW-dy-nSP" secondAttribute="centerX" id="yFT-mD-39r"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lYV-Yx-F85">
+                                                        <rect key="frame" x="0.0" y="564" width="380" height="112"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="체중 / 체성분" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cj-yt-hG8">
+                                                                <rect key="frame" x="19" y="14" width="77.5" height="18"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <color key="textColor" name="11SshColorBlack1"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sshIconScale" translatesAutoresizingMaskIntoConstraints="NO" id="mUa-0A-62G">
+                                                                <rect key="frame" x="31" y="45" width="16" height="16"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="16" id="XgC-43-UmB"/>
+                                                                    <constraint firstAttribute="height" constant="16" id="rkm-jX-SwL"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MvH-cf-Rpg">
+                                                                <rect key="frame" x="18" y="66" width="21.5" height="29"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <color key="textColor" name="11SshColorBlack1"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCe-fx-rjW">
+                                                                <rect key="frame" x="42.5" y="75" width="15.5" height="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <color key="textColor" name="11SshColorBlack2"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4K-vV-DRY">
+                                                                <rect key="frame" x="250" y="39" width="113" height="34"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="34" id="1Es-ti-dgF"/>
+                                                                    <constraint firstAttribute="width" constant="113" id="pfL-bS-wpH"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" image="sshWritebutton"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" name="11SshColorBgwhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="mUa-0A-62G" firstAttribute="leading" secondItem="lYV-Yx-F85" secondAttribute="leading" constant="31" id="0RM-8t-4i5"/>
+                                                            <constraint firstItem="S4K-vV-DRY" firstAttribute="centerY" secondItem="lYV-Yx-F85" secondAttribute="centerY" id="5P3-5W-Esd"/>
+                                                            <constraint firstItem="0cj-yt-hG8" firstAttribute="top" secondItem="lYV-Yx-F85" secondAttribute="top" constant="14" id="6DN-lW-8Os"/>
+                                                            <constraint firstItem="mUa-0A-62G" firstAttribute="top" secondItem="0cj-yt-hG8" secondAttribute="bottom" constant="13" id="Iw6-K1-c75"/>
+                                                            <constraint firstAttribute="height" constant="112" id="JD0-1Q-TlN"/>
+                                                            <constraint firstAttribute="bottom" secondItem="zCe-fx-rjW" secondAttribute="bottom" constant="20" id="THH-fi-4eI"/>
+                                                            <constraint firstItem="MvH-cf-Rpg" firstAttribute="leading" secondItem="lYV-Yx-F85" secondAttribute="leading" constant="18" id="j98-Kf-FYP"/>
+                                                            <constraint firstItem="zCe-fx-rjW" firstAttribute="leading" secondItem="MvH-cf-Rpg" secondAttribute="trailing" constant="3" id="luW-Zi-GKM"/>
+                                                            <constraint firstAttribute="trailing" secondItem="S4K-vV-DRY" secondAttribute="trailing" constant="17" id="oyx-DU-qot"/>
+                                                            <constraint firstItem="0cj-yt-hG8" firstAttribute="leading" secondItem="lYV-Yx-F85" secondAttribute="leading" constant="19" id="yf3-cT-icw"/>
+                                                            <constraint firstAttribute="bottom" secondItem="MvH-cf-Rpg" secondAttribute="bottom" constant="17" id="zFE-G6-cZx"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6qz-h3-Sj7">
+                                                        <rect key="frame" x="0.0" y="688" width="380" height="90"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="물" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sl-bz-mzJ">
+                                                                <rect key="frame" x="19" y="14" width="13" height="18"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <color key="textColor" name="11SshColorBlack1"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkK-f7-HBr">
+                                                                <rect key="frame" x="20" y="44" width="15" height="29"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <color key="textColor" name="11SshColorBlack1"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="잔" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0w-hx-hdP">
+                                                                <rect key="frame" x="38" y="52.5" width="15" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" name="11SshColorBlack2"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78E-ly-gT7">
+                                                                <rect key="frame" x="312" y="27.5" width="35" height="35"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="35" id="Pex-pd-2Ig"/>
+                                                                    <constraint firstAttribute="height" constant="35" id="wVC-eB-gbC"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" image="sshPlusButtonOn"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLe-LB-iR6">
+                                                                <rect key="frame" x="266" y="27.5" width="35" height="35"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="35" id="CFI-6g-vq3"/>
+                                                                    <constraint firstAttribute="height" constant="35" id="Gxe-sV-sPR"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" image="sshMinusButtonOff"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" name="11SshColorBgwhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="3sl-bz-mzJ" firstAttribute="top" secondItem="6qz-h3-Sj7" secondAttribute="top" constant="14" id="2sD-OF-8S7"/>
+                                                            <constraint firstAttribute="bottom" secondItem="lkK-f7-HBr" secondAttribute="bottom" constant="17" id="4BI-P6-PI7"/>
+                                                            <constraint firstItem="78E-ly-gT7" firstAttribute="centerY" secondItem="6qz-h3-Sj7" secondAttribute="centerY" id="8Ip-7z-ENH"/>
+                                                            <constraint firstAttribute="trailing" secondItem="78E-ly-gT7" secondAttribute="trailing" constant="33" id="JHu-07-PGs"/>
+                                                            <constraint firstItem="Y0w-hx-hdP" firstAttribute="leading" secondItem="lkK-f7-HBr" secondAttribute="trailing" constant="3" id="Y6s-rL-6pA"/>
+                                                            <constraint firstItem="YLe-LB-iR6" firstAttribute="centerY" secondItem="78E-ly-gT7" secondAttribute="centerY" id="jDg-Ke-BGq"/>
+                                                            <constraint firstAttribute="height" constant="90" id="lTV-EA-miN"/>
+                                                            <constraint firstItem="78E-ly-gT7" firstAttribute="leading" secondItem="YLe-LB-iR6" secondAttribute="trailing" constant="11" id="oDb-at-FAd"/>
+                                                            <constraint firstItem="3sl-bz-mzJ" firstAttribute="leading" secondItem="6qz-h3-Sj7" secondAttribute="leading" constant="19" id="oeb-ak-mI7"/>
+                                                            <constraint firstItem="lkK-f7-HBr" firstAttribute="leading" secondItem="6qz-h3-Sj7" secondAttribute="leading" constant="20" id="pov-DT-86g"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Y0w-hx-hdP" secondAttribute="bottom" constant="17" id="qqz-QK-ijw"/>
+                                                            <constraint firstItem="Y0w-hx-hdP" firstAttribute="bottom" secondItem="lkK-f7-HBr" secondAttribute="bottom" id="rzb-a6-VBI"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sshKnoxlogo" translatesAutoresizingMaskIntoConstraints="NO" id="IcR-V2-70P">
+                                                <rect key="frame" x="23" y="880" width="101" height="13"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="101" id="ZIG-hm-2Ta"/>
+                                                    <constraint firstAttribute="height" constant="13" id="sFJ-Tw-U0R"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="11SshColorBggray"/>
+                                        <constraints>
+                                            <constraint firstItem="IcR-V2-70P" firstAttribute="leading" secondItem="9C5-VD-o5w" secondAttribute="leading" constant="23" id="0Vr-8T-94z"/>
+                                            <constraint firstItem="YUr-u7-gM8" firstAttribute="top" secondItem="9C5-VD-o5w" secondAttribute="top" constant="36" id="61g-PK-gfx"/>
+                                            <constraint firstItem="IcR-V2-70P" firstAttribute="top" secondItem="9Of-qJ-URK" secondAttribute="bottom" constant="13" id="7bb-Hh-jQM"/>
+                                            <constraint firstAttribute="bottom" secondItem="IcR-V2-70P" secondAttribute="bottom" constant="35" id="I0F-qQ-wV8"/>
+                                            <constraint firstItem="9Of-qJ-URK" firstAttribute="leading" secondItem="9C5-VD-o5w" secondAttribute="leading" constant="17" id="Kzm-ws-HAc"/>
+                                            <constraint firstAttribute="trailing" secondItem="XW0-7S-1Fu" secondAttribute="trailing" constant="37" id="cOG-FA-Bbp"/>
+                                            <constraint firstItem="9Of-qJ-URK" firstAttribute="top" secondItem="YUr-u7-gM8" secondAttribute="bottom" constant="23" id="cWp-Or-Jah"/>
+                                            <constraint firstAttribute="trailing" secondItem="9Of-qJ-URK" secondAttribute="trailing" constant="17" id="g9q-VZ-Vdk"/>
+                                            <constraint firstItem="YUr-u7-gM8" firstAttribute="centerY" secondItem="XW0-7S-1Fu" secondAttribute="centerY" id="le0-Ao-Q9Q"/>
+                                            <constraint firstItem="YUr-u7-gM8" firstAttribute="leading" secondItem="9C5-VD-o5w" secondAttribute="leading" constant="28" id="wDQ-Kz-maF"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="9C5-VD-o5w" firstAttribute="width" secondItem="vlv-v3-v1e" secondAttribute="width" id="BzG-5t-cMC"/>
+                                    <constraint firstItem="9C5-VD-o5w" firstAttribute="bottom" secondItem="Wxf-EO-Gdf" secondAttribute="bottom" id="eVh-lg-W3A"/>
+                                    <constraint firstItem="9C5-VD-o5w" firstAttribute="leading" secondItem="Wxf-EO-Gdf" secondAttribute="leading" id="gDj-Nl-ifO"/>
+                                    <constraint firstItem="9C5-VD-o5w" firstAttribute="top" secondItem="Wxf-EO-Gdf" secondAttribute="top" id="uBe-hg-cE6"/>
+                                    <constraint firstItem="9C5-VD-o5w" firstAttribute="trailing" secondItem="Wxf-EO-Gdf" secondAttribute="trailing" id="wdk-w8-1ep"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Wxf-EO-Gdf"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="vlv-v3-v1e"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="11SshColorBggray"/>
+                        <constraints>
+                            <constraint firstItem="WG1-jW-dUd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="OAM-SW-KMl"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="WG1-jW-dUd" secondAttribute="trailing" id="OrG-aS-Tfc"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="WG1-jW-dUd" secondAttribute="bottom" id="UO4-Jj-ybp"/>
+                            <constraint firstItem="WG1-jW-dUd" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="aag-CC-tt8"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="홈" image="ssh_icon_home_off" selectedImage="ssh_icon_home_on" id="chv-C6-alQ"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <size key="freeformSize" width="414" height="1200"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="78" y="62"/>
+            <point key="canvasLocation" x="76.811594202898561" y="61.607142857142854"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="sshActivityheart" width="84" height="75"/>
+        <image name="sshButtonList" width="44" height="44"/>
+        <image name="sshButtonStretch" width="44" height="44"/>
+        <image name="sshButtonWalk" width="44" height="44"/>
+        <image name="sshButtonYoga" width="44" height="44"/>
+        <image name="sshIconKcal" width="16" height="16"/>
+        <image name="sshIconScale" width="16" height="16"/>
+        <image name="sshIconSteps" width="16" height="16"/>
+        <image name="sshIconTime" width="16" height="16"/>
+        <image name="sshKnoxlogo" width="101" height="13"/>
+        <image name="sshLogo" width="138" height="30"/>
+        <image name="sshMenubutton" width="3" height="15"/>
+        <image name="sshMinusButtonOff" width="35" height="35"/>
+        <image name="sshPlusButtonOn" width="35" height="35"/>
+        <image name="sshWalkbar" width="113" height="8"/>
+        <image name="sshWritebutton" width="113" height="34"/>
+        <image name="ssh_icon_home_off" width="20" height="20"/>
+        <image name="ssh_icon_home_on" width="20" height="20"/>
+        <namedColor name="11SshColorBggray">
+            <color red="0.9649999737739563" green="0.9649999737739563" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="11SshColorBgwhite">
+            <color red="0.98799997568130493" green="0.98799997568130493" blue="0.98799997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="11SshColorBlack1">
+            <color red="0.14499999582767487" green="0.14499999582767487" blue="0.14499999582767487" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="11SshColorBlack2">
+            <color red="0.2630000114440918" green="0.2630000114440918" blue="0.2630000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="11SshColorGray2">
+            <color red="0.54100000858306885" green="0.54100000858306885" blue="0.54100000858306885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="11SshColorGray5">
+            <color red="0.90200001001358032" green="0.90200001001358032" blue="0.90200001001358032" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

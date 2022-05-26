@@ -8,22 +8,33 @@
 import UIKit
 
 class YinHomeViewController: UIViewController {
-
+    
+    // MARK: - IBOutlet
+    
+    @IBOutlet var titleLabels: [UILabel]!
+    @IBOutlet var h1Labels: [UILabel]!
+    @IBOutlet var b2Labels: [UILabel]!
+    @IBOutlet var c1Labels: [UILabel]!
+    
+    // MARK: - VC Life Cycle (or Cell Life Cycle)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setUI()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: - Function
+    private func setUI() {
+        setFont()
     }
-    */
+    
+    private func setFont() {
+        titleLabels.forEach { $0.font = .NotoSans(.medium, size: 15)}
+        h1Labels.forEach { $0.font = .SshFontH1 }
+        b2Labels.forEach { $0.font = .SshFontB2 }
+        c1Labels.forEach { $0.font = .SshFontC1 }
+    }
 
+    // MARK: - objc Function
+    // MARK: - IBAction
 }

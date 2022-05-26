@@ -32,6 +32,7 @@ class YinWeightViewController: UIViewController {
         super.viewDidLoad()
         setUI()
         setDelegate()
+        setKeyboard()
     }
     
     override func viewWillLayoutSubviews() {
@@ -47,6 +48,11 @@ class YinWeightViewController: UIViewController {
     
     private func setDelegate() {
         setPickerView()
+    }
+    
+    private func setKeyboard() {
+        setKeyboardObserver()
+        hideKeyboard()
     }
     
     private func setFont() {

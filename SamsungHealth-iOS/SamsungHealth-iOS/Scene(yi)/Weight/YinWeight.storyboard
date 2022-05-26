@@ -256,6 +256,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nn4-lU-NQk"/>
                         <color key="backgroundColor" name="11SshColorBggray"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="15O-ux-y7L" secondAttribute="bottom" id="AyJ-IR-rLG"/>
                             <constraint firstItem="15O-ux-y7L" firstAttribute="top" secondItem="nn4-lU-NQk" secondAttribute="top" id="Bcb-Dm-edC"/>

@@ -62,6 +62,7 @@ final class KmWeightViewController: UIViewController {
     // MARK: - IBAction
     
     @IBAction func cancelButtonDidTap(_ sender: Any) {
+        dismiss(animated: true)
     }
     
     @IBAction func saveButtonDidTap(_ sender: Any) {

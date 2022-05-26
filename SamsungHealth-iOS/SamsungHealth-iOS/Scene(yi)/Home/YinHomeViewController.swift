@@ -35,6 +35,11 @@ class YinHomeViewController: UIViewController {
         c1Labels.forEach { $0.font = .SshFontC1 }
     }
 
-    // MARK: - objc Function
     // MARK: - IBAction
+    @IBAction func weightBtnDidTap(_ sender: Any) {
+        guard let weightVC = UIStoryboard(name: "YinWeight", bundle: nil).instantiateViewController(withIdentifier: "YinWeightViewController") as? YinWeightViewController else { return }
+        weightVC.modalPresentationStyle = .fullScreen
+        present(weightVC, animated: true)
+    }
+    
 }

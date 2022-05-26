@@ -425,6 +425,9 @@
                                                                 </constraints>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" image="sshWritebutton"/>
+                                                                <connections>
+                                                                    <action selector="weightBtnDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="jLE-wO-yyX"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" name="11SshColorBgwhite"/>

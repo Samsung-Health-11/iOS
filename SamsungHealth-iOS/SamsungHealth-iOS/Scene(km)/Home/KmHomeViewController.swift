@@ -9,7 +9,15 @@ import UIKit
 
 final class KmHomeViewController: UIViewController {
     
+    // MARK: - Property
+    
+    var waterCount: Int = 0
+    
     // MARK: - IBOutlet
+    
+    @IBOutlet weak var waterCountLabel: UILabel!
+    @IBOutlet weak var waterMinusButton: UIButton!
+    @IBOutlet weak var waterPlusButton: UIButton!
     
     @IBOutlet var componentViewCollection: [UIView]!
     @IBOutlet var titleLabelCollection: [UILabel]!
@@ -19,6 +27,7 @@ final class KmHomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
+        setWaterComponent(water: waterCount)
     }
     
     // MARK: - Function
@@ -28,10 +37,22 @@ final class KmHomeViewController: UIViewController {
         setLabelUI()
     }
     
+    private func setWaterComponent(water: Int) {
+        waterCountLabel.text = "\(waterCount)"
+        waterMinusButton.isSelected = (waterCount == 0)
+    }
+    
     // MARK: - IBAction
+    
     @IBAction func writeWeightButtonDidTap(_ sender: Any) {
         guard let weightVC = UIStoryboard(name: Const.Storyboard.KmWeight, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.KmWeightViewController) as? KmWeightViewController else { return }
+        weightVC.modalPresentationStyle = .fullScreen
         present(weightVC, animated: true)
+    }
+    
+    @IBAction func waterCountButtonDidTap(_ sender: UIButton) {
+        waterCount = (sender == waterPlusButton) ? waterCount + 1 : ( waterCount >= 1 ? waterCount - 1 : 0)
+        setWaterComponent(water: waterCount)
     }
 }
 

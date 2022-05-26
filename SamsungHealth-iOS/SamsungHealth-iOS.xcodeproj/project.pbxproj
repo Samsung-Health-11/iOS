@@ -59,6 +59,7 @@
 		98AC5DD728322429001F040D /* YinMyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AC5DD628322429001F040D /* YinMyPageViewController.swift */; };
 		98D25B762830B6F30030C2D1 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98D25B752830B6F30030C2D1 /* Colors.xcassets */; };
 		98D25B782830B7440030C2D1 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D25B772830B7440030C2D1 /* UIColor+.swift */; };
+		A9319EE9283FA1FB008F8FEA /* YinWeightViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9319EE8283FA1FB008F8FEA /* YinWeightViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,6 +117,7 @@
 		98AC5DD628322429001F040D /* YinMyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YinMyPageViewController.swift; sourceTree = "<group>"; };
 		98D25B752830B6F30030C2D1 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		98D25B772830B7440030C2D1 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		A9319EE8283FA1FB008F8FEA /* YinWeightViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YinWeightViewController+Extension.swift"; sourceTree = "<group>"; };
 		C932CDDFDBAC295AEBE74D20 /* Pods-SamsungHealth-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamsungHealth-iOS.debug.xcconfig"; path = "Target Support Files/Pods-SamsungHealth-iOS/Pods-SamsungHealth-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		DCD77963D8091FC46DD7CF2E /* Pods-SamsungHealth-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamsungHealth-iOS.release.xcconfig"; path = "Target Support Files/Pods-SamsungHealth-iOS/Pods-SamsungHealth-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -371,6 +373,7 @@
 			isa = PBXGroup;
 			children = (
 				98484F66282F923C00D670B8 /* YinWeightViewController+Network.swift */,
+				A9319EE8283FA1FB008F8FEA /* YinWeightViewController+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -583,6 +586,7 @@
 				98484F67282F923C00D670B8 /* YinWeightViewController+Network.swift in Sources */,
 				98AC5DCE28322401001F040D /* BabyFitnessViewController.swift in Sources */,
 				98484F7D282F92C000D670B8 /* KmWeightViewController.swift in Sources */,
+				A9319EE9283FA1FB008F8FEA /* YinWeightViewController+Extension.swift in Sources */,
 				98AC5DD528322422001F040D /* YinFitnessViewController.swift in Sources */,
 				98484F47282F903400D670B8 /* BabyWeightViewController+Network.swift in Sources */,
 				98AC5DC328322121001F040D /* YinMainTabBarController.swift in Sources */,

@@ -8,7 +8,7 @@
 import UIKit
 
 protocol BabyWeightViewContollerDelegate {
-    func recordWeight(weight: String)
+    func recordWeight(weight: Float)
 }
 
 class BabyWeightViewController: UIViewController {
@@ -24,6 +24,7 @@ class BabyWeightViewController: UIViewController {
     @IBOutlet weak var bottomView: UIView!
     
     var delegate: BabyWeightViewContollerDelegate?
+    var weight: Float = 0.0
 
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -45,10 +46,8 @@ class BabyWeightViewController: UIViewController {
     // MARK: - @IBAction
     @IBAction func saveButtonDidTap(_ sender: Any) {
         print("저장")
-//        if let text = weightPickerView.text{
-//            delegate?.recordWeight(weight: text)
-//        }
-//        self.dismiss(animated: true, completion: nil)
+        delegate?.recordWeight(weight: weight)
+        self.dismiss(animated: true, completion: nil)
     }
 }
 
@@ -69,10 +68,27 @@ extension BabyWeightViewController: UIPickerViewDelegate, UIPickerViewDataSource
     }
 
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        pickerView.subviews.forEach {
+            $0.backgroundColor = .clear
+        }
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 60))
         label.textAlignment = .center
         label.font = .SshFontH1
+      
         return component == 1 ? "." : "\(row)"
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
+        return 60
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
+        return 30
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        weight = Float(pickerView.selectedRow(inComponent: 0))
+        weight += (Float(pickerView.selectedRow(inComponent: 2)) * 0.1)
     }
 }
 

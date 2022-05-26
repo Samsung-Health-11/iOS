@@ -8,8 +8,8 @@
 import UIKit
 
 class BabyHomeViewController: UIViewController, BabyWeightViewContollerDelegate {
-    func recordWeight(weight: String) {
-        weightLabel.text = weight
+    func recordWeight(weight: Float) {
+        weightLabel.text = String(weight)
     }
     
     // MARK: - @IBOutlet

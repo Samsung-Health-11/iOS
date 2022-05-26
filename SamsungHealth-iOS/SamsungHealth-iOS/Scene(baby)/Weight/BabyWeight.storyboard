@@ -127,6 +127,15 @@
                                                                 <color key="textColor" name="11SshColorBlack1"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALI-Bi-a7G">
+                                                                <rect key="frame" x="310" y="17" width="14" height="19"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="19" id="0eQ-Ho-lP0"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <color key="textColor" name="11SshColorBlack1"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="골격근량" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Tr-10-v8F">
                                                                 <rect key="frame" x="19" y="68" width="52" height="22"/>
                                                                 <constraints>
@@ -136,14 +145,48 @@
                                                                 <color key="textColor" name="11SshColorBlack1"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iy6-YN-lEb">
+                                                                <rect key="frame" x="241" y="46" width="63" height="1"/>
+                                                                <color key="backgroundColor" name="11SshColorGray3"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="63" id="ET0-ye-3sq"/>
+                                                                    <constraint firstAttribute="height" constant="1" id="rW2-rh-3Q1"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kg" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2F-4u-zaA">
+                                                                <rect key="frame" x="307.5" y="67" width="16.5" height="22"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="19" id="1qo-sR-3Iz"/>
+                                                                    <constraint firstAttribute="height" constant="22" id="3ab-i0-QGZ"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <color key="textColor" name="11SshColorBlack1"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gxb-Kn-g4l">
+                                                                <rect key="frame" x="240.5" y="100" width="63" height="1"/>
+                                                                <color key="backgroundColor" name="11SshColorGray3"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="Ux5-S3-soW"/>
+                                                                    <constraint firstAttribute="width" constant="63" id="XKS-n2-V0a"/>
+                                                                </constraints>
+                                                            </view>
                                                         </subviews>
                                                         <color key="backgroundColor" name="11SshColorBgwhite"/>
                                                         <constraints>
+                                                            <constraint firstItem="gxb-Kn-g4l" firstAttribute="top" secondItem="q2F-4u-zaA" secondAttribute="bottom" constant="11" id="0n8-xw-ZE0"/>
+                                                            <constraint firstItem="ALI-Bi-a7G" firstAttribute="leading" secondItem="Iy6-YN-lEb" secondAttribute="trailing" constant="6" id="4Lu-ou-3U0"/>
                                                             <constraint firstItem="3Tr-10-v8F" firstAttribute="leading" secondItem="0jC-zb-4bT" secondAttribute="leading" constant="19" id="5Mj-3R-rnn"/>
+                                                            <constraint firstItem="Iy6-YN-lEb" firstAttribute="top" secondItem="ALI-Bi-a7G" secondAttribute="bottom" constant="10" id="B5P-Y8-HxB"/>
+                                                            <constraint firstItem="q2F-4u-zaA" firstAttribute="leading" secondItem="gxb-Kn-g4l" secondAttribute="trailing" constant="4" id="DKz-9f-G8E"/>
                                                             <constraint firstItem="1RA-94-8AX" firstAttribute="leading" secondItem="0jC-zb-4bT" secondAttribute="leading" constant="19" id="FvE-b8-2jE"/>
+                                                            <constraint firstAttribute="bottom" secondItem="q2F-4u-zaA" secondAttribute="bottom" constant="17" id="PvG-AI-5DQ"/>
+                                                            <constraint firstAttribute="trailing" secondItem="q2F-4u-zaA" secondAttribute="trailing" constant="19" id="VPO-xO-L2h"/>
                                                             <constraint firstAttribute="height" constant="106" id="VxI-9L-4lR"/>
                                                             <constraint firstItem="3Tr-10-v8F" firstAttribute="top" secondItem="1RA-94-8AX" secondAttribute="bottom" constant="31" id="cjx-ed-eqb"/>
+                                                            <constraint firstItem="ALI-Bi-a7G" firstAttribute="top" secondItem="0jC-zb-4bT" secondAttribute="top" constant="17" id="cqP-IJ-nef"/>
                                                             <constraint firstItem="1RA-94-8AX" firstAttribute="top" secondItem="0jC-zb-4bT" secondAttribute="top" constant="15" id="gwb-lP-vIA"/>
+                                                            <constraint firstAttribute="trailing" secondItem="ALI-Bi-a7G" secondAttribute="trailing" constant="19" id="iMD-CG-AH0"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">

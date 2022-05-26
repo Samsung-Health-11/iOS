@@ -7,10 +7,7 @@
 
 import UIKit
 
-class BabyHomeViewController: UIViewController, BabyWeightViewContollerDelegate {
-    func recordWeight(weight: Float) {
-        weightLabel.text = String(weight)
-    }
+class BabyHomeViewController: UIViewController {
     
     // MARK: - @IBOutlet
     @IBOutlet var titleLabel: [UILabel]!
@@ -27,6 +24,7 @@ class BabyHomeViewController: UIViewController, BabyWeightViewContollerDelegate 
         setFont()
     }
     
+    // MARK: - Functions
     func setFont() {
         titleLabel.forEach{ $0.font = .SshFontH3 }
         daliyActivityLabel.forEach{ $0.font = .SshFontB1 }
@@ -38,12 +36,17 @@ class BabyHomeViewController: UIViewController, BabyWeightViewContollerDelegate 
     // MARK: - @IBAction
     @IBAction func weightbtnDidTap(_ sender: Any) {
         guard let babyWeightVC = UIStoryboard(name: "BabyWeight", bundle: nil).instantiateViewController(withIdentifier: "BabyWeightViewController") as? BabyWeightViewController else { return }
-        
         babyWeightVC.delegate = self
 
         babyWeightVC.modalTransitionStyle = .crossDissolve
         babyWeightVC.modalPresentationStyle = .fullScreen
 
         self.present(babyWeightVC, animated: true, completion: nil)
+    }
+}
+
+extension BabyHomeViewController: BabyWeightViewContollerDelegate {
+    func recordWeight(weight: Float) {
+        weightLabel.text = String(weight)
     }
 }

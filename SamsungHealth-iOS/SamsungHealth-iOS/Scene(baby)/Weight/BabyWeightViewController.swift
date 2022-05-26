@@ -13,6 +13,10 @@ protocol BabyWeightViewContollerDelegate {
 
 class BabyWeightViewController: UIViewController {
 
+    // MARK: - Properties
+    var delegate: BabyWeightViewContollerDelegate?
+    var weight: Float = 0.0
+    
     // MARK: - @IBOutlet
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet var DateLabel: [UILabel]!
@@ -22,20 +26,16 @@ class BabyWeightViewController: UIViewController {
     @IBOutlet weak var weightTextField: UITextField!
     @IBOutlet weak var weightPickerView: UIPickerView!
     @IBOutlet weak var bottomView: UIView!
-    
-    var delegate: BabyWeightViewContollerDelegate?
-    var weight: Float = 0.0
 
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.bringSubviewToFront(bottomView)
+        setHierarchy()
         setFont()
-        weightPickerView.delegate = self
-        weightPickerView.dataSource = self
-        
+        setDelegate()
     }
     
+    // MARK: - Functions
     func setFont() {
         titleLabel.font = .SshFontH2
         DateLabel.forEach { $0.font = .SshFontB1 }
@@ -43,9 +43,17 @@ class BabyWeightViewController: UIViewController {
         explainLabel.forEach{ $0.font = .SshFontB3 }
     }
     
+    func setDelegate() {
+        weightPickerView.delegate = self
+        weightPickerView.dataSource = self
+    }
+    
+    func setHierarchy(){
+        self.view.bringSubviewToFront(bottomView)
+    }
+    
     // MARK: - @IBAction
     @IBAction func saveButtonDidTap(_ sender: Any) {
-        print("저장")
         delegate?.recordWeight(weight: weight)
         self.dismiss(animated: true, completion: nil)
     }
@@ -66,16 +74,19 @@ extension BabyWeightViewController: UIPickerViewDelegate, UIPickerViewDataSource
             return 10
         }
     }
-
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
         pickerView.subviews.forEach {
             $0.backgroundColor = .clear
         }
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 60))
         label.textAlignment = .center
         label.font = .SshFontH1
-      
-        return component == 1 ? "." : "\(row)"
+        switch (component) {
+            case 1: label.text = "."
+            default: label.text = "\(row)"
+        }
+        return label
     }
     
     func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {

@@ -15,6 +15,8 @@ final class KmHomeViewController: UIViewController {
     
     // MARK: - IBOutlet
     
+    @IBOutlet weak var sleepBarView: UIView!
+    
     @IBOutlet weak var waterCountLabel: UILabel!
     @IBOutlet weak var waterMinusButton: UIButton!
     @IBOutlet weak var waterPlusButton: UIButton!
@@ -61,6 +63,7 @@ extension KmHomeViewController {
         componentViewCollection.forEach {
             $0.layer.cornerRadius = 20
         }
+        sleepBarView.layer.cornerRadius = 5
     }
     
     private func setLabelUI() {

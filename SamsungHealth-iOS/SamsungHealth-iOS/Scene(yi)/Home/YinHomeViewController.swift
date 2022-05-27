@@ -37,7 +37,7 @@ class YinHomeViewController: UIViewController {
 
     // MARK: - IBAction
     @IBAction func weightBtnDidTap(_ sender: Any) {
-        guard let weightVC = UIStoryboard(name: "YinWeight", bundle: nil).instantiateViewController(withIdentifier: "YinWeightViewController") as? YinWeightViewController else { return }
+        guard let weightVC = UIStoryboard(name: Const.Storyboard.YinWeight, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.YinWeightViewController) as? YinWeightViewController else { return }
         weightVC.modalPresentationStyle = .fullScreen
         present(weightVC, animated: true)
     }

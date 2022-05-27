@@ -443,14 +443,14 @@
                                                             <action selector="waterCountButtonDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="rz5-ck-gMt"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jou-XN-eNF">
-                                                        <rect key="frame" x="20" y="73" width="0.0" height="0.0"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jou-XN-eNF">
+                                                        <rect key="frame" x="20" y="44" width="15" height="29"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                         <color key="textColor" name="11SshColorBlack1"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="잔" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QwS-tA-wxG">
-                                                        <rect key="frame" x="23" y="52" width="12.5" height="17"/>
+                                                        <rect key="frame" x="38" y="52" width="12.5" height="17"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <color key="textColor" name="11SshColorBlack2"/>
                                                         <nil key="highlightedColor"/>
@@ -537,10 +537,22 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <size key="freeformSize" width="414" height="1100"/>
                     <connections>
+                        <outlet property="activityCalorieLabel" destination="ova-Gm-Z13" id="iyp-zA-sC4"/>
+                        <outlet property="activityHourLabel" destination="sgw-CH-MKn" id="mDr-Xm-bjy"/>
+                        <outlet property="activityWalkLabel" destination="zUi-HE-ChT" id="3ju-Qg-56U"/>
+                        <outlet property="foodIntakeLabel" destination="raT-lM-EnT" id="Fb0-8f-E8u"/>
+                        <outlet property="foodTargetLabel" destination="DBB-v6-hql" id="LPp-Hv-CRc"/>
                         <outlet property="sleepBarView" destination="DZ3-e7-Lsq" id="Sea-XZ-xVf"/>
+                        <outlet property="sleepHourLabel" destination="3sh-5i-KYi" id="NXf-P6-d9Q"/>
+                        <outlet property="sleepMinuteLabel" destination="ML3-ZA-6Sb" id="vOe-Tv-7Tr"/>
+                        <outlet property="sleepTimeLabel" destination="u6F-ck-Ms8" id="4a3-Ff-492"/>
+                        <outlet property="walkCountLabel" destination="msn-Qe-bjy" id="I2M-pT-QDm"/>
+                        <outlet property="walkPercentLabel" destination="hi8-Ub-bk7" id="fPf-QA-A29"/>
+                        <outlet property="walkTargetLabel" destination="bea-c0-9Ls" id="mYd-8s-1gf"/>
                         <outlet property="waterCountLabel" destination="Jou-XN-eNF" id="QJQ-lB-wqs"/>
                         <outlet property="waterMinusButton" destination="BCc-K1-eYB" id="jKl-x9-Hai"/>
                         <outlet property="waterPlusButton" destination="ykp-5l-LcN" id="XJe-JO-sfe"/>
+                        <outlet property="weightLabel" destination="FjO-hw-AbI" id="6og-uC-eRe"/>
                         <outletCollection property="componentViewCollection" destination="esI-jS-IqU" collectionClass="NSMutableArray" id="zWb-pP-XKJ"/>
                         <outletCollection property="componentViewCollection" destination="KL9-i3-qbM" collectionClass="NSMutableArray" id="da6-WP-ooT"/>
                         <outletCollection property="componentViewCollection" destination="GvT-RR-BSa" collectionClass="NSMutableArray" id="mX9-z8-vzO"/>
@@ -556,6 +568,18 @@
                         <outletCollection property="titleLabelCollection" destination="nhQ-oz-waz" collectionClass="NSMutableArray" id="J5n-Vo-8nA"/>
                         <outletCollection property="titleLabelCollection" destination="c6G-hU-TmN" collectionClass="NSMutableArray" id="GlL-MC-Idz"/>
                         <outletCollection property="titleLabelCollection" destination="XzF-6M-l5R" collectionClass="NSMutableArray" id="JeY-YB-u5c"/>
+                        <outletCollection property="unitLabelCollection" destination="QwS-tA-wxG" collectionClass="NSMutableArray" id="zDd-BT-HGb"/>
+                        <outletCollection property="unitLabelCollection" destination="byK-I9-Uxe" collectionClass="NSMutableArray" id="5nw-Q3-fg4"/>
+                        <outletCollection property="unitLabelCollection" destination="xNZ-sM-n4W" collectionClass="NSMutableArray" id="AsR-5C-uWJ"/>
+                        <outletCollection property="unitLabelCollection" destination="i3i-IL-huN" collectionClass="NSMutableArray" id="ifD-AP-IGs"/>
+                        <outletCollection property="unitLabelCollection" destination="DBB-v6-hql" collectionClass="NSMutableArray" id="yoB-HO-LdH"/>
+                        <outletCollection property="unitLabelCollection" destination="bea-c0-9Ls" collectionClass="NSMutableArray" id="pr6-HM-mOM"/>
+                        <outletCollection property="resultLabelCollection" destination="msn-Qe-bjy" collectionClass="NSMutableArray" id="zA1-Xm-iBV"/>
+                        <outletCollection property="resultLabelCollection" destination="raT-lM-EnT" collectionClass="NSMutableArray" id="LYG-A9-8uS"/>
+                        <outletCollection property="resultLabelCollection" destination="ML3-ZA-6Sb" collectionClass="NSMutableArray" id="EYc-Si-nZq"/>
+                        <outletCollection property="resultLabelCollection" destination="3sh-5i-KYi" collectionClass="NSMutableArray" id="rEO-B3-FK4"/>
+                        <outletCollection property="resultLabelCollection" destination="FjO-hw-AbI" collectionClass="NSMutableArray" id="lgC-5E-Uje"/>
+                        <outletCollection property="resultLabelCollection" destination="Jou-XN-eNF" collectionClass="NSMutableArray" id="LEE-SG-Ws2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

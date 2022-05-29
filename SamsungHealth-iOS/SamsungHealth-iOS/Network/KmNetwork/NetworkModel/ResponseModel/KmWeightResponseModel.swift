@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+// MARK: - KmWeightResponse
+struct KmWeightResponse: Codable {
+    let status: Int
+    let success: Bool
+    let message: String
+}

@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+// MARK: - KmWaterResponse
+struct KmWaterResponse: Codable {
+    let status: Int
+    let success: Bool
+    let message: String
+    let data: KmWaterResponseData?
+}
+
+// MARK: - DataClass
+struct KmWaterResponseData: Codable {
+    let water: Int
+}

@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+// MARK: - KmWaterRequest
+struct KmWaterRequest: Codable {
+    let type: String
+}

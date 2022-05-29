@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+// MARK: - KmWeightRequest
+struct KmWeightRequest: Codable {
+    let weight: Double
+}

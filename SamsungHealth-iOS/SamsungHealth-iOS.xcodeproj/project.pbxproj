@@ -45,6 +45,30 @@
 		98682C8D2836AD7200DDF9AE /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98682C8C2836AD7200DDF9AE /* UIViewController+.swift */; };
 		98682C982838E49F00DDF9AE /* KmWeightViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98682C972838E49F00DDF9AE /* KmWeightViewController+Extension.swift */; };
 		98682C9A2838F13100DDF9AE /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98682C992838F13100DDF9AE /* UITextField+.swift */; };
+		9891E4F22843BF960098DA62 /* BabyWeightRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891E4F12843BF960098DA62 /* BabyWeightRequestModel.swift */; };
+		9891E4F42843BFA10098DA62 /* BabyWaterRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891E4F32843BFA10098DA62 /* BabyWaterRequestModel.swift */; };
+		9891E4F62843BFAE0098DA62 /* BabyHealthResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891E4F52843BFAE0098DA62 /* BabyHealthResponseModel.swift */; };
+		9891E4F82843BFB70098DA62 /* BabyWeightResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891E4F72843BFB70098DA62 /* BabyWeightResponseModel.swift */; };
+		9891E4FA2843BFD20098DA62 /* BabyWaterResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891E4F92843BFD20098DA62 /* BabyWaterResponseModel.swift */; };
+		9891E4FC2843BFDF0098DA62 /* BabyWeightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891E4FB2843BFDF0098DA62 /* BabyWeightService.swift */; };
+		9891E4FE2843BFE80098DA62 /* BabyHealthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891E4FD2843BFE80098DA62 /* BabyHealthService.swift */; };
+		9891E5002843BFF10098DA62 /* BabyWaterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891E4FF2843BFF10098DA62 /* BabyWaterService.swift */; };
+		9891E5062843C0320098DA62 /* YinHealthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891E5052843C0320098DA62 /* YinHealthService.swift */; };
+		9891E5082843C03C0098DA62 /* YinWeightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891E5072843C03C0098DA62 /* YinWeightService.swift */; };
+		9891E50A2843C0460098DA62 /* YinWaterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891E5092843C0460098DA62 /* YinWaterService.swift */; };
+		9891E5102843C0770098DA62 /* KmHealthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891E50F2843C0770098DA62 /* KmHealthService.swift */; };
+		9891E5122843C0800098DA62 /* KmWeightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891E5112843C0800098DA62 /* KmWeightService.swift */; };
+		9891E5142843C0890098DA62 /* KmWaterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891E5132843C0890098DA62 /* KmWaterService.swift */; };
+		9891E5162843C09B0098DA62 /* YinHealthResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891E5152843C09B0098DA62 /* YinHealthResponseModel.swift */; };
+		9891E5182843C0A40098DA62 /* YinWeightResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891E5172843C0A40098DA62 /* YinWeightResponseModel.swift */; };
+		9891E51A2843C0AB0098DA62 /* YinWaterResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891E5192843C0AB0098DA62 /* YinWaterResponseModel.swift */; };
+		9891E51C2843C0B50098DA62 /* KmHealthResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891E51B2843C0B50098DA62 /* KmHealthResponseModel.swift */; };
+		9891E51E2843C0BB0098DA62 /* KmWeightResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891E51D2843C0BB0098DA62 /* KmWeightResponseModel.swift */; };
+		9891E5202843C0C30098DA62 /* KmWaterResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891E51F2843C0C30098DA62 /* KmWaterResponseModel.swift */; };
+		9891E5222843C0D40098DA62 /* KmWeightRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891E5212843C0D40098DA62 /* KmWeightRequestModel.swift */; };
+		9891E5242843C0DE0098DA62 /* KmWaterRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891E5232843C0DE0098DA62 /* KmWaterRequestModel.swift */; };
+		9891E5262843C0E90098DA62 /* YinWeightRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891E5252843C0E90098DA62 /* YinWeightRequestModel.swift */; };
+		9891E5282843C0F40098DA62 /* YinWaterRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891E5272843C0F40098DA62 /* YinWaterRequestModel.swift */; };
 		98AC5DBF28322105001F040D /* BabyMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98AC5DBE28322105001F040D /* BabyMain.storyboard */; };
 		98AC5DC128322117001F040D /* BabyMainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AC5DC028322117001F040D /* BabyMainTabBarController.swift */; };
 		98AC5DC328322121001F040D /* YinMainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AC5DC228322121001F040D /* YinMainTabBarController.swift */; };
@@ -103,6 +127,30 @@
 		98682C8C2836AD7200DDF9AE /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		98682C972838E49F00DDF9AE /* KmWeightViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KmWeightViewController+Extension.swift"; sourceTree = "<group>"; };
 		98682C992838F13100DDF9AE /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
+		9891E4F12843BF960098DA62 /* BabyWeightRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyWeightRequestModel.swift; sourceTree = "<group>"; };
+		9891E4F32843BFA10098DA62 /* BabyWaterRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyWaterRequestModel.swift; sourceTree = "<group>"; };
+		9891E4F52843BFAE0098DA62 /* BabyHealthResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyHealthResponseModel.swift; sourceTree = "<group>"; };
+		9891E4F72843BFB70098DA62 /* BabyWeightResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyWeightResponseModel.swift; sourceTree = "<group>"; };
+		9891E4F92843BFD20098DA62 /* BabyWaterResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyWaterResponseModel.swift; sourceTree = "<group>"; };
+		9891E4FB2843BFDF0098DA62 /* BabyWeightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyWeightService.swift; sourceTree = "<group>"; };
+		9891E4FD2843BFE80098DA62 /* BabyHealthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyHealthService.swift; sourceTree = "<group>"; };
+		9891E4FF2843BFF10098DA62 /* BabyWaterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyWaterService.swift; sourceTree = "<group>"; };
+		9891E5052843C0320098DA62 /* YinHealthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YinHealthService.swift; sourceTree = "<group>"; };
+		9891E5072843C03C0098DA62 /* YinWeightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YinWeightService.swift; sourceTree = "<group>"; };
+		9891E5092843C0460098DA62 /* YinWaterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YinWaterService.swift; sourceTree = "<group>"; };
+		9891E50F2843C0770098DA62 /* KmHealthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KmHealthService.swift; sourceTree = "<group>"; };
+		9891E5112843C0800098DA62 /* KmWeightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KmWeightService.swift; sourceTree = "<group>"; };
+		9891E5132843C0890098DA62 /* KmWaterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KmWaterService.swift; sourceTree = "<group>"; };
+		9891E5152843C09B0098DA62 /* YinHealthResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YinHealthResponseModel.swift; sourceTree = "<group>"; };
+		9891E5172843C0A40098DA62 /* YinWeightResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YinWeightResponseModel.swift; sourceTree = "<group>"; };
+		9891E5192843C0AB0098DA62 /* YinWaterResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YinWaterResponseModel.swift; sourceTree = "<group>"; };
+		9891E51B2843C0B50098DA62 /* KmHealthResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KmHealthResponseModel.swift; sourceTree = "<group>"; };
+		9891E51D2843C0BB0098DA62 /* KmWeightResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KmWeightResponseModel.swift; sourceTree = "<group>"; };
+		9891E51F2843C0C30098DA62 /* KmWaterResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KmWaterResponseModel.swift; sourceTree = "<group>"; };
+		9891E5212843C0D40098DA62 /* KmWeightRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KmWeightRequestModel.swift; sourceTree = "<group>"; };
+		9891E5232843C0DE0098DA62 /* KmWaterRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KmWaterRequestModel.swift; sourceTree = "<group>"; };
+		9891E5252843C0E90098DA62 /* YinWeightRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YinWeightRequestModel.swift; sourceTree = "<group>"; };
+		9891E5272843C0F40098DA62 /* YinWaterRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YinWaterRequestModel.swift; sourceTree = "<group>"; };
 		98AC5DBE28322105001F040D /* BabyMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BabyMain.storyboard; sourceTree = "<group>"; };
 		98AC5DC028322117001F040D /* BabyMainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyMainTabBarController.swift; sourceTree = "<group>"; };
 		98AC5DC228322121001F040D /* YinMainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YinMainTabBarController.swift; sourceTree = "<group>"; };
@@ -232,6 +280,9 @@
 		98484F1F282F8D9400D670B8 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				9891E4E82843BE950098DA62 /* BabyNetwork */,
+				9891E4E92843BEA50098DA62 /* YinNetwork */,
+				9891E4EA2843BEAB0098DA62 /* KmNetwork */,
 				98484F942830AF7A00D670B8 /* Base */,
 			);
 			path = Network;
@@ -417,6 +468,147 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		9891E4E82843BE950098DA62 /* BabyNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				9891E4EB2843BED00098DA62 /* NetworkModel */,
+				9891E4EC2843BEDB0098DA62 /* NetworkService */,
+			);
+			path = BabyNetwork;
+			sourceTree = "<group>";
+		};
+		9891E4E92843BEA50098DA62 /* YinNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				9891E5022843C0090098DA62 /* NetworkModel */,
+				9891E5012843C0020098DA62 /* NetworkService */,
+			);
+			path = YinNetwork;
+			sourceTree = "<group>";
+		};
+		9891E4EA2843BEAB0098DA62 /* KmNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				9891E50C2843C0570098DA62 /* NetworkModel */,
+				9891E50B2843C04F0098DA62 /* NetworkService */,
+			);
+			path = KmNetwork;
+			sourceTree = "<group>";
+		};
+		9891E4EB2843BED00098DA62 /* NetworkModel */ = {
+			isa = PBXGroup;
+			children = (
+				9891E4ED2843BEEC0098DA62 /* RequestModel */,
+				9891E4EE2843BEF20098DA62 /* ResponseModel */,
+			);
+			path = NetworkModel;
+			sourceTree = "<group>";
+		};
+		9891E4EC2843BEDB0098DA62 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				9891E4FD2843BFE80098DA62 /* BabyHealthService.swift */,
+				9891E4FB2843BFDF0098DA62 /* BabyWeightService.swift */,
+				9891E4FF2843BFF10098DA62 /* BabyWaterService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		9891E4ED2843BEEC0098DA62 /* RequestModel */ = {
+			isa = PBXGroup;
+			children = (
+				9891E4F12843BF960098DA62 /* BabyWeightRequestModel.swift */,
+				9891E4F32843BFA10098DA62 /* BabyWaterRequestModel.swift */,
+			);
+			path = RequestModel;
+			sourceTree = "<group>";
+		};
+		9891E4EE2843BEF20098DA62 /* ResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+				9891E4F52843BFAE0098DA62 /* BabyHealthResponseModel.swift */,
+				9891E4F72843BFB70098DA62 /* BabyWeightResponseModel.swift */,
+				9891E4F92843BFD20098DA62 /* BabyWaterResponseModel.swift */,
+			);
+			path = ResponseModel;
+			sourceTree = "<group>";
+		};
+		9891E5012843C0020098DA62 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				9891E5052843C0320098DA62 /* YinHealthService.swift */,
+				9891E5072843C03C0098DA62 /* YinWeightService.swift */,
+				9891E5092843C0460098DA62 /* YinWaterService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		9891E5022843C0090098DA62 /* NetworkModel */ = {
+			isa = PBXGroup;
+			children = (
+				9891E5042843C0230098DA62 /* RequestModel */,
+				9891E5032843C01D0098DA62 /* ResponseModel */,
+			);
+			path = NetworkModel;
+			sourceTree = "<group>";
+		};
+		9891E5032843C01D0098DA62 /* ResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+				9891E5152843C09B0098DA62 /* YinHealthResponseModel.swift */,
+				9891E5172843C0A40098DA62 /* YinWeightResponseModel.swift */,
+				9891E5192843C0AB0098DA62 /* YinWaterResponseModel.swift */,
+			);
+			path = ResponseModel;
+			sourceTree = "<group>";
+		};
+		9891E5042843C0230098DA62 /* RequestModel */ = {
+			isa = PBXGroup;
+			children = (
+				9891E5252843C0E90098DA62 /* YinWeightRequestModel.swift */,
+				9891E5272843C0F40098DA62 /* YinWaterRequestModel.swift */,
+			);
+			path = RequestModel;
+			sourceTree = "<group>";
+		};
+		9891E50B2843C04F0098DA62 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				9891E50F2843C0770098DA62 /* KmHealthService.swift */,
+				9891E5112843C0800098DA62 /* KmWeightService.swift */,
+				9891E5132843C0890098DA62 /* KmWaterService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		9891E50C2843C0570098DA62 /* NetworkModel */ = {
+			isa = PBXGroup;
+			children = (
+				9891E50E2843C0620098DA62 /* RequestModel */,
+				9891E50D2843C05B0098DA62 /* ResponseModel */,
+			);
+			path = NetworkModel;
+			sourceTree = "<group>";
+		};
+		9891E50D2843C05B0098DA62 /* ResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+				9891E51B2843C0B50098DA62 /* KmHealthResponseModel.swift */,
+				9891E51D2843C0BB0098DA62 /* KmWeightResponseModel.swift */,
+				9891E51F2843C0C30098DA62 /* KmWaterResponseModel.swift */,
+			);
+			path = ResponseModel;
+			sourceTree = "<group>";
+		};
+		9891E50E2843C0620098DA62 /* RequestModel */ = {
+			isa = PBXGroup;
+			children = (
+				9891E5212843C0D40098DA62 /* KmWeightRequestModel.swift */,
+				9891E5232843C0DE0098DA62 /* KmWaterRequestModel.swift */,
+			);
+			path = RequestModel;
+			sourceTree = "<group>";
+		};
 		98AC5DCA283223CB001F040D /* TabVCs */ = {
 			isa = PBXGroup;
 			children = (
@@ -566,18 +758,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				98484F89282F943800D670B8 /* UIFont+.swift in Sources */,
+				9891E5162843C09B0098DA62 /* YinHealthResponseModel.swift in Sources */,
+				9891E4F42843BFA10098DA62 /* BabyWaterRequestModel.swift in Sources */,
 				98484F912830A6F100D670B8 /* Image.swift in Sources */,
+				9891E51A2843C0AB0098DA62 /* YinWaterResponseModel.swift in Sources */,
+				9891E5002843BFF10098DA62 /* BabyWaterService.swift in Sources */,
 				98AC5DCC283223F7001F040D /* BabyTogetherViewController.swift in Sources */,
 				98484FA22830B06500D670B8 /* NetworkResult.swift in Sources */,
 				98484F83282F92DC00D670B8 /* KmWeightViewController+Network.swift in Sources */,
 				98484F03282F8B1600D670B8 /* AppDelegate.swift in Sources */,
 				98484F57282F91E500D670B8 /* YinHomeViewController.swift in Sources */,
 				98484F4D282F913000D670B8 /* BabyHomeViewController.swift in Sources */,
+				9891E5182843C0A40098DA62 /* YinWeightResponseModel.swift in Sources */,
 				98682C8D2836AD7200DDF9AE /* UIViewController+.swift in Sources */,
 				98484F79282F92AB00D670B8 /* KmHomeViewController+Network.swift in Sources */,
+				9891E4FC2843BFDF0098DA62 /* BabyWeightService.swift in Sources */,
 				98484F4F282F913B00D670B8 /* BabyWeightViewController.swift in Sources */,
+				9891E5122843C0800098DA62 /* KmWeightService.swift in Sources */,
 				98484F05282F8B1600D670B8 /* SceneDelegate.swift in Sources */,
+				9891E5102843C0770098DA62 /* KmHealthService.swift in Sources */,
 				98D25B782830B7440030C2D1 /* UIColor+.swift in Sources */,
+				9891E4F82843BFB70098DA62 /* BabyWeightResponseModel.swift in Sources */,
 				98484FA42830B08A00D670B8 /* URLConstant.swift in Sources */,
 				98AC5DD728322429001F040D /* YinMyPageViewController.swift in Sources */,
 				98AC5DD32832241B001F040D /* YinTogetherViewController.swift in Sources */,
@@ -585,21 +786,36 @@
 				98682C982838E49F00DDF9AE /* KmWeightViewController+Extension.swift in Sources */,
 				98484F67282F923C00D670B8 /* YinWeightViewController+Network.swift in Sources */,
 				98AC5DCE28322401001F040D /* BabyFitnessViewController.swift in Sources */,
+				9891E4F62843BFAE0098DA62 /* BabyHealthResponseModel.swift in Sources */,
 				98484F7D282F92C000D670B8 /* KmWeightViewController.swift in Sources */,
+				9891E5062843C0320098DA62 /* YinHealthService.swift in Sources */,
+				9891E5202843C0C30098DA62 /* KmWaterResponseModel.swift in Sources */,
+				9891E5142843C0890098DA62 /* KmWaterService.swift in Sources */,
 				A9319EE9283FA1FB008F8FEA /* YinWeightViewController+Extension.swift in Sources */,
 				98AC5DD528322422001F040D /* YinFitnessViewController.swift in Sources */,
 				98484F47282F903400D670B8 /* BabyWeightViewController+Network.swift in Sources */,
+				9891E50A2843C0460098DA62 /* YinWaterService.swift in Sources */,
+				9891E4FA2843BFD20098DA62 /* BabyWaterResponseModel.swift in Sources */,
 				98AC5DC328322121001F040D /* YinMainTabBarController.swift in Sources */,
+				9891E5222843C0D40098DA62 /* KmWeightRequestModel.swift in Sources */,
+				9891E5242843C0DE0098DA62 /* KmWaterRequestModel.swift in Sources */,
+				9891E5282843C0F40098DA62 /* YinWaterRequestModel.swift in Sources */,
 				98484F73282F928600D670B8 /* KmHomeViewController.swift in Sources */,
+				9891E51C2843C0B50098DA62 /* KmHealthResponseModel.swift in Sources */,
 				98484F61282F921E00D670B8 /* YinWeightViewController.swift in Sources */,
+				9891E4F22843BF960098DA62 /* BabyWeightRequestModel.swift in Sources */,
 				98484F8D2830A54300D670B8 /* ViewController.swift in Sources */,
+				9891E5262843C0E90098DA62 /* YinWeightRequestModel.swift in Sources */,
 				98484FA02830B03E00D670B8 /* NetworkConstant.swift in Sources */,
 				98AC5DD02832240A001F040D /* BabyMyPageViewController.swift in Sources */,
+				9891E4FE2843BFE80098DA62 /* BabyHealthService.swift in Sources */,
 				98484F39282F8F5B00D670B8 /* Const.swift in Sources */,
 				98AC5DC128322117001F040D /* BabyMainTabBarController.swift in Sources */,
 				98484F8F2830A54900D670B8 /* Storyboard.swift in Sources */,
+				9891E51E2843C0BB0098DA62 /* KmWeightResponseModel.swift in Sources */,
 				98484F5D282F920700D670B8 /* YinHomeViewController+Network.swift in Sources */,
 				98AC5DC728322139001F040D /* KmMainTabBarController.swift in Sources */,
+				9891E5082843C03C0098DA62 /* YinWeightService.swift in Sources */,
 				98484F3F282F8FA500D670B8 /* BabyHomeViewController+Network.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -23,18 +23,21 @@ class BabyWeightViewController: UIViewController {
     @IBOutlet var subTitleLabel: [UILabel]!
     @IBOutlet var explainLabel: [UILabel]!
     @IBOutlet weak var buttonView: UIView!
-    @IBOutlet weak var weightTextField: UITextField!
     @IBOutlet weak var weightPickerView: UIPickerView!
     @IBOutlet weak var bottomView: UIView!
-
+    @IBOutlet weak var fatPercentTextField: UITextField!
+    @IBOutlet weak var muscleTextField: UITextField!
+    @IBOutlet weak var memoTextField: UITextField!
+    
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setHierarchy()
         setFont()
         setDelegate()
+        setKeyboardObserver()
     }
-    
+
     // MARK: - Functions
     func setFont() {
         titleLabel.font = .SshFontH2
@@ -51,11 +54,32 @@ class BabyWeightViewController: UIViewController {
     func setHierarchy(){
         self.view.bringSubviewToFront(bottomView)
     }
-    
+
     // MARK: - @IBAction
     @IBAction func saveButtonDidTap(_ sender: Any) {
         delegate?.recordWeight(weight: weight)
         self.dismiss(animated: true, completion: nil)
+    }
+}
+
+extension BabyWeightViewController: UITextFieldDelegate {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    @objc override func keyboardWillShow(notification: NSNotification) {
+        if let keyboardFrame: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
+            let keyboardHeight = keyboardFrame.cgRectValue.height
+            self.view.window?.frame.origin.y = (keyboardHeight * -1)
+        }
+    }
+    
+    @objc override func keyboardWillHide(notification: NSNotification) {
+        if self.view.window?.frame.origin.y != 0 {
+            if let keyboardFrame: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
+                self.view.window?.frame.origin.y = 0
+            }
+        }
     }
 }
 

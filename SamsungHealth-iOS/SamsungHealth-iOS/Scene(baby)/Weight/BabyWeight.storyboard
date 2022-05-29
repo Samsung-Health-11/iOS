@@ -171,13 +171,33 @@
                                                                     <constraint firstAttribute="width" constant="63" id="XKS-n2-V0a"/>
                                                                 </constraints>
                                                             </view>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rmT-v5-mgb">
+                                                                <rect key="frame" x="241" y="15.5" width="63" height="22"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="22" id="DW8-dx-N4b"/>
+                                                                    <constraint firstAttribute="width" constant="63" id="nfx-DV-ckc"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n8O-HR-ltg">
+                                                                <rect key="frame" x="238.5" y="67" width="63" height="22"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="22" id="9gW-gp-yoT"/>
+                                                                    <constraint firstAttribute="width" constant="63" id="r23-HM-686"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                            </textField>
                                                         </subviews>
                                                         <color key="backgroundColor" name="11SshColorBgwhite"/>
                                                         <constraints>
                                                             <constraint firstItem="gxb-Kn-g4l" firstAttribute="top" secondItem="q2F-4u-zaA" secondAttribute="bottom" constant="11" id="0n8-xw-ZE0"/>
                                                             <constraint firstItem="ALI-Bi-a7G" firstAttribute="leading" secondItem="Iy6-YN-lEb" secondAttribute="trailing" constant="6" id="4Lu-ou-3U0"/>
                                                             <constraint firstItem="3Tr-10-v8F" firstAttribute="leading" secondItem="0jC-zb-4bT" secondAttribute="leading" constant="19" id="5Mj-3R-rnn"/>
+                                                            <constraint firstItem="rmT-v5-mgb" firstAttribute="centerY" secondItem="ALI-Bi-a7G" secondAttribute="centerY" id="71A-bV-xQ5"/>
                                                             <constraint firstItem="Iy6-YN-lEb" firstAttribute="top" secondItem="ALI-Bi-a7G" secondAttribute="bottom" constant="10" id="B5P-Y8-HxB"/>
+                                                            <constraint firstItem="ALI-Bi-a7G" firstAttribute="leading" secondItem="rmT-v5-mgb" secondAttribute="trailing" constant="6" id="C72-TR-GQT"/>
                                                             <constraint firstItem="q2F-4u-zaA" firstAttribute="leading" secondItem="gxb-Kn-g4l" secondAttribute="trailing" constant="4" id="DKz-9f-G8E"/>
                                                             <constraint firstItem="1RA-94-8AX" firstAttribute="leading" secondItem="0jC-zb-4bT" secondAttribute="leading" constant="19" id="FvE-b8-2jE"/>
                                                             <constraint firstAttribute="bottom" secondItem="q2F-4u-zaA" secondAttribute="bottom" constant="17" id="PvG-AI-5DQ"/>
@@ -187,6 +207,8 @@
                                                             <constraint firstItem="ALI-Bi-a7G" firstAttribute="top" secondItem="0jC-zb-4bT" secondAttribute="top" constant="17" id="cqP-IJ-nef"/>
                                                             <constraint firstItem="1RA-94-8AX" firstAttribute="top" secondItem="0jC-zb-4bT" secondAttribute="top" constant="15" id="gwb-lP-vIA"/>
                                                             <constraint firstAttribute="trailing" secondItem="ALI-Bi-a7G" secondAttribute="trailing" constant="19" id="iMD-CG-AH0"/>
+                                                            <constraint firstItem="q2F-4u-zaA" firstAttribute="leading" secondItem="n8O-HR-ltg" secondAttribute="trailing" constant="6" id="lli-eV-4ou"/>
+                                                            <constraint firstItem="n8O-HR-ltg" firstAttribute="centerY" secondItem="q2F-4u-zaA" secondAttribute="centerY" id="svI-xr-ps6"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -203,27 +225,29 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rKy-iA-IvW">
                                                         <rect key="frame" x="0.0" y="453.5" width="343" height="52"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메모" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Maj-np-AiS">
-                                                                <rect key="frame" x="47" y="17" width="26" height="18"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                                <color key="textColor" name="11SshColorBlack1"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sshMemo" translatesAutoresizingMaskIntoConstraints="NO" id="Xr9-vo-vrp">
                                                                 <rect key="frame" x="20" y="19" width="12" height="14"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="14" id="EJ1-2c-LOA"/>
                                                                 </constraints>
                                                             </imageView>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="메모" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VJP-uS-2T3">
+                                                                <rect key="frame" x="47" y="10" width="286" height="32"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
                                                         </subviews>
                                                         <color key="backgroundColor" name="11SshColorBgwhite"/>
                                                         <constraints>
-                                                            <constraint firstItem="Maj-np-AiS" firstAttribute="centerY" secondItem="rKy-iA-IvW" secondAttribute="centerY" id="4mF-pS-0FU"/>
                                                             <constraint firstAttribute="bottom" secondItem="Xr9-vo-vrp" secondAttribute="bottom" constant="19" id="Fmg-qd-6X0"/>
                                                             <constraint firstAttribute="height" constant="52" id="JLu-Jz-L0G"/>
-                                                            <constraint firstItem="Maj-np-AiS" firstAttribute="leading" secondItem="Xr9-vo-vrp" secondAttribute="trailing" constant="15" id="T3r-mc-7gs"/>
+                                                            <constraint firstItem="VJP-uS-2T3" firstAttribute="centerY" secondItem="Xr9-vo-vrp" secondAttribute="centerY" id="Q3T-OV-hHu"/>
                                                             <constraint firstItem="Xr9-vo-vrp" firstAttribute="leading" secondItem="rKy-iA-IvW" secondAttribute="leading" constant="20" id="TeT-wG-g6t"/>
                                                             <constraint firstItem="Xr9-vo-vrp" firstAttribute="top" secondItem="rKy-iA-IvW" secondAttribute="top" constant="19" id="UpO-y5-00X"/>
+                                                            <constraint firstAttribute="bottom" secondItem="VJP-uS-2T3" secondAttribute="bottom" constant="10" id="dNr-ci-BMM"/>
+                                                            <constraint firstItem="VJP-uS-2T3" firstAttribute="leading" secondItem="Xr9-vo-vrp" secondAttribute="trailing" constant="15" id="fci-dg-S3T"/>
+                                                            <constraint firstAttribute="trailing" secondItem="VJP-uS-2T3" secondAttribute="trailing" constant="10" id="ggQ-Or-cwK"/>
+                                                            <constraint firstItem="VJP-uS-2T3" firstAttribute="top" secondItem="rKy-iA-IvW" secondAttribute="top" constant="10" id="xHq-5B-1Qi"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -263,6 +287,7 @@
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" name="11SshColorBggray"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="Z7u-9B-iOx" secondAttribute="trailing" constant="82" id="07o-0v-a9x"/>
                                             <constraint firstItem="fdt-Tk-VEK" firstAttribute="leading" secondItem="OHX-zo-ttk" secondAttribute="leading" constant="16" id="1vh-U1-CBC"/>
@@ -290,6 +315,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="11SshColorBggray"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="NgJ-sa-Cqg" secondAttribute="trailing" id="7OH-RM-pWj"/>
                             <constraint firstItem="NgJ-sa-Cqg" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="7aU-3G-e75"/>
@@ -304,13 +330,15 @@
                     <connections>
                         <outlet property="bottomView" destination="f6S-Ng-Bfs" id="nDd-Jv-N7H"/>
                         <outlet property="buttonView" destination="oNo-DI-UXY" id="6zj-N2-9Zw"/>
+                        <outlet property="fatPercentTextField" destination="rmT-v5-mgb" id="EIP-Fq-AEr"/>
+                        <outlet property="memoTextField" destination="VJP-uS-2T3" id="8VD-5g-gFL"/>
+                        <outlet property="muscleTextField" destination="n8O-HR-ltg" id="fAc-SN-rlx"/>
                         <outlet property="titleLabel" destination="oNo-DI-UXY" id="cyo-Sg-9lF"/>
                         <outlet property="weightPickerView" destination="OPN-Dy-oUd" id="xEd-dh-DPL"/>
                         <outletCollection property="DateLabel" destination="fyl-2T-7zI" collectionClass="NSMutableArray" id="c9Q-kG-sSv"/>
                         <outletCollection property="subTitleLabel" destination="ter-cc-ODj" collectionClass="NSMutableArray" id="D0F-QJ-dcA"/>
                         <outletCollection property="subTitleLabel" destination="1RA-94-8AX" collectionClass="NSMutableArray" id="MCr-xu-hM1"/>
                         <outletCollection property="subTitleLabel" destination="3Tr-10-v8F" collectionClass="NSMutableArray" id="ogI-oN-niJ"/>
-                        <outletCollection property="subTitleLabel" destination="Maj-np-AiS" collectionClass="NSMutableArray" id="WlA-cj-Fyt"/>
                         <outletCollection property="explainLabel" destination="2ZO-ee-xqm" collectionClass="NSMutableArray" id="Dkw-lB-FZQ"/>
                     </connections>
                 </viewController>

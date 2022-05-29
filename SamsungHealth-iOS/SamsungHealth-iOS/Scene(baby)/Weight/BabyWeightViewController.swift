@@ -16,7 +16,6 @@ class BabyWeightViewController: UIViewController {
     // MARK: - Properties
     var delegate: BabyWeightViewContollerDelegate?
     var weight: Float = 0.0
-    var restoreFrameValue: CGFloat = 0.0
     
     // MARK: - @IBOutlet
     @IBOutlet weak var titleLabel: UILabel!

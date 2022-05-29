@@ -16,6 +16,7 @@ class BabyWeightViewController: UIViewController {
     // MARK: - Properties
     var delegate: BabyWeightViewContollerDelegate?
     var weight: Float = 0.0
+    var restoreFrameValue: CGFloat = 0.0
     
     // MARK: - @IBOutlet
     @IBOutlet weak var titleLabel: UILabel!
@@ -35,8 +36,9 @@ class BabyWeightViewController: UIViewController {
         setHierarchy()
         setFont()
         setDelegate()
+        setKeyboardObserver()
     }
-    
+
     // MARK: - Functions
     func setFont() {
         titleLabel.font = .SshFontH2
@@ -53,11 +55,32 @@ class BabyWeightViewController: UIViewController {
     func setHierarchy(){
         self.view.bringSubviewToFront(bottomView)
     }
-    
+
     // MARK: - @IBAction
     @IBAction func saveButtonDidTap(_ sender: Any) {
         delegate?.recordWeight(weight: weight)
         self.dismiss(animated: true, completion: nil)
+    }
+}
+
+extension BabyWeightViewController: UITextFieldDelegate {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    @objc override func keyboardWillShow(notification: NSNotification) {
+        if let keyboardFrame: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
+            let keyboardHeight = keyboardFrame.cgRectValue.height
+            self.view.window?.frame.origin.y = (keyboardHeight * -1)
+        }
+    }
+    
+    @objc override func keyboardWillHide(notification: NSNotification) {
+        if self.view.window?.frame.origin.y != 0 {
+            if let keyboardFrame: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
+                self.view.window?.frame.origin.y = 0
+            }
+        }
     }
 }
 

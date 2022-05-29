@@ -8,6 +8,5 @@
 import Foundation
 
 struct NetworkConstant {
-    
     static let noTokenHeader = ["Content-Type": "application/json"]
 }

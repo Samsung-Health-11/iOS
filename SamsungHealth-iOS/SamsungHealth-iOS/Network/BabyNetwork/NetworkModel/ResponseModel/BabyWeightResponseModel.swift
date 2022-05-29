@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct BabyWeightResponseModel: Codable {
+    let status: Int
+    let success: Bool
+    let message: String
+}

@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct BabyWaterRequestModel: Codable {
+    let type: String
+}

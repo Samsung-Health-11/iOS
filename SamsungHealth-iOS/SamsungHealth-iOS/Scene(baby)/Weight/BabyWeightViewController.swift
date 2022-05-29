@@ -23,10 +23,12 @@ class BabyWeightViewController: UIViewController {
     @IBOutlet var subTitleLabel: [UILabel]!
     @IBOutlet var explainLabel: [UILabel]!
     @IBOutlet weak var buttonView: UIView!
-    @IBOutlet weak var weightTextField: UITextField!
     @IBOutlet weak var weightPickerView: UIPickerView!
     @IBOutlet weak var bottomView: UIView!
-
+    @IBOutlet weak var fatPercentTextField: UITextField!
+    @IBOutlet weak var muscleTextField: UITextField!
+    @IBOutlet weak var memoTextField: UITextField!
+    
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()

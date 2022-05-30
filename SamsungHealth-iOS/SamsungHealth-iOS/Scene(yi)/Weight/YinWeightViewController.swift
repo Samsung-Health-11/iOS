@@ -11,7 +11,7 @@ class YinWeightViewController: UIViewController {
     
     // MARK: - Properties
     
-    var weight = Float(0.0)
+    var weight = Double(0.0)
     
     // MARK: - IBOutlet
     
@@ -25,6 +25,7 @@ class YinWeightViewController: UIViewController {
     @IBOutlet weak var weightPickerView: UIPickerView!
     @IBOutlet weak var weightTextField: UITextField!
     @IBOutlet weak var muscleTextField: UITextField!
+    @IBOutlet weak var memoTextField: UITextField!
     
     // MARK: - VC Life Cycle (or Cell Life Cycle)
     
@@ -61,6 +62,7 @@ class YinWeightViewController: UIViewController {
         msgLabels.forEach { $0.font = .SshFontB3 }
         titleLabels.forEach { $0.font = .NotoSans(.medium, size: 15) }
         typeLabels.forEach { $0.font = .NotoSans(.medium, size: 13)}
+        memoTextField.font = .NotoSans(.medium, size: 15)
     }
     
     private func initPickerView() {
@@ -82,8 +84,19 @@ class YinWeightViewController: UIViewController {
         }
     }
     
-    // MARK: - objc Function
     // MARK: - IBAction
+    @IBAction func cancelWeightBtnDidTap(_ sender: Any) {
+        dismiss(animated: true)
+    }
+    
+    @IBAction func addWeightBtnDidTap(_ sender: Any) {
+        postWeight(YinWeightRequestModel(
+            weight: weight,
+            fatPercent: Double(weightTextField.text ?? ""),
+            muscle: Double(muscleTextField.text ?? ""),
+            memo: memoTextField.text)
+        )
+    }
     
 }
 
@@ -117,8 +130,7 @@ extension YinWeightViewController: UIPickerViewDelegate, UIPickerViewDataSource 
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        weight = Float(pickerView.selectedRow(inComponent: 0))
-        weight += (Float(pickerView.selectedRow(inComponent: 2)) * 0.1)
+        weight = Double(pickerView.selectedRow(inComponent: 0))
+        weight += (Double(pickerView.selectedRow(inComponent: 2)) * 0.1)
     }
-    
 }

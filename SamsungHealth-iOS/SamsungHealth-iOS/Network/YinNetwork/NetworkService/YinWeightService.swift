@@ -5,4 +5,55 @@
 //  Created by 이경민 on 2022/05/29.
 //
 
-import Foundation
+import Alamofire
+
+class YinWeightService {
+    static let shared = YinWeightService()
+    
+    private init() {}
+    
+    func healthWeight(weightData: YinWeightRequestModel,
+                      completion: @escaping (NetworkResult<Any>) -> Void)
+    {
+        let url = URLConstant.healthWeight
+        let header: HTTPHeaders = ["Content-Type" : "application/json"]
+        
+        let body: Parameters = [
+            "weight": weightData.weight,
+            "fatPercent": weightData.fatPercent ?? "",
+            "muscle": weightData.muscle ?? "",
+            "memo": weightData.memo ?? ""
+        ]
+        
+        let dataRequest = AF.request(url,
+                                     method: .post,
+                                     parameters: body,
+                                     encoding: JSONEncoding.default,
+                                     headers: header)
+        
+        dataRequest.responseData { response in
+            switch response.result {
+            case .success:
+                guard let statusCode = response.response?.statusCode else { return }
+                guard let value = response.value else { return }
+                let networkResult = self.judgeStatus(by: statusCode, value)
+                completion(networkResult)
+            case .failure:
+                completion(.networkFail)
+            }
+        }
+    }
+    
+    func judgeStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
+        let decoder = JSONDecoder()
+        guard let decodedData = try? decoder.decode(YinWeightResponseModel.self, from: data)
+        else { return .pathErr }
+        
+        switch statusCode {
+        case 200 ..< 300: return .success(decodedData)
+        case 401 ..< 500: return .requestErr(decodedData)
+        case 500: return .serverErr
+        default: return .networkFail
+        }
+    }
+}

@@ -31,10 +31,13 @@ class YinHomeViewController: UIViewController {
     
     // MARK: - VC Life Cycle (or Cell Life Cycle)
     
+    override func viewWillAppear(_ animated: Bool) {
+        getHealth()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
-        getHealth()
     }
     
     // MARK: - Function

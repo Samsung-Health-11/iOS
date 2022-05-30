@@ -9,6 +9,9 @@ import UIKit
 
 class YinHomeViewController: UIViewController {
     
+    // MARK: - Properties
+    var weight = Double(0.0)
+    
     // MARK: - IBOutlet
     
     @IBOutlet var titleLabels: [UILabel]!
@@ -63,7 +66,8 @@ class YinHomeViewController: UIViewController {
         sleepHourLabel.text = "\(data.sleep.hour)"
         sleepMinuteLabel.text = "\(data.sleep.minute)"
         sleepTimeLabel.text = "\(data.sleep.time)"
-        weightLabel.text = "\(data.weight ?? 0.0)"
+        weight = data.weight ?? 0.0
+        weightLabel.text = "\(weight)"
         waterLabel.text = "\(data.water)"
     }
 
@@ -71,6 +75,7 @@ class YinHomeViewController: UIViewController {
     @IBAction func weightBtnDidTap(_ sender: Any) {
         guard let weightVC = UIStoryboard(name: Const.Storyboard.YinWeight, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.YinWeightViewController) as? YinWeightViewController else { return }
         weightVC.modalPresentationStyle = .fullScreen
+        weightVC.weight = weight
         present(weightVC, animated: true)
     }
 }

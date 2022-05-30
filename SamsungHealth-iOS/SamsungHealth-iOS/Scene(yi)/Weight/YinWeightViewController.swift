@@ -67,6 +67,10 @@ class YinWeightViewController: UIViewController {
     
     private func initPickerView() {
         weightPickerView.subviews[1].backgroundColor = .clear
+        let first = Int(weight)
+        let second = Int(weight * 10) - (first * 10)
+        weightPickerView.selectRow(first, inComponent: 0, animated: false)
+        weightPickerView.selectRow(second, inComponent: 2, animated: false)
     }
     
     private func setPickerView() {

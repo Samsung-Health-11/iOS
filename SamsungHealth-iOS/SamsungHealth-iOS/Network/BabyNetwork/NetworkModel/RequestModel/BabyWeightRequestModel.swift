@@ -9,4 +9,7 @@ import Foundation
 
 struct BabyWeightRequestModel: Codable {
     let weight: Double
+    let fatpercent: String?
+    let muscle: String?
+    let memo: String?
 }

@@ -5,4 +5,19 @@
 //  Created by 이경민 on 2022/05/14.
 //
 
-import Foundation
+import UIKit
+
+extension YinHomeViewController {
+    func getHealth() {
+        YinHealthService.shared.health() { response in
+            switch response {
+            case .success(let data):
+                guard let data = data as? YinHealthData else { return }
+                self.setData(data)
+                print(data)
+            default:
+                print(response)
+            }
+        }
+    }
+}

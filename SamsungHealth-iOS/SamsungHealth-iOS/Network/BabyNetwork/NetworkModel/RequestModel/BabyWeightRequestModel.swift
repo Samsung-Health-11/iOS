@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct BabyWeightRequestModel: Codable {
+    let weight: Double
+}

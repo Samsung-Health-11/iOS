@@ -11,7 +11,7 @@ struct URLConstant {
     
     // MARK: - base URL
     
-    static let baseURL = "43.200.4.231:8000"
+    static let baseURL = "http://43.200.4.231:8000"
     
     // MARK: - Health
     

@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct YinWeightRequestModel {
+    let weight: Double
+    let fatPercent, muscle: Double?
+    let memo: String?
+}

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct YinWeightRequestModel {
+struct YinWeightRequestModel: Codable {
     let weight: Double
     let fatPercent, muscle: Double?
     let memo: String?

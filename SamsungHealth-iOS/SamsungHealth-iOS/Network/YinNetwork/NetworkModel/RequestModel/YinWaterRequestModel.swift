@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct YinWaterRequestModel: Codable {
+    let type: String
+}

@@ -28,6 +28,21 @@ extension BabyHomeViewController {
                 self.sleepTimeLabel.text = data.sleep.time
                 self.weightLabel.text = "\(data.weight)"
                 self.waterLabel.text = "\(data.water)"
+                self.setWaterButton(data.water)
+                print(data)
+            default:
+                print(response)
+            }
+        }
+    }
+    
+    func modifyWaterData(modifyType: String) {
+        BabyWaterService.shared.modifyWaterData(dataModel: BabyWaterRequestModel(type: modifyType)) {
+            response in
+            switch response {
+            case .success(let data):
+                guard let data = data as? BabyWaterResponseModel else { return }
+                self.loadHealthData()
                 print(data)
             default:
                 print(response)

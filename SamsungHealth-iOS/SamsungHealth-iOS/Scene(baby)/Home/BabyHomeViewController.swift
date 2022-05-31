@@ -63,7 +63,7 @@ class BabyHomeViewController: UIViewController {
 
     // MARK: - @IBAction
     @IBAction func weightbtnDidTap(_ sender: Any) {
-        guard let babyWeightVC = UIStoryboard(name: "BabyWeight", bundle: nil).instantiateViewController(withIdentifier: "BabyWeightViewController") as? BabyWeightViewController else { return }
+        guard let babyWeightVC = UIStoryboard(name: Const.Storyboard.BabyWeight, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.BabyWeightViewController) as? BabyWeightViewController else { return }
         babyWeightVC.modalTransitionStyle = .crossDissolve
         babyWeightVC.modalPresentationStyle = .fullScreen
         self.present(babyWeightVC, animated: true, completion: nil)

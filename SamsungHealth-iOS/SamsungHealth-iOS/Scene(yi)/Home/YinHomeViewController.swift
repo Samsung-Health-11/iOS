@@ -10,6 +10,7 @@ import UIKit
 class YinHomeViewController: UIViewController {
     
     // MARK: - Properties
+    
     var weight = Double(0.0)
     
     // MARK: - IBOutlet
@@ -32,6 +33,8 @@ class YinHomeViewController: UIViewController {
     @IBOutlet weak var weightLabel: UILabel!
     @IBOutlet weak var waterLabel: UILabel!
     
+    @IBOutlet weak var waterMinusButton: UIButton!
+    
     // MARK: - VC Life Cycle (or Cell Life Cycle)
     
     override func viewWillAppear(_ animated: Bool) {
@@ -44,6 +47,7 @@ class YinHomeViewController: UIViewController {
     }
     
     // MARK: - Function
+    
     private func setUI() {
         setFont()
     }
@@ -70,12 +74,33 @@ class YinHomeViewController: UIViewController {
         weightLabel.text = "\(weight)"
         waterLabel.text = "\(data.water)"
     }
+    
+    func setWaterBtn(_ water: Int) {
+        if (water == 0) {
+            waterMinusButton.setImage(Const.Image.sshMinusButtonOff, for: .normal)
+            waterMinusButton.isEnabled = false
+        } else {
+            waterMinusButton.setImage(Const.Image.sshMinusButtonOn, for: .normal)
+            waterMinusButton.isEnabled = true
+        }
+    }
 
     // MARK: - IBAction
+    
     @IBAction func weightBtnDidTap(_ sender: Any) {
         guard let weightVC = UIStoryboard(name: Const.Storyboard.YinWeight, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.YinWeightViewController) as? YinWeightViewController else { return }
         weightVC.modalPresentationStyle = .fullScreen
         weightVC.weight = weight
         present(weightVC, animated: true)
     }
+    
+    
+    @IBAction func waterMinusBtnDidTap(_ sender: Any) {
+        putWater(YinWaterRequestModel(type: "-"))
+    }
+    
+    @IBAction func waterPlusBtnDidTap(_ sender: Any) {
+        putWater(YinWaterRequestModel(type: "+"))
+    }
+    
 }

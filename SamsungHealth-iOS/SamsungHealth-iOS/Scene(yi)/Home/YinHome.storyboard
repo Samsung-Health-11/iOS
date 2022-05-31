@@ -479,15 +479,21 @@
                                                                 </constraints>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" image="sshPlusButtonOn"/>
+                                                                <connections>
+                                                                    <action selector="waterPlusBtnDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="fdY-L9-g5T"/>
+                                                                </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLe-LB-iR6">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLe-LB-iR6">
                                                                 <rect key="frame" x="266" y="27.5" width="35" height="35"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="35" id="CFI-6g-vq3"/>
                                                                     <constraint firstAttribute="height" constant="35" id="Gxe-sV-sPR"/>
                                                                 </constraints>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" image="sshMinusButtonOff"/>
+                                                                <buttonConfiguration key="configuration" style="plain" image="sshMinusButtonOn"/>
+                                                                <connections>
+                                                                    <action selector="waterMinusBtnDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="2z3-2o-KH3"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" name="11SshColorBgwhite"/>
@@ -569,6 +575,7 @@
                         <outlet property="stepTargetLabel" destination="cop-pM-LUn" id="cSz-5m-Fl6"/>
                         <outlet property="stepTimeLabel" destination="TxA-qy-jJS" id="yBC-jq-RrM"/>
                         <outlet property="waterLabel" destination="lkK-f7-HBr" id="ieg-hi-HrN"/>
+                        <outlet property="waterMinusButton" destination="YLe-LB-iR6" id="ggl-vZ-iD4"/>
                         <outlet property="weightLabel" destination="MvH-cf-Rpg" id="O7x-dQ-FG1"/>
                         <outletCollection property="titleLabels" destination="qL8-GM-zAU" collectionClass="NSMutableArray" id="oJB-Ih-z7k"/>
                         <outletCollection property="titleLabels" destination="zy4-AW-f34" collectionClass="NSMutableArray" id="Fa4-uL-rOA"/>
@@ -617,7 +624,7 @@
         <image name="sshKnoxlogo" width="101" height="13"/>
         <image name="sshLogo" width="138" height="30"/>
         <image name="sshMenubutton" width="3" height="15"/>
-        <image name="sshMinusButtonOff" width="35" height="35"/>
+        <image name="sshMinusButtonOn" width="35" height="35"/>
         <image name="sshPlusButtonOn" width="35" height="35"/>
         <image name="sshWalkbar" width="113" height="8"/>
         <image name="sshWritebutton" width="113" height="34"/>

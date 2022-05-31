@@ -12,19 +12,16 @@ struct BabyWeightService {
     static let shared = BabyWeightService()
     private init() {}
     
-    func recordWeightData(weight: Double,
-                          fatpercent: Double?,
-                          muscle: Double?,
-                          memo: String?,
+    func recordWeightData(dataModel : BabyWeightRequestModel,
                           completion: @escaping (NetworkResult<Any>) -> (Void))
     {
         let url = URLConstant.healthWeight
         let header: HTTPHeaders = ["Content-Type" : "application/json"]
         let body: Parameters = [
-            "weight": weight,
-            "fatPercent": fatpercent ?? "",
-            "muscle": muscle ?? "",
-            "memo": memo ?? ""
+            "weight": dataModel.weight,
+            "fatPercent": dataModel.fatpercent ?? "",
+            "muscle": dataModel.muscle ?? "",
+            "memo": dataModel.memo ?? ""
         ]
         
         let dataRequest = AF.request(url,

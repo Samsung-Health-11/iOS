@@ -14,10 +14,10 @@ extension BabyWeightViewController {
         guard let muscle = muscleTextField.text else { return }
         guard let memo = memoTextField.text else { return }
         
-        BabyWeightService.shared.recordWeightData(weight: weightData,
+        BabyWeightService.shared.recordWeightData(dataModel : BabyWeightRequestModel(weight: weightData,
                                                   fatpercent: Double(fatPercent),
                                                   muscle: Double(muscle),
-                                                  memo: memo) {
+                                                  memo: memo)) {
             response in
             switch response {
             case .success(let data):

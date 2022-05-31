@@ -18,7 +18,7 @@ struct BabyHealthService {
         let header: HTTPHeaders = ["Content-Type" : "application/json"]
         let dataRequest = AF.request(url,
                                      method: .get,
-                                     encoding: URLEncoding.default,
+                                     encoding: JSONEncoding.default,
                                      headers: header)
         
         dataRequest.responseData { response in

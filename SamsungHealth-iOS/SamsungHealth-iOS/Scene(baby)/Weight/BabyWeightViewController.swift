@@ -7,15 +7,10 @@
 
 import UIKit
 
-protocol BabyWeightViewContollerDelegate {
-    func recordWeight(weight: Float)
-}
-
 class BabyWeightViewController: UIViewController {
 
-    // MARK: - Properties
-    var delegate: BabyWeightViewContollerDelegate?
-    var weight: Float = 0.0
+    // MARK: - Propertie
+    var weightData: Double = 0.0
     
     // MARK: - @IBOutlet
     @IBOutlet weak var titleLabel: UILabel!
@@ -57,7 +52,10 @@ class BabyWeightViewController: UIViewController {
 
     // MARK: - @IBAction
     @IBAction func saveButtonDidTap(_ sender: Any) {
-        delegate?.recordWeight(weight: weight)
+        recordWeight()
+    }
+    
+    @IBAction func cancelButtonDidTap(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
 }
@@ -122,10 +120,13 @@ extension BabyWeightViewController: UIPickerViewDelegate, UIPickerViewDataSource
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        weight = Float(pickerView.selectedRow(inComponent: 0))
-        weight += (Float(pickerView.selectedRow(inComponent: 2)) * 0.1)
+        weightData = Double(pickerView.selectedRow(inComponent: 0))
+        weightData += (Double(pickerView.selectedRow(inComponent: 2)) * 0.1)
     }
 }
+
+
+
 
 
 

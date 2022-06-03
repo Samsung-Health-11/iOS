@@ -5,4 +5,46 @@
 //  Created by 이경민 on 2022/05/29.
 //
 
-import Foundation
+import Alamofire
+
+class YinHealthService {
+    static let shared = YinHealthService()
+    
+    private init() {}
+    
+    func health(completion: @escaping (NetworkResult<Any>) -> Void)
+    {
+        let url = URLConstant.health
+        let header: HTTPHeaders = ["Content-Type" : "application/json"]
+        let dataRequest = AF.request(url,
+                                     method: .get,
+                                     parameters: nil,
+                                     encoding: JSONEncoding.default,
+                                     headers: header)
+        
+        dataRequest.responseData { response in
+            switch response.result {
+            case .success:
+                guard let statusCode = response.response?.statusCode else { return }
+                guard let value = response.value else { return }
+                let networkResult = self.judgeStatus(by: statusCode, value)
+                completion(networkResult)
+            case .failure:
+                completion(.networkFail)
+            }
+        }
+    }
+    
+    func judgeStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
+        let decoder = JSONDecoder()
+        guard let decodedData = try? decoder.decode(YinHealthResponseModel.self, from: data)
+        else { return .pathErr }
+        
+        switch statusCode {
+        case 200 ..< 300: return .success(decodedData.data)
+        case 401 ..< 500: return .requestErr(decodedData.data)
+        case 500: return .serverErr
+        default: return .networkFail
+        }
+    }
+}

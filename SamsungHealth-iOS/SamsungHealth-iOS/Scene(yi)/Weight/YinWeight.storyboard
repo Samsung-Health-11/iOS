@@ -168,20 +168,25 @@
                                                                     <constraint firstAttribute="height" constant="14" id="qNG-GT-cPC"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메모" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDA-Yp-ne2">
-                                                                <rect key="frame" x="52" y="17" width="26" height="18"/>
-                                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                                                                <color key="textColor" name="11SshColorGray2"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="메모" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fvk-ka-Rct">
+                                                                <rect key="frame" x="52" y="17" width="284" height="18.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                                        <color key="value" name="11SshColorGray2"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
                                                         </subviews>
                                                         <color key="backgroundColor" name="11SshColorBgwhite"/>
                                                         <constraints>
-                                                            <constraint firstItem="KDA-Yp-ne2" firstAttribute="centerY" secondItem="9hl-OB-L6K" secondAttribute="centerY" id="11d-cf-W5y"/>
+                                                            <constraint firstItem="fvk-ka-Rct" firstAttribute="centerY" secondItem="9hl-OB-L6K" secondAttribute="centerY" id="NTl-QA-6DT"/>
                                                             <constraint firstAttribute="height" constant="52" id="VRo-Fo-8vx"/>
                                                             <constraint firstItem="BFD-ZV-Gwa" firstAttribute="leading" secondItem="9hl-OB-L6K" secondAttribute="leading" constant="20" id="Zpr-1m-hPe"/>
+                                                            <constraint firstItem="fvk-ka-Rct" firstAttribute="leading" secondItem="BFD-ZV-Gwa" secondAttribute="trailing" constant="20" id="lPc-Vp-xKN"/>
                                                             <constraint firstItem="BFD-ZV-Gwa" firstAttribute="centerY" secondItem="9hl-OB-L6K" secondAttribute="centerY" id="owh-cy-GRP"/>
-                                                            <constraint firstItem="KDA-Yp-ne2" firstAttribute="leading" secondItem="BFD-ZV-Gwa" secondAttribute="trailing" constant="20" id="xlC-YY-Wz3"/>
+                                                            <constraint firstAttribute="trailing" secondItem="fvk-ka-Rct" secondAttribute="trailing" constant="10" id="zHz-pa-150"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="20"/>
@@ -234,6 +239,9 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
                                             <color key="baseForegroundColor" name="11SshColorBlack1"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="cancelWeightBtnDidTap:" destination="4Mq-Wr-Ove" eventType="touchUpInside" id="FlW-VN-Qm0"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3x-Oh-j6q">
                                         <rect key="frame" x="254.5" y="20.5" width="55.5" height="35.5"/>
@@ -242,6 +250,9 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
                                             <color key="baseForegroundColor" name="11SshColorBlack1"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="addWeightBtnDidTap:" destination="4Mq-Wr-Ove" eventType="touchUpInside" id="ULr-PR-ev2"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" name="11SshColorBggray"/>
@@ -270,6 +281,7 @@
                     <size key="freeformSize" width="376" height="800"/>
                     <connections>
                         <outlet property="dateLabel" destination="IXl-Am-rth" id="PpD-oG-2U9"/>
+                        <outlet property="memoTextField" destination="fvk-ka-Rct" id="Xae-s6-X4u"/>
                         <outlet property="muscleTextField" destination="pTu-gL-lZY" id="YYA-YG-L7V"/>
                         <outlet property="titleLabel" destination="9ME-ry-TlK" id="sZ1-da-Is2"/>
                         <outlet property="weightPickerView" destination="b58-bb-vdu" id="YvZ-5V-MAe"/>
@@ -277,7 +289,6 @@
                         <outletCollection property="titleLabels" destination="HCC-MI-dPQ" collectionClass="NSMutableArray" id="Cud-4i-q7o"/>
                         <outletCollection property="titleLabels" destination="clc-vK-Sf2" collectionClass="NSMutableArray" id="NX7-rM-7F7"/>
                         <outletCollection property="titleLabels" destination="vRj-SU-2zF" collectionClass="NSMutableArray" id="kfm-92-qfr"/>
-                        <outletCollection property="titleLabels" destination="KDA-Yp-ne2" collectionClass="NSMutableArray" id="CEh-IY-k5p"/>
                         <outletCollection property="typeLabels" destination="w2o-te-44O" collectionClass="NSMutableArray" id="iPV-Q1-3Yu"/>
                         <outletCollection property="typeLabels" destination="bf8-od-fw7" collectionClass="NSMutableArray" id="nuh-uK-rfG"/>
                         <outletCollection property="msgLabels" destination="OSk-v5-p2z" collectionClass="NSMutableArray" id="a9c-dT-xcB"/>

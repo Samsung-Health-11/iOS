@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct YinWeightResponseModel: Codable {
+    let status: Int
+    let success: Bool
+    let message: String
+}

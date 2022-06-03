@@ -11,9 +11,4 @@ struct BabyWaterResponseModel: Codable {
     let status: Int
     let success: Bool
     let message: String
-    let data: BabyWaterDataClass?
-}
-
-struct BabyWaterDataClass: Codable {
-    let water: Int
 }

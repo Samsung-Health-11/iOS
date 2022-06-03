@@ -29,6 +29,7 @@ class BabyHomeViewController: UIViewController {
     @IBOutlet var bigLabel: [UILabel]!
     @IBOutlet var smallLabel: [UILabel]!
     @IBOutlet var detailLabel: [UILabel]!
+    @IBOutlet weak var waterMinusButton: UIButton!
     
     // MARK: - VC Life Cycle
     override func viewDidLoad() {
@@ -48,13 +49,32 @@ class BabyHomeViewController: UIViewController {
         smallLabel.forEach{ $0.font = .SshFontB2 }
         detailLabel.forEach{ $0.font = .SshFontC1 }
     }
+    
+    func setWaterButton(_ water: Int){
+        if water == 0{
+            waterMinusButton.setImage(Const.Image.sshMinusButtonOff, for: .normal)
+            waterMinusButton.isEnabled = false
+        }
+        else{
+            waterMinusButton.setImage(Const.Image.sshMinusButtonOn, for: .normal)
+            waterMinusButton.isEnabled = true
+        }
+    }
 
     // MARK: - @IBAction
     @IBAction func weightbtnDidTap(_ sender: Any) {
-        guard let babyWeightVC = UIStoryboard(name: "BabyWeight", bundle: nil).instantiateViewController(withIdentifier: "BabyWeightViewController") as? BabyWeightViewController else { return }
+        guard let babyWeightVC = UIStoryboard(name: Const.Storyboard.BabyWeight, bundle: nil).instantiateViewController(withIdentifier: Const.ViewController.BabyWeightViewController) as? BabyWeightViewController else { return }
         babyWeightVC.modalTransitionStyle = .crossDissolve
         babyWeightVC.modalPresentationStyle = .fullScreen
         self.present(babyWeightVC, animated: true, completion: nil)
+    }
+    
+    @IBAction func waterMinusButtonDidTap(_ sender: Any) {
+        modifyWaterData(modifyType: "-")
+    }
+    
+    @IBAction func waterPlusButtonDidTap(_ sender: Any) {
+        modifyWaterData(modifyType: "+")
     }
 }
 

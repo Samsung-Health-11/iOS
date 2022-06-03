@@ -571,6 +571,9 @@
                                                                         </constraints>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" image="sshMinusButtonOff"/>
+                                                                        <connections>
+                                                                            <action selector="waterMinusButtonDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="lAM-9S-AIK"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vy4-5M-uXp">
                                                                         <rect key="frame" x="46" y="0.0" width="35" height="35"/>
@@ -580,6 +583,9 @@
                                                                         </constraints>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" image="sshPlusButtonOn"/>
+                                                                        <connections>
+                                                                            <action selector="waterPlusButtonDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="r5W-u3-7Tj"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -673,6 +679,7 @@
                         <outlet property="stepTargetLabel" destination="DDY-rI-rrc" id="MJR-du-8hd"/>
                         <outlet property="stepTimeLabel" destination="Foe-D7-jDz" id="2Jh-5N-Jei"/>
                         <outlet property="waterLabel" destination="hqV-3i-fpV" id="FNY-A7-ODR"/>
+                        <outlet property="waterMinusButton" destination="q8k-cj-A1n" id="qJG-z4-ESV"/>
                         <outlet property="weightLabel" destination="3dX-iZ-Dci" id="ZM0-Zn-M0e"/>
                         <outletCollection property="titleLabel" destination="6Kr-Zd-zg6" collectionClass="NSMutableArray" id="nJl-lB-HiL"/>
                         <outletCollection property="titleLabel" destination="CNk-sp-yZu" collectionClass="NSMutableArray" id="7d9-tI-a8O"/>
